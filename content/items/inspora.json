@@ -1,0 +1,15 @@
+{
+  "slug": "inspora",
+  "title": "Inspora",
+  "url": "https://www.inspora.design/",
+  "description": "An archive of recent visual design and creative work.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "archive"
+  ],
+  "thumbnail": "/thumbs/inspora.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 85
+}

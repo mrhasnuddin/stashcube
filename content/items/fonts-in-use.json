@@ -1,0 +1,15 @@
+{
+  "slug": "fonts-in-use",
+  "title": "Fonts In Use",
+  "url": "https://fontsinuse.com/",
+  "description": "A searchable archive of typography in real projects.",
+  "category": "fonts",
+  "tags": [
+    "archive",
+    "typography"
+  ],
+  "thumbnail": "/thumbs/fonts-in-use.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 33
+}

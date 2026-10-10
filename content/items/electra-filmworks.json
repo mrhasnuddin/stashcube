@@ -1,0 +1,16 @@
+{
+  "slug": "electra-filmworks",
+  "title": "Electra Filmworks",
+  "url": "https://electrafilmworks.com/",
+  "description": "A Los Angeles production studio.",
+  "category": "inspiration",
+  "subcategory": "studios-agencies",
+  "tags": [
+    "film",
+    "production"
+  ],
+  "thumbnail": "/thumbs/electra-filmworks.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 110
+}

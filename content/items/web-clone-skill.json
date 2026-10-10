@@ -1,0 +1,16 @@
+{
+  "slug": "web-clone-skill",
+  "title": "Web Clone Skill",
+  "url": "https://github.com/Jane-xiaoer/claude-skill-web-clone",
+  "description": "A Claude skill for cloning websites.",
+  "category": "skills",
+  "tags": [
+    "claude",
+    "cloning",
+    "github"
+  ],
+  "thumbnail": "/thumbs/web-clone-skill.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 139
+}

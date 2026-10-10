@@ -1,0 +1,15 @@
+{
+  "slug": "graphify",
+  "title": "Graphify",
+  "url": "https://graphify.com/",
+  "description": "Your codebase as a knowledge graph your AI assistant can query. Open source and on-device.",
+  "category": "mcp-agents",
+  "tags": [
+    "knowledge-graph",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/graphify.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 142
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "0g",
+  "title": "0G",
+  "url": "https://0g.ai/",
+  "description": "A decentralized AI operating system on its own EVM chain.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "ai",
+    "decentralized"
+  ],
+  "thumbnail": "/thumbs/0g.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 91
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "navbar-gallery",
+  "title": "Navbar Gallery",
+  "url": "https://www.navbar.gallery/",
+  "description": "Website navigation bars from across the web.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "navigation"
+  ],
+  "thumbnail": "/thumbs/navbar-gallery.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 68
+}

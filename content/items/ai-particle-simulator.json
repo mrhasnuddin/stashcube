@@ -1,0 +1,16 @@
+{
+  "slug": "ai-particle-simulator",
+  "title": "AI Particle Simulator",
+  "url": "https://particles.casberry.in/",
+  "description": "Generate and publish 3D particle swarms with custom logic.",
+  "category": "3d-tools",
+  "tags": [
+    "particles",
+    "webgl",
+    "ai"
+  ],
+  "thumbnail": "/thumbs/ai-particle-simulator.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 43
+}

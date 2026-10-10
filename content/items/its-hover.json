@@ -1,0 +1,15 @@
+{
+  "slug": "its-hover",
+  "title": "Its Hover",
+  "url": "https://www.itshover.com/icons",
+  "description": "Animated icons that move on hover.",
+  "category": "icons",
+  "tags": [
+    "animated",
+    "react"
+  ],
+  "thumbnail": "/thumbs/its-hover.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 28
+}

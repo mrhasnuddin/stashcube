@@ -1,0 +1,16 @@
+{
+  "slug": "tempo",
+  "title": "Tempo",
+  "url": "https://tempo.xyz/",
+  "description": "A payments-focused blockchain with predictable low fees.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "payments",
+    "blockchain"
+  ],
+  "thumbnail": "/thumbs/tempo.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 93
+}

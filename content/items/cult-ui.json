@@ -1,0 +1,17 @@
+{
+  "slug": "cult-ui",
+  "title": "Cult UI",
+  "url": "https://www.cult-ui.com/",
+  "description": "Open-source shadcn components, animated blocks and full templates for Next.js.",
+  "category": "ui-libraries",
+  "tags": [
+    "react",
+    "shadcn",
+    "tailwind",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/cult-ui.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 0
+}

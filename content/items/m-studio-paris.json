@@ -1,0 +1,16 @@
+{
+  "slug": "m-studio-paris",
+  "title": "M Studio Paris",
+  "url": "https://www.mstudio-paris.com/en",
+  "description": "Three daylight photo studios in Paris.",
+  "category": "inspiration",
+  "subcategory": "studios-agencies",
+  "tags": [
+    "photo",
+    "studio"
+  ],
+  "thumbnail": "/thumbs/m-studio-paris.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 111
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "svg-shapes",
+  "title": "SVG Shapes",
+  "url": "https://www.shapes.gallery/",
+  "description": "Free copy-paste SVG shapes by Monika Michalczyk.",
+  "category": "illustration",
+  "tags": [
+    "svg",
+    "shapes",
+    "copy-paste"
+  ],
+  "thumbnail": "/thumbs/svg-shapes.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 54
+}

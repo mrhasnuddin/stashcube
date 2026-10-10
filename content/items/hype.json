@@ -1,0 +1,16 @@
+{
+  "slug": "hype",
+  "title": "Hype",
+  "url": "https://www.hy.pe/",
+  "description": "A crypto and emerging-tech marketing agency.",
+  "category": "inspiration",
+  "subcategory": "studios-agencies",
+  "tags": [
+    "crypto",
+    "agency"
+  ],
+  "thumbnail": "/thumbs/hype.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 109
+}

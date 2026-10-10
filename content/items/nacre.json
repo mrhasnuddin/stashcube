@@ -1,0 +1,16 @@
+{
+  "slug": "nacre",
+  "title": "Nacre",
+  "url": "https://kaiba.world/",
+  "description": "A tool for making 3D hero sections.",
+  "category": "3d-tools",
+  "tags": [
+    "hero",
+    "3d",
+    "tool"
+  ],
+  "thumbnail": "/thumbs/nacre.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 41
+}

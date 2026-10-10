@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "../styles/design-tokens.css";
+@import "../styles/components.css";
+
+/* next/font exposes the loaded families through these variables; keep the token stack as the fallback */
+:root {
+  --font-heading: var(--nf-heading), 'Bricolage Grotesque', 'Arial Narrow', sans-serif;
+  --font-body: var(--nf-body), 'Figtree', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--nf-mono), 'Martian Mono', ui-monospace, SFMono-Regular, monospace;
+}

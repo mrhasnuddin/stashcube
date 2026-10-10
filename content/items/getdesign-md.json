@@ -1,0 +1,15 @@
+{
+  "slug": "getdesign-md",
+  "title": "getdesign.md",
+  "url": "https://getdesign.md/",
+  "description": "DESIGN.md files modeled on popular sites, for AI agents to build from.",
+  "category": "skills",
+  "tags": [
+    "design-md",
+    "agents"
+  ],
+  "thumbnail": "/thumbs/getdesign-md.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 134
+}

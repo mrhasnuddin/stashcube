@@ -1,0 +1,15 @@
+{
+  "slug": "promptefy",
+  "title": "Promptefy",
+  "url": "https://www.promptefy.online/",
+  "description": "Build detailed video prompts, with optional image references.",
+  "category": "prompts",
+  "tags": [
+    "video",
+    "ai"
+  ],
+  "thumbnail": "/thumbs/promptefy.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 141
+}

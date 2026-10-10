@@ -1,0 +1,16 @@
+{
+  "slug": "typeui",
+  "title": "TypeUI",
+  "url": "https://www.typeui.sh/design-skills",
+  "description": "57 design skill files for AI tools like Claude, Codex and Gemini.",
+  "category": "skills",
+  "tags": [
+    "design-skills",
+    "claude",
+    "codex"
+  ],
+  "thumbnail": "/thumbs/typeui.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 132
+}

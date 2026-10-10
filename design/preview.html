@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stashcube design system</title>
+<link rel="icon" href="../brand/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:wght@400;500;600&family=Martian+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="design-tokens.css">
+<style>
+
+*{box-sizing:border-box;margin:0}
+:root{
+  --px-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4' shape-rendering='crispEdges'><path d='M2 0h2v4H2zM0 1h1v1H0zM1 2h1v1H1zM0 3h1v1H0z'/></svg>");
+}
+/* stepped pixel corners; --n is set per element */
+.btn,.btn.s::before,.search,.search::before,.search kbd,.tag,.tag::before{clip-path:polygon(0 var(--n),var(--n) var(--n),var(--n) 0,calc(100% - var(--n)) 0,calc(100% - var(--n)) var(--n),100% var(--n),100% calc(100% - var(--n)),calc(100% - var(--n)) calc(100% - var(--n)),calc(100% - var(--n)) 100%,var(--n) 100%,var(--n) calc(100% - var(--n)),0 calc(100% - var(--n)))}
+/* background texture: three weak layers, each in its own place */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(var(--texture-dot-color) var(--texture-dot-size),transparent calc(var(--texture-dot-size) + 0.6px));background-size:var(--texture-dot-gap) var(--texture-dot-gap);-webkit-mask-image:radial-gradient(ellipse 60% 55% at 92% 0%,#000,transparent 72%);mask-image:radial-gradient(ellipse 60% 55% at 92% 0%,#000,transparent 72%)}
+.tex{position:absolute;pointer-events:none;z-index:-1}
+.tex-pixels{top:0;right:0;width:min(480px,60%);height:340px;opacity:var(--texture-pixel-opacity)}
+html[data-tex="off"] .tex,html[data-tex="off"] body::before{display:none}
+body{background:var(--color-background);color:var(--color-foreground);font:var(--primitive-fontWeight-regular) var(--primitive-fontSize-base)/var(--primitive-lineHeight-normal) var(--font-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font-heading);font-weight:var(--font-heading-weight);letter-spacing:var(--primitive-tracking-tight);line-height:var(--primitive-lineHeight-tight)}
+.label{font:var(--primitive-fontWeight-medium) 0.6875rem/1.2 var(--font-mono);letter-spacing:0.04em;text-transform:uppercase;color:var(--color-muted-foreground)}
+.app{position:relative;z-index:1;display:grid;grid-template-columns:var(--layout-sidebar-width) 1fr;min-height:100vh}
+svg.px{display:block;shape-rendering:crispEdges;fill:currentColor}
+
+/* ---------- sidebar ---------- */
+aside{border-right:1px solid var(--color-border);padding:var(--primitive-spacing-5) var(--primitive-spacing-3);position:sticky;top:0;height:100vh;overflow:auto}
+.brand{display:flex;align-items:center;gap:var(--primitive-spacing-3);padding:0 var(--primitive-spacing-2) var(--primitive-spacing-6)}
+.wm{font:var(--font-heading-weight) 1.5rem/1 var(--font-heading);letter-spacing:-0.04em}
+.wm b{color:var(--color-primary);font-weight:inherit}
+.grp{margin-top:var(--primitive-spacing-6)}
+.grp .label{display:block;padding:0 var(--primitive-spacing-4) var(--primitive-spacing-2)}
+.nav{position:relative;display:flex;align-items:center;justify-content:space-between;height:var(--sidebar-item-height);padding:0 calc(var(--sidebar-item-cell-size) * 4 + 12px) 0 var(--sidebar-item-padding-x);color:var(--sidebar-item-fg);font-size:var(--primitive-fontSize-sm);font-weight:500;text-decoration:none;overflow:hidden;margin-bottom:2px}
+.nav>span{position:relative;z-index:1}
+.nav .pxz{position:absolute;right:0;top:0;width:calc(var(--sidebar-item-cell-size) * 4);height:100%;display:grid;grid:repeat(4,1fr)/repeat(4,1fr)}
+.nav .pxz i{background:var(--sidebar-item-pixel-color);opacity:var(--s,0);transform:translateX(calc((1 - var(--s,0)) * 4px)) scale(var(--s,0));transition:transform var(--sidebar-item-exit-duration) var(--sidebar-item-exit-ease) calc(var(--dx) * var(--sidebar-item-stagger)),opacity var(--sidebar-item-exit-duration) linear calc(var(--dx) * var(--sidebar-item-stagger))}
+.nav:hover .pxz i,.nav:focus-visible .pxz i{--s:var(--h);transition:transform var(--sidebar-item-enter-duration) var(--sidebar-item-enter-ease) calc(var(--de) * var(--sidebar-item-stagger)),opacity var(--sidebar-item-enter-duration) ease-out calc(var(--de) * var(--sidebar-item-stagger))}
+.nav:active .pxz i,.nav[aria-current] .pxz i{--s:var(--a);transition:transform var(--sidebar-item-enter-duration) var(--sidebar-item-enter-ease) calc(var(--d) * var(--sidebar-item-stagger)),opacity var(--sidebar-item-enter-duration) ease-out calc(var(--d) * var(--sidebar-item-stagger))}
+.nav:hover{color:var(--sidebar-item-hover-fg)}
+.nav[aria-current]{background:var(--sidebar-item-active-bg);color:var(--sidebar-item-active-fg)}
+.nav:focus-visible{outline:2px solid var(--color-ring);outline-offset:-2px}
+.badge{font:var(--primitive-fontWeight-medium) 9px/1 var(--font-mono);letter-spacing:0.04em;padding:3px 5px;background:var(--badge-new-bg);color:var(--badge-new-fg)}
+.badge.out{background:transparent;color:var(--color-muted-foreground);box-shadow:inset 0 0 0 1px var(--badge-outline-border)}
+
+/* ---------- layout ---------- */
+main{position:relative;isolation:isolate;padding:var(--spacing-page-gutter) var(--primitive-spacing-8) var(--primitive-spacing-24);min-width:0}
+.crumb{display:flex;gap:var(--primitive-spacing-2);align-items:center;padding-bottom:var(--primitive-spacing-4);border-bottom:1px solid var(--color-border);margin-bottom:var(--primitive-spacing-10)}
+.crumb .cur{background:var(--color-foreground);color:var(--color-background);padding:3px 6px}
+section{margin-bottom:var(--spacing-section)}
+section>.label{display:block;margin-bottom:var(--primitive-spacing-4)}
+.hero h1{font-size:var(--primitive-fontSize-5xl)}
+.hero p{color:var(--color-muted-foreground);max-width:46ch;margin-top:var(--primitive-spacing-4);font-size:var(--primitive-fontSize-lg)}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:var(--primitive-spacing-3)}
+.sw div{height:72px;padding:var(--primitive-spacing-2);display:flex;flex-direction:column;justify-content:flex-end;font:var(--primitive-fontSize-xs)/1.3 var(--font-mono);border:1px solid var(--color-border)}
+.row{display:flex;flex-wrap:wrap;gap:var(--primitive-spacing-3);align-items:center}
+.type>div{display:flex;align-items:baseline;gap:var(--primitive-spacing-6);padding:var(--primitive-spacing-3) 0;border-bottom:1px solid var(--color-border)}
+.type>div .label{width:110px;flex:none}
+
+/* ---------- buttons: stepped pixel corners ---------- */
+.btn{--n:var(--button-notch);position:relative;display:inline-flex;align-items:center;gap:var(--primitive-spacing-2);height:var(--button-height);padding:0 var(--button-padding-x);border:0;background:var(--button-bg);color:var(--button-fg);font:600 var(--button-font-size)/1 var(--font-body);cursor:pointer;isolation:isolate;transition:transform var(--primitive-duration-fast) steps(2,end)}
+.btn>.t{position:relative;z-index:2;display:inline-flex;align-items:center;gap:var(--primitive-spacing-2)}
+.btn .pxz{position:absolute;z-index:1;right:0;top:0;width:var(--button-height);height:100%;display:grid;grid:repeat(4,1fr)/repeat(4,1fr);pointer-events:none}
+.btn .pxz i{background:var(--button-pixel-color);opacity:var(--s,0);transform:translateX(calc((1 - var(--s,0)) * 4px)) scale(var(--s,0));transition:transform var(--button-exit-duration) var(--button-exit-ease) calc(var(--dx) * var(--button-stagger)),opacity var(--button-exit-duration) linear calc(var(--dx) * var(--button-stagger))}
+.btn:hover .pxz i,.btn:focus-visible .pxz i{--s:var(--h);transition:transform var(--button-enter-duration) var(--button-enter-ease) calc(var(--de) * var(--button-stagger)),opacity var(--button-enter-duration) ease-out calc(var(--de) * var(--button-stagger))}
+.btn:active .pxz i{--s:var(--a);transition:transform var(--button-enter-duration) var(--button-enter-ease) calc(var(--d) * var(--button-stagger)),opacity var(--button-enter-duration) ease-out calc(var(--d) * var(--button-stagger))}
+.nav[data-pv="bars"]:hover:not([aria-current]):not(:active) i[data-b]{animation:bar-blink var(--sidebar-item-blink-duration) ease-in-out infinite;animation-delay:calc(var(--sidebar-item-enter-duration) + var(--b) * 160ms)}
+.btn[data-pv="bars"]:hover:not(:active) i[data-b]{animation:bar-blink var(--button-blink-duration) ease-in-out infinite;animation-delay:calc(var(--button-enter-duration) + var(--b) * 160ms)}
+@keyframes bar-blink{0%,100%{transform:scale(1)}50%{transform:scale(.25)}}
+.legend{display:flex;gap:var(--primitive-spacing-8);flex-wrap:wrap}
+.legend figure{display:flex;align-items:center;gap:var(--primitive-spacing-3);margin:0}
+.legend figcaption{font:500 0.6875rem/1.2 var(--font-mono);letter-spacing:0.04em;text-transform:uppercase;color:var(--color-muted-foreground)}
+.btn.s .pxz,.btn.g .pxz,.btn[data-state="busy"] .pxz,.btn[data-state="done"] .pxz{display:none}
+.btn:active{transform:translate(2px,2px)}
+.btn[aria-busy="true"],.btn[data-state="busy"]{cursor:progress}
+.btn[data-state="busy"]:active,.btn[data-state="done"]:active{transform:none}
+.btn>.t.cta-stack{display:inline-grid}
+.cta-stack>span:not(.sr){grid-area:1/1;justify-self:center;display:inline-flex;align-items:center;gap:var(--primitive-spacing-2);visibility:hidden}
+.btn[data-state="idle"] .cta-idle,.btn[data-state="busy"] .cta-busy,.btn[data-state="done"] .cta-done{visibility:visible}
+.cta-stack>span.cta-busy{gap:0}
+.cta-busy span{display:inline-block;animation:hop var(--button-hop-duration) steps(1,end) infinite;animation-delay:calc(var(--i) * var(--button-hop-stagger))}
+@keyframes hop{0%{transform:translateY(0)}12%{transform:translateY(calc(var(--button-hop-height) * -1))}24%{transform:translateY(0)}100%{transform:translateY(0)}}
+.btn[data-state="done"] .cta-done svg{animation:pop var(--primitive-duration-normal) steps(3,end)}
+@keyframes pop{from{transform:translateY(-4px)}to{transform:translateY(0)}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.btn:focus-visible{outline:2px solid var(--color-ring);outline-offset:3px;clip-path:none}
+.btn.s{background:var(--button-secondary-edge);color:var(--color-foreground);transition:background var(--primitive-duration-fast) steps(2,end)}
+.btn.s::before{content:"";position:absolute;inset:1px;z-index:0;background:var(--button-secondary-fill);--n:calc(var(--button-notch) - 1px)}
+.btn.s:hover{background:var(--color-primary);color:var(--color-primary)}
+.btn.g{background:transparent;color:var(--color-muted-foreground)}
+.btn.g:hover{background:var(--button-ghost-hover-bg);color:var(--color-foreground)}
+.btn[disabled]{opacity:.35;pointer-events:none}
+
+/* ---------- search ---------- */
+.search{--n:var(--search-notch);position:relative;display:flex;align-items:center;gap:var(--primitive-spacing-3);height:var(--search-height);width:min(100%,420px);padding:0 var(--search-padding-x);background:var(--search-edge);color:var(--search-icon);isolation:isolate;transition:background var(--primitive-duration-fast) steps(2,end)}
+.search::before{content:"";position:absolute;inset:1px;z-index:-1;background:var(--search-fill);--n:calc(var(--search-notch) - 1px)}
+.search:focus-within{background:var(--search-edge-focus);color:var(--search-edge-focus)}
+.search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--search-fg);font:inherit;font-size:var(--primitive-fontSize-sm);caret-color:var(--search-edge-focus)}
+.search input::placeholder{color:var(--search-placeholder)}
+.search kbd{font:500 10px/1 var(--font-mono);color:var(--color-muted-foreground);background:var(--search-key-bg);padding:5px 7px;--n:2px}
+.search:focus-within kbd{background:var(--color-primary);color:var(--color-primary-foreground)}
+
+/* ---------- tags ---------- */
+.tag{--n:var(--tag-notch);position:relative;display:inline-flex;align-items:center;gap:var(--primitive-spacing-2);padding:var(--tag-padding-y) var(--tag-padding-x);background:var(--tag-edge);color:var(--tag-fg);font:500 0.6875rem/1.6 var(--font-mono);letter-spacing:0.02em;border:0;cursor:pointer;isolation:isolate}
+.tag::before{content:"";position:absolute;inset:1px;z-index:-1;background:var(--tag-fill);--n:calc(var(--tag-notch) - 1px);transition:background var(--primitive-duration-fast) steps(2,end)}
+.tag i{width:4px;height:4px;background:var(--tag-dot-color)}
+.tag:hover,.tag[aria-pressed="true"]{color:var(--tag-hover-fg)}
+.tag:hover::before,.tag[aria-pressed="true"]::before{background:var(--tag-hover-bg)}
+.tag:hover i,.tag[aria-pressed="true"] i{background:var(--tag-hover-fg)}
+.tag:focus-visible{outline:2px solid var(--color-ring);outline-offset:2px;clip-path:none}
+
+/* ---------- tiles ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--spacing-grid-gap);padding-top:var(--primitive-spacing-5)}
+.cell{position:relative;z-index:0}
+.cell:hover,.cell:focus-within{z-index:3}
+.cell::before{content:"";position:absolute;inset:0;z-index:0;background:var(--tile-shadow-color);-webkit-mask:conic-gradient(black 25%,transparent 0 50%,black 0 75%,transparent 0) 0 0/calc(var(--tile-shadow-cell) * 2) calc(var(--tile-shadow-cell) * 2);mask:conic-gradient(black 25%,transparent 0 50%,black 0 75%,transparent 0) 0 0/calc(var(--tile-shadow-cell) * 2) calc(var(--tile-shadow-cell) * 2);opacity:0;transition:transform var(--primitive-duration-fast) steps(2,end),opacity 0s steps(1,end)}
+.cell:hover::before,.cell:focus-within::before{opacity:1;transform:translate(var(--tile-shadow-offset),var(--tile-shadow-offset))}
+.pop{position:absolute;right:var(--primitive-spacing-5);top:0;width:32px;height:32px;z-index:0;transform:translateY(0);transition:transform var(--primitive-duration-normal) steps(3,end);pointer-events:none}
+.pop .a{fill:var(--tile-pop-face-top)}.pop .b{fill:var(--tile-pop-face-left)}.pop .c{fill:var(--tile-pop-face-right)}
+.cell:hover .pop,.cell:focus-within .pop{transform:translateY(-22px)}
+.tile{position:relative;z-index:1;background:var(--tile-bg);border:1px solid var(--tile-border);border-radius:var(--tile-radius);text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform var(--primitive-duration-fast) steps(2,end),border-color var(--primitive-duration-fast) steps(2,end)}
+.tile i.c{position:absolute;width:var(--container-line-corner-size);height:var(--container-line-corner-size);border:1px solid var(--container-line-color);background:var(--color-background);transition:background var(--primitive-duration-fast) steps(2,end),border-color var(--primitive-duration-fast) steps(2,end)}
+.tile i.c:nth-of-type(1){top:-1px;left:-1px}.tile i.c:nth-of-type(2){top:-1px;right:-1px}.tile i.c:nth-of-type(3){bottom:-1px;left:-1px}.tile i.c:nth-of-type(4){bottom:-1px;right:-1px}
+.tile:hover,.tile:focus-visible{border-color:var(--tile-hover-border);transform:translate(var(--tile-hover-translate-x),var(--tile-hover-translate-y));outline:0}
+.tile:hover i.c,.tile:focus-visible i.c{background:var(--color-primary);border-color:var(--color-primary)}
+.thumb{position:relative;overflow:hidden;aspect-ratio:4/3;display:grid;place-items:center;border-bottom:1px solid var(--tile-border)}
+.thumb::after{content:"";position:absolute;inset:0;background:conic-gradient(var(--tile-dither-color) 25%,transparent 0 50%,var(--tile-dither-color) 0 75%,transparent 0) 0 0/calc(var(--tile-dither-cell) * 2) calc(var(--tile-dither-cell) * 2);opacity:.12;transform:translateY(100%);transition:transform var(--primitive-duration-slow) steps(6,end)}
+.tile:hover .thumb::after,.tile:focus-visible .thumb::after{transform:translateY(0)}
+.cap{display:flex;justify-content:space-between;align-items:center;padding:var(--tile-label-padding);font-size:var(--primitive-fontSize-sm);font-weight:500}
+.cap small{display:block;margin-top:2px;color:var(--color-muted-foreground);font:400 0.6875rem/1.2 var(--font-mono)}
+.cap .arr{color:var(--color-muted-foreground);transition:transform var(--primitive-duration-fast) steps(2,end),color var(--primitive-duration-fast) steps(2,end)}
+.tile:hover .arr,.tile:focus-visible .arr{color:var(--color-primary);transform:translateX(4px)}
+
+@media (max-width:820px){.app{grid-template-columns:1fr}aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--color-border)}main{padding:var(--primitive-spacing-6) var(--primitive-spacing-4)}.hero h1{font-size:var(--primitive-fontSize-4xl)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside>
+  <div class="brand"><span id="tile"></span><span class="wm">stash<b>cube</b></span></div>
+  <a class="nav" href="#" aria-current="page"><span>Home</span><b class="pxz"></b></a>
+  <div class="grp"><span class="label">Build</span>
+    <a class="nav" href="#"><span>UI Libraries</span><span class="badge">NEW</span><b class="pxz"></b></a>
+    <a class="nav" href="#"><span>Components</span><b class="pxz"></b></a>
+    <a class="nav" href="#"><span>Icons</span><b class="pxz"></b></a>
+    <a class="nav" href="#"><span>Fonts</span><b class="pxz"></b></a></div>
+  <div class="grp"><span class="label">Create</span>
+    <a class="nav" href="#"><span>3D Tools</span><b class="pxz"></b></a>
+    <a class="nav" href="#"><span>Shaders and Gradients</span><b class="pxz"></b></a>
+    <a class="nav" href="#"><span>Mockups</span><span class="badge out">FAV</span><b class="pxz"></b></a></div>
+  <div class="grp"><span class="label">AI</span>
+    <a class="nav" href="#"><span>Skills.md</span><span class="badge">NEW</span><b class="pxz"></b></a>
+    <a class="nav" href="#"><span>MCP and Agents</span><b class="pxz"></b></a></div>
+</aside>
+<main>
+  <canvas class="tex tex-pixels" aria-hidden="true"></canvas>
+  <div class="crumb label"><span>Build</span><span>&gt;</span><span class="cur">UI Libraries</span><button class="tag" id="texToggle" aria-pressed="true" style="margin-left:auto"><i></i>Texture: on</button></div>
+
+  <section class="hero">
+    <span class="label">Design system / dark</span>
+    <h1 style="margin-top:var(--primitive-spacing-4)">Every good link,<br><span style="color:var(--color-primary)">stashed.</span></h1>
+    <p>A public library of UI libraries, 3D tools, icons and inspiration. The pixels live in the details.</p>
+    <div class="row" style="margin-top:var(--primitive-spacing-8)">
+      <button class="btn p"><span class="t">Browse the stash <svg class="px" viewBox="0 0 7 5" width="14" height="10" aria-hidden="true"><path d="M4 0h1v1H4zM5 1h1v1H5zM0 2h7v1H0zM5 3h1v1H5zM4 4h1v1H4z"/></svg></span><b class="pxz" aria-hidden="true"></b></button>
+      <button class="btn s"><span class="t">Collections</span></button>
+      <button class="btn g"><span class="t">About</span></button>
+      <button class="btn p" disabled><span class="t">Disabled</span><b class="pxz" aria-hidden="true"></b></button>
+    </div>
+  </section>
+
+  <section><span class="label">CTA: process state lives inside the button (click the first one)</span>
+    <div class="row">
+      <button class="btn p" data-cta data-state="idle"><span class="t cta-stack"><span class="cta-idle">Copy link</span><span class="cta-busy" data-text="Copying" aria-hidden="true"></span><span class="cta-done" aria-hidden="true"><svg class="px" viewBox="0 0 7 5" width="14" height="10" aria-hidden="true"><path d="M6 0h1v1H6zM5 1h1v1H5zM4 2h1v1H4zM0 2h1v1H0zM3 3h1v1H3zM1 3h1v1H1zM2 4h1v1H2z"/></svg>Copied</span></span><span class="sr" role="status"></span><b class="pxz" aria-hidden="true"></b></button>
+      <button class="btn p" aria-busy="true" data-state="busy"><span class="t cta-stack"><span class="cta-idle">Copy link</span><span class="cta-busy" data-text="Copying" aria-hidden="true"></span><span class="cta-done" aria-hidden="true"><svg class="px" viewBox="0 0 7 5" width="14" height="10" aria-hidden="true"><path d="M6 0h1v1H6zM5 1h1v1H5zM4 2h1v1H4zM0 2h1v1H0zM3 3h1v1H3zM1 3h1v1H1zM2 4h1v1H2z"/></svg>Copied</span></span><span class="sr" role="status"></span><b class="pxz" aria-hidden="true"></b></button>
+      <button class="btn p"  data-state="done"><span class="t cta-stack"><span class="cta-idle">Copy link</span><span class="cta-busy" data-text="Copying" aria-hidden="true"></span><span class="cta-done" aria-hidden="true"><svg class="px" viewBox="0 0 7 5" width="14" height="10" aria-hidden="true"><path d="M6 0h1v1H6zM5 1h1v1H5zM4 2h1v1H4zM0 2h1v1H0zM3 3h1v1H3zM1 3h1v1H1zM2 4h1v1H2z"/></svg>Copied</span></span><span class="sr" role="status"></span><b class="pxz" aria-hidden="true"></b></button>
+    </div></section>
+
+  <section><span class="label">Hover pattern: 3 variants, a random one on every new hover (never the same twice in a row)</span>
+    <div class="legend" id="legend"></div></section>
+
+  <section><span class="label">Controls: search and tags</span>
+    <div class="row" style="gap:var(--primitive-spacing-5)">
+      <label class="search"><svg class="px" viewBox="0 0 9 9" width="18" height="18" aria-hidden="true"><path d="M2 0h3v1H2zM1 1h1v1H1zM5 1h1v1H5zM0 2h1v3H0zM6 2h1v3H6zM1 5h1v1H1zM5 5h1v1H5zM2 6h3v1H2zM6 6h1v1H6zM7 7h1v1H7zM8 8h1v1H8z"/></svg><input placeholder="Search the stash" aria-label="Search the stash"><kbd>/</kbd></label>
+    </div>
+    <div class="row" style="margin-top:var(--primitive-spacing-4)">
+      <button class="tag"><i></i>react</button><button class="tag"><i></i>tailwind</button><button class="tag" aria-pressed="true"><i></i>free</button><button class="tag"><i></i>open-source</button><button class="tag"><i></i>three.js</button>
+    </div></section>
+
+  <section><span class="label">Tiles: hover one</span>
+    <div class="grid" id="grid"></div></section>
+
+  <section><span class="label">Color</span>
+    <div class="sw">
+      <div style="background:var(--color-background)">background<br>#0A0A0A</div>
+      <div style="background:var(--color-surface)">surface<br>#121212</div>
+      <div style="background:var(--color-surface-raised)">raised<br>#1C1C1C</div>
+      <div style="background:var(--color-border)">border<br>#2A2A2A</div>
+      <div style="background:var(--color-muted-foreground);color:var(--color-background)">muted-fg<br>#8C8C8C</div>
+      <div style="background:var(--color-foreground);color:var(--color-background)">foreground<br>#F5F5F5</div>
+      <div style="background:var(--color-primary);color:var(--color-primary-foreground)">primary<br>#95D914</div>
+      <div style="background:var(--color-primary-hover);color:var(--color-primary-foreground)">hover<br>#A8E71F</div>
+      <div style="background:var(--color-primary-active);color:var(--color-primary-foreground)">active<br>#6C9E0E</div>
+      <div style="background:var(--color-highlight);color:var(--color-primary-foreground)">highlight<br>#C2F25A</div>
+    </div></section>
+
+  <section class="type"><span class="label">Type: Bricolage Grotesque, Figtree, Martian Mono</span>
+    <div><span class="label">5xl heading</span><h1 style="font-size:var(--primitive-fontSize-5xl)">Stashcube</h1></div>
+    <div><span class="label">3xl heading</span><h2 style="font-size:var(--primitive-fontSize-3xl)">UI Libraries</h2></div>
+    <div><span class="label">xl heading</span><h3 style="font-size:var(--primitive-fontSize-xl)">React Bits</h3></div>
+    <div><span class="label">base body</span><p>Animated, interactive and fully customizable React components.</p></div>
+    <div><span class="label">sm muted</span><p style="font-size:var(--primitive-fontSize-sm);color:var(--color-muted-foreground)">Open source, copy and paste, Tailwind.</p></div>
+    <div><span class="label">label mono</span><span class="label" style="color:var(--color-foreground)">Updated Oct 10, 2026</span></div>
+  </section>
+</main>
+</div>
+<script>
+const ARROW='<svg class="px arr" viewBox="0 0 7 5" width="14" height="10" aria-hidden="true"><path d="M4 0h1v1H4zM5 1h1v1H5zM0 2h7v1H0zM5 3h1v1H5zM4 4h1v1H4z"/></svg>';
+const S=['01111','11000','11000','01110','00011','00011','11110'];
+function tile(size){let r='';
+ for(let y=0;y<15;y++)for(let x=0;x<15;x++){const c=(x===0||x===14)&&(y===0||y===14);if(!c)r+=`<rect x="${x}" y="${y}" width="1" height="1" fill="#95D914"/>`}
+ S.forEach((row,y)=>[...row].forEach((b,x)=>{if(b==='1')r+=`<rect x="${x+5}" y="${y+4}" width="1" height="1" fill="#0A0A0A"/>`}));
+ return `<svg viewBox="0 0 15 15" width="${size}" height="${size}" shape-rendering="crispEdges" role="img" aria-label="Stashcube">${r}</svg>`}
+function cube(){const top=(x,y)=>Math.abs(x+.5-8)/8+Math.abs(y+.5-4)/4<=1;let r='';
+ for(let y=0;y<16;y++)for(let x=0;x<16;x++){const cx=x+.5,cy=y+.5;let k=null;
+  if(top(x,y))k='a';else if(x<8&&cy>=4+cx/2&&cy<=12+cx/2)k='b';else if(x>=8&&cy>=12-cx/2&&cy<=20-cx/2)k='c';
+  if(k)r+=`<rect class="${k}" x="${x}" y="${y}" width="1" height="1"/>`}
+ return `<svg viewBox="0 0 16 16" width="32" height="32" shape-rendering="crispEdges" aria-hidden="true">${r}</svg>`}
+const AC=['0011','1011','0111','1011'];
+/* nav = hover shape on the full 4x4 grid; btn = hover shape confined to the two right columns (inside the button padding); d = per-cell delay step for the press morph */
+const VAR={
+ /* e = order the cells enter in (rest -> hover); exit runs it in reverse; d = order of the press morph (hover shape -> dither block) */
+ chevron:{nav:['0100','0010','0010','0100'],btn:['0010','0001','0001','0010'],e:(r,c)=>r,d:(r,c,hv,ac)=>(hv&&!ac)?0:c+1},
+ stair:{nav:['0001','0010','0100','1000'],btn:['0000','0001','0011','0011'],e:(r,c)=>c,d:(r,c,hv,ac)=>(hv&&!ac)?0:Math.abs(r+c-3)+1},
+ bars:{nav:['0000','0010','0011','0111'],btn:['0000','0001','0001','0011'],e:(r,c)=>c,d:(r,c,hv,ac)=>(hv&&!ac)?0:(3-r)+1}
+};
+function fillPx(z,HV,v,blink){const top={};if(blink)for(let c=0;c<4;c++)for(let r=0;r<4;r++)if(+HV[r][c]){top[c]=r;break}
+ let h='';for(let r=0;r<4;r++)for(let c=0;c<4;c++){const hv=+HV[r][c],ac=+AC[r][c],e=v.e(r,c);h+='<i style="--h:'+hv+';--a:'+ac+';--d:'+v.d(r,c,hv,ac)+';--de:'+e+';--dx:'+(3-e)+(blink&&hv&&top[c]===r?';--b:'+c+'" data-b="':'')+'"></i>'}
+ z.innerHTML=h}
+let lastPv=null;
+function pickPv(){const names=Object.keys(VAR).filter(n=>n!==lastPv);return lastPv=names[Math.floor(Math.random()*names.length)]}
+function armPx(el,kind){const z=el.querySelector('.pxz');if(!z)return;
+ const set=n=>{el.dataset.pv=n;fillPx(z,VAR[n][kind],VAR[n],n==='bars')};
+ set('chevron');
+ const go=e=>{if(el.matches('[aria-current]')||el.dataset.state==='busy'||el.dataset.state==='done')return;if(e.type==='focus'&&!el.matches(':focus-visible'))return;set(pickPv())};
+ el.addEventListener('mouseenter',go);el.addEventListener('focus',go)}
+document.querySelectorAll('.nav').forEach(el=>armPx(el,'nav'));
+document.querySelectorAll('.btn:has(.pxz)').forEach(el=>armPx(el,'btn'));
+document.getElementById('legend').innerHTML=Object.entries(VAR).map(([n,v])=>{let r='';v.nav.forEach((row,y)=>[...row].forEach((b,x)=>{if(b==='1')r+='<rect x="'+x+'" y="'+y+'" width="1" height="1"/>'}));return '<figure><svg class="px" viewBox="0 0 4 4" width="32" height="32" style="color:var(--color-primary)" aria-hidden="true">'+r+'</svg><figcaption>'+n+'</figcaption></figure>'}).join('');
+document.querySelectorAll('.nav').forEach(n=>n.addEventListener('click',e=>{e.preventDefault();document.querySelectorAll('.nav[aria-current]').forEach(x=>x.removeAttribute('aria-current'));n.setAttribute('aria-current','page')}));
+document.getElementById('tile').innerHTML=tile(32);
+const items=[['React Bits','UI Libraries'],['Aceternity UI','UI Libraries'],['Cult UI','UI Libraries'],['Evil Charts','Components'],['Hugeicons','Icons'],['Isocons','Icons'],['Lumen','3D Tools'],['Cobe','3D Tools']];
+const cb=cube();
+document.getElementById('grid').innerHTML=items.map(([t,c],i)=>`<div class="cell"><span class="pop">${cb}</span><a class="tile" href="#"><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><div class="thumb"><span class="label" style="color:var(--color-subtle-foreground)">thumbnail ${i+1}</span></div><div class="cap"><span>${t}<small>${c}</small></span>${ARROW}</div></a></div>`).join('');
+document.querySelectorAll('.cta-busy').forEach(el=>{el.innerHTML=[...el.dataset.text].map((c,i)=>`<span style="--i:${i}">${c}</span>`).join('')});
+document.querySelectorAll('[data-cta]').forEach(b=>b.addEventListener('click',()=>{
+ if(b.dataset.state!=='idle')return;
+ const live=b.querySelector('[role=status]');
+ b.dataset.state='busy';b.setAttribute('aria-busy','true');live.textContent='Copying';
+ setTimeout(()=>{b.dataset.state='done';b.removeAttribute('aria-busy');live.textContent='Copied';
+  setTimeout(()=>{b.dataset.state='idle';live.textContent=''},1400)},2200);
+}));
+(function(){
+ const css=getComputedStyle(document.documentElement);const v=n=>css.getPropertyValue(n).trim();const px=n=>parseFloat(v(n));
+ const B8=(()=>{let m=[[0]];for(let n=1;n<8;n*=2){const t=[];for(let y=0;y<2*n;y++){t[y]=[];for(let x=0;x<2*n;x++){t[y][x]=4*m[y%n][x%n]+(y<n?(x<n?0:2):(x<n?3:1))}}m=t}return m})();
+ const rng=a=>()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+ const noise=(a,b,s)=>(Math.sin(a*.37+b*.21+s)+Math.sin(a*.11-b*.43+s*2.3)+Math.sin(a*.07+b*.05+s*5.1))/3;
+ function setup(cv){const d=Math.min(window.devicePixelRatio||1,2),w=cv.clientWidth,h=cv.clientHeight;cv.width=Math.round(w*d);cv.height=Math.round(h*d);const ctx=cv.getContext('2d');ctx.setTransform(d,0,0,d,0,0);ctx.clearRect(0,0,w,h);return{ctx,w,h}}
+ /* Foerah-style: ordered (Bayer 8x8) dither of a noisy radial field that dissolves out of the top-right corner, in square cells */
+ function pixels(cv){const{ctx,w,h}=setup(cv);if(!w)return;const cell=px('--texture-pixel-cell'),rnd=rng(7);
+  const shades=[[.78,v('--primitive-color-lime-500')],[.55,v('--primitive-color-lime-600')],[.3,v('--primitive-color-lime-700')],[0,v('--primitive-color-lime-800')]];
+  const spark=v('--primitive-color-lime-200');
+  for(let j=0;j<Math.ceil(h/cell);j++)for(let i=0;i<Math.ceil(w/cell);i++){
+   const x=i*cell,y=j*cell,dx=(w-x)/(w*.95),dy=y/h;
+   const f=1-Math.hypot(dx,dy*1.05)+noise(i,j,3)*.28;
+   if(f<=0||f<=(B8[j%8][i%8]+.5)/64)continue;
+   let c=shades.find(s=>f>=s[0])[1];if(f>.35&&rnd()<.025)c=spark;
+   ctx.fillStyle=c;ctx.fillRect(x,y,cell-1,cell-1)}}
+ const draw=()=>{document.querySelectorAll('.tex-pixels').forEach(pixels)};
+ draw();let tm;window.addEventListener('resize',()=>{clearTimeout(tm);tm=setTimeout(draw,120)});
+ const tg=document.getElementById('texToggle');tg.addEventListener('click',()=>{const off=document.documentElement.dataset.tex==='off';document.documentElement.dataset.tex=off?'on':'off';tg.setAttribute('aria-pressed',off);tg.lastChild.textContent=off?'Texture: on':'Texture: off'})
+})();
+</script>
+</body>
+</html>

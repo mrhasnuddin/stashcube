@@ -1,0 +1,15 @@
+{
+  "slug": "tenbin",
+  "title": "Tenbin",
+  "url": "https://tenbinlabs.xyz/",
+  "description": "A tokenization protocol for FX, commodities and precious metals.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "tokenization"
+  ],
+  "thumbnail": "/thumbs/tenbin.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 98
+}

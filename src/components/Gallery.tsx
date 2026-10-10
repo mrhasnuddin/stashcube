@@ -1,0 +1,105 @@
+"use client";
+
+import { useMemo, useSyncExternalStore } from "react";
+import type { ItemView, Subcategory } from "@/lib/content";
+import { ItemTile } from "./ItemTile";
+
+function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <button type="button" className="tag" aria-pressed={pressed} onClick={onClick}>
+      <i />
+      {children}
+    </button>
+  );
+}
+
+// The URL query (?sub=...&tag=...) is the filter state. Reading it through useSyncExternalStore keeps the
+// server render unfiltered (so every tile is in the static HTML) and applies the filters right after hydration.
+const listeners = new Set<() => void>();
+const subscribe = (cb: () => void) => {
+  listeners.add(cb);
+  window.addEventListener("popstate", cb);
+  return () => {
+    listeners.delete(cb);
+    window.removeEventListener("popstate", cb);
+  };
+};
+const getSearch = () => window.location.search;
+const getServerSearch = () => "";
+function writeSearch(params: URLSearchParams) {
+  const qs = params.toString();
+  window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  listeners.forEach((l) => l());
+}
+
+/** Category gallery with a sub-category row and tag filters. */
+export function Gallery({ items, subcategories }: { items: ItemView[]; subcategories: Subcategory[] }) {
+  const search = useSyncExternalStore(subscribe, getSearch, getServerSearch);
+  const params = useMemo(() => new URLSearchParams(search), [search]);
+  const subParam = params.get("sub");
+  const sub = subParam && subcategories.some((s) => s.slug === subParam) ? subParam : null;
+  const tags = useMemo(() => params.getAll("tag"), [params]);
+
+  const pickSub = (s: string | null) => {
+    const next = new URLSearchParams(params);
+    if (s) next.set("sub", s);
+    else next.delete("sub");
+    writeSearch(next);
+  };
+  const toggleTag = (t: string) => {
+    const next = new URLSearchParams(params);
+    next.delete("tag");
+    (tags.includes(t) ? tags.filter((x) => x !== t) : [...tags, t]).forEach((x) => next.append("tag", x));
+    writeSearch(next);
+  };
+
+  const scoped = useMemo(() => (sub ? items.filter((i) => i.subcategory === sub) : items), [items, sub]);
+  const topTags = useMemo(() => {
+    const counts = new Map<string, number>();
+    scoped.forEach((i) => i.tags.forEach((t) => counts.set(t, (counts.get(t) ?? 0) + 1)));
+    return [...counts.entries()]
+      .filter(([t, n]) => n >= 2 || tags.includes(t))
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .slice(0, 14)
+      .map(([t]) => t);
+  }, [scoped, tags]);
+  const shown = useMemo(() => scoped.filter((i) => tags.every((t) => i.tags.includes(t))), [scoped, tags]);
+
+  return (
+    <>
+      {subcategories.length > 0 ? (
+        <div className="chips" role="group" aria-label="Sub-category">
+          <Chip pressed={sub === null} onClick={() => pickSub(null)}>
+            All
+          </Chip>
+          {subcategories.map((s) => (
+            <Chip key={s.slug} pressed={sub === s.slug} onClick={() => pickSub(s.slug)}>
+              {s.name}
+            </Chip>
+          ))}
+        </div>
+      ) : null}
+      {topTags.length > 0 ? (
+        <div className="chips" role="group" aria-label="Tags">
+          {topTags.map((t) => (
+            <Chip key={t} pressed={tags.includes(t)} onClick={() => toggleTag(t)}>
+              {t}
+            </Chip>
+          ))}
+        </div>
+      ) : null}
+      <p className="label result-count" aria-live="polite">
+        {shown.length === items.length ? `${items.length} links` : `${shown.length} of ${items.length} links`}
+      </p>
+      {shown.length > 0 ? (
+        <div className="grid">
+          {shown.map((i, n) => (
+            <ItemTile key={i.slug} item={i} priority={n < 4} />
+          ))}
+        </div>
+      ) : (
+        <p className="empty">Nothing matches those filters. Clear a tag or switch sub-category.</p>
+      )}
+    </>
+  );
+}

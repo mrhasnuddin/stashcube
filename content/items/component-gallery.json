@@ -1,0 +1,15 @@
+{
+  "slug": "component-gallery",
+  "title": "Component Gallery",
+  "url": "https://component.gallery/",
+  "description": "A reference of UI components, with real examples from design systems.",
+  "category": "components",
+  "tags": [
+    "reference",
+    "design-systems"
+  ],
+  "thumbnail": "/thumbs/component-gallery.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 14
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "the-moving-poster",
+  "title": "The Moving Poster",
+  "url": "https://themovingposter.com/",
+  "description": "A collection of motion posters.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "motion",
+    "posters"
+  ],
+  "thumbnail": "/thumbs/the-moving-poster.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 73
+}

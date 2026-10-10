@@ -1,0 +1,15 @@
+{
+  "slug": "shardeum",
+  "title": "Shardeum",
+  "url": "https://shardeum.instawp.xyz/",
+  "description": "A layer 1 blockchain run by community nodes.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "layer-1"
+  ],
+  "thumbnail": "/thumbs/shardeum.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 87
+}

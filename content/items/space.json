@@ -1,0 +1,16 @@
+{
+  "slug": "space",
+  "title": "Space",
+  "url": "https://spacefs.com/",
+  "description": "Keep every project on your Mac without filling your disk.",
+  "category": "inspiration",
+  "subcategory": "saas-ai",
+  "tags": [
+    "mac",
+    "storage"
+  ],
+  "thumbnail": "/thumbs/space.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 128
+}

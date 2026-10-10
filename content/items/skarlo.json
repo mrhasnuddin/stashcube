@@ -1,0 +1,16 @@
+{
+  "slug": "skarlo",
+  "title": "Skarlo",
+  "url": "https://skarlo.co/portfolio",
+  "description": "A Copenhagen and London product studio for teams building with AI.",
+  "category": "inspiration",
+  "subcategory": "studios-agencies",
+  "tags": [
+    "product-studio",
+    "ai"
+  ],
+  "thumbnail": "/thumbs/skarlo.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 108
+}

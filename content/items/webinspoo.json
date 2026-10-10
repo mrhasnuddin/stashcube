@@ -1,0 +1,16 @@
+{
+  "slug": "webinspoo",
+  "title": "WebInspoo",
+  "url": "https://www.webinspoo.com/",
+  "description": "1,200+ SaaS websites you can filter by category, font, color and tech stack.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "saas",
+    "filters"
+  ],
+  "thumbnail": "/thumbs/webinspoo.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 74
+}

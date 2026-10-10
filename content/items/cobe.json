@@ -1,0 +1,16 @@
+{
+  "slug": "cobe",
+  "title": "COBE",
+  "url": "https://cobe.vercel.app/",
+  "description": "A 5KB WebGL globe.",
+  "category": "3d-tools",
+  "tags": [
+    "webgl",
+    "globe",
+    "lightweight"
+  ],
+  "thumbnail": "/thumbs/cobe.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 40
+}

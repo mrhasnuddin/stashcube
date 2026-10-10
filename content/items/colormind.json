@@ -1,0 +1,15 @@
+{
+  "slug": "colormind",
+  "title": "Colormind",
+  "url": "http://colormind.io/",
+  "description": "A color palette generator driven by a neural net.",
+  "category": "colors-gradients",
+  "tags": [
+    "palette",
+    "generator"
+  ],
+  "thumbnail": "/thumbs/colormind.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 50
+}

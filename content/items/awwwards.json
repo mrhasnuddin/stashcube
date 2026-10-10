@@ -1,0 +1,16 @@
+{
+  "slug": "awwwards",
+  "title": "Awwwards",
+  "url": "https://www.awwwards.com/",
+  "description": "Website awards, and the sites that win them.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "awards",
+    "websites"
+  ],
+  "thumbnail": "/thumbs/awwwards.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 72
+}

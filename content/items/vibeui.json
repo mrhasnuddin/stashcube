@@ -1,0 +1,15 @@
+{
+  "slug": "vibeui",
+  "title": "VibeUI",
+  "url": "https://www.vibeui.studio/",
+  "description": "AI-generated UI components and templates.",
+  "category": "templates",
+  "tags": [
+    "ai-generated",
+    "ui"
+  ],
+  "thumbnail": "/thumbs/vibeui.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 37
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "fantik-studio",
+  "title": "Fantik Studio",
+  "url": "https://fantik.studio/",
+  "description": "A branding, web and motion studio for startups, SaaS and web3.",
+  "category": "inspiration",
+  "subcategory": "studios-agencies",
+  "tags": [
+    "branding",
+    "motion"
+  ],
+  "thumbnail": "/thumbs/fantik-studio.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 101
+}

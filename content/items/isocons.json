@@ -1,0 +1,15 @@
+{
+  "slug": "isocons",
+  "title": "Isocons",
+  "url": "https://www.isocons.app/",
+  "description": "Carefully crafted isometric icons.",
+  "category": "icons",
+  "tags": [
+    "isometric",
+    "icons"
+  ],
+  "thumbnail": "/thumbs/isocons.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 22
+}

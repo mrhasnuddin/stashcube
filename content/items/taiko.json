@@ -1,0 +1,16 @@
+{
+  "slug": "taiko",
+  "title": "Taiko",
+  "url": "https://taiko.xyz/",
+  "description": "A permissionless, Ethereum-equivalent rollup.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "rollup",
+    "ethereum"
+  ],
+  "thumbnail": "/thumbs/taiko.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 86
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "fancy-design",
+  "title": "fancy.design",
+  "url": "https://fancy.design/",
+  "description": "A design subscription service for web, apps, branding and 3D.",
+  "category": "inspiration",
+  "subcategory": "other",
+  "tags": [
+    "design"
+  ],
+  "thumbnail": "/thumbs/fancy-design.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 130
+}

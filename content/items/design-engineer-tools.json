@@ -1,0 +1,15 @@
+{
+  "slug": "design-engineer-tools",
+  "title": "Design Engineer Tools",
+  "url": "https://designengineer.tools/",
+  "description": "Useful tools for web-focused design engineers, curated by James Warner.",
+  "category": "tools",
+  "tags": [
+    "directory",
+    "design-engineering"
+  ],
+  "thumbnail": "/thumbs/design-engineer-tools.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 147
+}

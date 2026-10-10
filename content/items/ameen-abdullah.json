@@ -1,0 +1,16 @@
+{
+  "slug": "ameen-abdullah",
+  "title": "Ameen Abdullah",
+  "url": "https://ameen-abdullah.dev/",
+  "description": "A creative developer building 3D web experiences with Three.js, WebGPU and GSAP.",
+  "category": "inspiration",
+  "subcategory": "portfolios",
+  "tags": [
+    "creative-dev",
+    "immersive"
+  ],
+  "thumbnail": "/thumbs/ameen-abdullah.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 116
+}

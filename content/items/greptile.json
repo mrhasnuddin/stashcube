@@ -1,0 +1,16 @@
+{
+  "slug": "greptile",
+  "title": "Greptile",
+  "url": "https://www.greptile.com/",
+  "description": "AI code review that knows your whole codebase.",
+  "category": "inspiration",
+  "subcategory": "saas-ai",
+  "tags": [
+    "code-review",
+    "ai"
+  ],
+  "thumbnail": "/thumbs/greptile.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 124
+}

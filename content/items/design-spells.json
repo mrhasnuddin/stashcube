@@ -1,0 +1,16 @@
+{
+  "slug": "design-spells",
+  "title": "Design Spells",
+  "url": "https://www.designspells.com/",
+  "description": "Micro-interactions, easter eggs and other small details that give a site personality.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "micro-interactions",
+    "details"
+  ],
+  "thumbnail": "/thumbs/design-spells.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 64
+}

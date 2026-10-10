@@ -1,0 +1,16 @@
+{
+  "slug": "manifold",
+  "title": "Manifold",
+  "url": "https://manifold.xyz/",
+  "description": "Tools to create, sell and distribute digital goods on Ethereum.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "nft",
+    "ethereum"
+  ],
+  "thumbnail": "/thumbs/manifold.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 90
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "cta-gallery",
+  "title": "CTA Gallery",
+  "url": "https://www.cta.gallery/",
+  "description": "Call-to-action examples from across the web.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "cta",
+    "buttons"
+  ],
+  "thumbnail": "/thumbs/cta-gallery.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 61
+}

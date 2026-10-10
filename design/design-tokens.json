@@ -1,0 +1,866 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "Stashcube design tokens. Dark only. Three layers: primitive -> semantic -> component. Edit this file, then run: node .claude/skills/design-system/scripts/generate-tokens.cjs --config design/design-tokens.json -o design/design-tokens.css",
+  "primitive": {
+    "color": {
+      "neutral": {
+        "50": {
+          "$value": "#F5F5F5",
+          "$type": "color"
+        },
+        "100": {
+          "$value": "#EDEDED",
+          "$type": "color"
+        },
+        "200": {
+          "$value": "#D4D4D4",
+          "$type": "color"
+        },
+        "300": {
+          "$value": "#ABABAB",
+          "$type": "color"
+        },
+        "400": {
+          "$value": "#8C8C8C",
+          "$type": "color"
+        },
+        "500": {
+          "$value": "#636363",
+          "$type": "color"
+        },
+        "600": {
+          "$value": "#404040",
+          "$type": "color"
+        },
+        "700": {
+          "$value": "#2A2A2A",
+          "$type": "color"
+        },
+        "800": {
+          "$value": "#1C1C1C",
+          "$type": "color"
+        },
+        "900": {
+          "$value": "#121212",
+          "$type": "color"
+        },
+        "950": {
+          "$value": "#0A0A0A",
+          "$type": "color"
+        }
+      },
+      "lime": {
+        "100": {
+          "$value": "#E6FAB4",
+          "$type": "color"
+        },
+        "200": {
+          "$value": "#C2F25A",
+          "$type": "color"
+        },
+        "400": {
+          "$value": "#A8E71F",
+          "$type": "color"
+        },
+        "500": {
+          "$value": "#95D914",
+          "$type": "color"
+        },
+        "600": {
+          "$value": "#6C9E0E",
+          "$type": "color"
+        },
+        "700": {
+          "$value": "#4A6D0A",
+          "$type": "color"
+        },
+        "800": {
+          "$value": "#33480A",
+          "$type": "color"
+        },
+        "900": {
+          "$value": "#1B2706",
+          "$type": "color"
+        }
+      },
+      "red": {
+        "500": {
+          "$value": "#F0605D",
+          "$type": "color"
+        }
+      },
+      "amber": {
+        "500": {
+          "$value": "#F2B84B",
+          "$type": "color"
+        }
+      }
+    },
+    "spacing": {
+      "0": {
+        "$value": "0",
+        "$type": "dimension"
+      },
+      "1": {
+        "$value": "0.25rem",
+        "$type": "dimension"
+      },
+      "2": {
+        "$value": "0.5rem",
+        "$type": "dimension"
+      },
+      "3": {
+        "$value": "0.75rem",
+        "$type": "dimension"
+      },
+      "4": {
+        "$value": "1rem",
+        "$type": "dimension"
+      },
+      "5": {
+        "$value": "1.25rem",
+        "$type": "dimension"
+      },
+      "6": {
+        "$value": "1.5rem",
+        "$type": "dimension"
+      },
+      "8": {
+        "$value": "2rem",
+        "$type": "dimension"
+      },
+      "10": {
+        "$value": "2.5rem",
+        "$type": "dimension"
+      },
+      "12": {
+        "$value": "3rem",
+        "$type": "dimension"
+      },
+      "16": {
+        "$value": "4rem",
+        "$type": "dimension"
+      },
+      "24": {
+        "$value": "6rem",
+        "$type": "dimension"
+      }
+    },
+    "pixel": {
+      "unit": {
+        "$value": "4px",
+        "$type": "dimension"
+      },
+      "corner-mark": {
+        "$value": "6px",
+        "$type": "dimension"
+      },
+      "cell": {
+        "$value": "10px",
+        "$type": "dimension"
+      }
+    },
+    "fontFamily": {
+      "heading": {
+        "$value": "'Bricolage Grotesque', 'Arial Narrow', sans-serif",
+        "$type": "fontFamily"
+      },
+      "body": {
+        "$value": "'Figtree', ui-sans-serif, system-ui, sans-serif",
+        "$type": "fontFamily"
+      },
+      "mono": {
+        "$value": "'Martian Mono', ui-monospace, SFMono-Regular, monospace",
+        "$type": "fontFamily"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "$value": "0.75rem",
+        "$type": "dimension"
+      },
+      "sm": {
+        "$value": "0.875rem",
+        "$type": "dimension"
+      },
+      "base": {
+        "$value": "1rem",
+        "$type": "dimension"
+      },
+      "lg": {
+        "$value": "1.125rem",
+        "$type": "dimension"
+      },
+      "xl": {
+        "$value": "1.25rem",
+        "$type": "dimension"
+      },
+      "2xl": {
+        "$value": "1.5rem",
+        "$type": "dimension"
+      },
+      "3xl": {
+        "$value": "2rem",
+        "$type": "dimension"
+      },
+      "4xl": {
+        "$value": "2.75rem",
+        "$type": "dimension"
+      },
+      "5xl": {
+        "$value": "3.75rem",
+        "$type": "dimension"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "$value": "400",
+        "$type": "fontWeight"
+      },
+      "medium": {
+        "$value": "500",
+        "$type": "fontWeight"
+      },
+      "bold": {
+        "$value": "700",
+        "$type": "fontWeight"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "$value": "1.1",
+        "$type": "number"
+      },
+      "snug": {
+        "$value": "1.3",
+        "$type": "number"
+      },
+      "normal": {
+        "$value": "1.6",
+        "$type": "number"
+      }
+    },
+    "tracking": {
+      "tight": {
+        "$value": "-0.03em",
+        "$type": "dimension"
+      },
+      "normal": {
+        "$value": "0",
+        "$type": "dimension"
+      },
+      "label": {
+        "$value": "0.04em",
+        "$type": "dimension"
+      }
+    },
+    "radius": {
+      "none": {
+        "$value": "0",
+        "$type": "dimension"
+      },
+      "sm": {
+        "$value": "2px",
+        "$type": "dimension"
+      },
+      "md": {
+        "$value": "4px",
+        "$type": "dimension"
+      },
+      "full": {
+        "$value": "9999px",
+        "$type": "dimension"
+      }
+    },
+    "border": {
+      "hairline": {
+        "$value": "1px",
+        "$type": "dimension"
+      }
+    },
+    "shadow": {
+      "none": {
+        "$value": "none",
+        "$type": "shadow"
+      }
+    },
+    "duration": {
+      "fast": {
+        "$value": "120ms",
+        "$type": "duration"
+      },
+      "normal": {
+        "$value": "200ms",
+        "$type": "duration"
+      },
+      "slow": {
+        "$value": "320ms",
+        "$type": "duration"
+      },
+      "loop": {
+        "$value": "1200ms",
+        "$type": "duration"
+      },
+      "pixel-in": {
+        "$value": "300ms",
+        "$type": "duration"
+      },
+      "pixel-out": {
+        "$value": "200ms",
+        "$type": "duration"
+      },
+      "pixel-stagger": {
+        "$value": "40ms",
+        "$type": "duration"
+      },
+      "pixel-blink": {
+        "$value": "1100ms",
+        "$type": "duration"
+      }
+    },
+    "easing": {
+      "standard": {
+        "$value": "cubic-bezier(0.2, 0, 0, 1)",
+        "$type": "cubicBezier"
+      },
+      "step": {
+        "$value": "steps(4, end)",
+        "$type": "cubicBezier"
+      },
+      "pixel-in": {
+        "$value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "$type": "cubicBezier"
+      },
+      "pixel-out": {
+        "$value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "$type": "cubicBezier"
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "background": {
+        "$value": "{primitive.color.neutral.950}",
+        "$type": "color"
+      },
+      "foreground": {
+        "$value": "{primitive.color.neutral.50}",
+        "$type": "color"
+      },
+      "surface": {
+        "$value": "{primitive.color.neutral.900}",
+        "$type": "color"
+      },
+      "surface-raised": {
+        "$value": "{primitive.color.neutral.800}",
+        "$type": "color"
+      },
+      "card": {
+        "$value": "{primitive.color.neutral.900}",
+        "$type": "color"
+      },
+      "card-foreground": {
+        "$value": "{primitive.color.neutral.50}",
+        "$type": "color"
+      },
+      "popover": {
+        "$value": "{primitive.color.neutral.800}",
+        "$type": "color"
+      },
+      "popover-foreground": {
+        "$value": "{primitive.color.neutral.50}",
+        "$type": "color"
+      },
+      "primary": {
+        "$value": "{primitive.color.lime.500}",
+        "$type": "color"
+      },
+      "primary-hover": {
+        "$value": "{primitive.color.lime.400}",
+        "$type": "color"
+      },
+      "primary-active": {
+        "$value": "{primitive.color.lime.600}",
+        "$type": "color"
+      },
+      "primary-foreground": {
+        "$value": "{primitive.color.neutral.950}",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "{primitive.color.neutral.800}",
+        "$type": "color"
+      },
+      "secondary-foreground": {
+        "$value": "{primitive.color.neutral.50}",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "{primitive.color.neutral.800}",
+        "$type": "color"
+      },
+      "muted-foreground": {
+        "$value": "{primitive.color.neutral.400}",
+        "$type": "color"
+      },
+      "subtle-foreground": {
+        "$value": "{primitive.color.neutral.500}",
+        "$type": "color"
+      },
+      "accent": {
+        "$value": "{primitive.color.neutral.800}",
+        "$type": "color"
+      },
+      "accent-foreground": {
+        "$value": "{primitive.color.neutral.50}",
+        "$type": "color"
+      },
+      "highlight": {
+        "$value": "{primitive.color.lime.200}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{primitive.color.neutral.700}",
+        "$type": "color"
+      },
+      "border-strong": {
+        "$value": "{primitive.color.neutral.600}",
+        "$type": "color"
+      },
+      "input": {
+        "$value": "{primitive.color.neutral.700}",
+        "$type": "color"
+      },
+      "ring": {
+        "$value": "{primitive.color.lime.500}",
+        "$type": "color"
+      },
+      "success": {
+        "$value": "{primitive.color.lime.500}",
+        "$type": "color"
+      },
+      "warning": {
+        "$value": "{primitive.color.amber.500}",
+        "$type": "color"
+      },
+      "destructive": {
+        "$value": "{primitive.color.red.500}",
+        "$type": "color"
+      },
+      "destructive-foreground": {
+        "$value": "{primitive.color.neutral.950}",
+        "$type": "color"
+      }
+    },
+    "font": {
+      "heading": {
+        "$value": "{primitive.fontFamily.heading}",
+        "$type": "fontFamily"
+      },
+      "body": {
+        "$value": "{primitive.fontFamily.body}",
+        "$type": "fontFamily"
+      },
+      "mono": {
+        "$value": "{primitive.fontFamily.mono}",
+        "$type": "fontFamily"
+      },
+      "heading-weight": {
+        "$value": "700",
+        "$type": "fontWeight"
+      }
+    },
+    "spacing": {
+      "component": {
+        "$value": "{primitive.spacing.4}",
+        "$type": "dimension"
+      },
+      "grid-gap": {
+        "$value": "{primitive.spacing.4}",
+        "$type": "dimension"
+      },
+      "page-gutter": {
+        "$value": "{primitive.spacing.6}",
+        "$type": "dimension"
+      },
+      "section": {
+        "$value": "{primitive.spacing.12}",
+        "$type": "dimension"
+      }
+    },
+    "layout": {
+      "sidebar-width": {
+        "$value": "15rem",
+        "$type": "dimension"
+      },
+      "content-max": {
+        "$value": "80rem",
+        "$type": "dimension"
+      }
+    }
+  },
+  "component": {
+    "button": {
+      "bg": {
+        "$value": "{semantic.color.primary}",
+        "$type": "color"
+      },
+      "fg": {
+        "$value": "{semantic.color.primary-foreground}",
+        "$type": "color"
+      },
+      "hover-bg": {
+        "$value": "{semantic.color.primary-hover}",
+        "$type": "color"
+      },
+      "active-bg": {
+        "$value": "{semantic.color.primary-active}",
+        "$type": "color"
+      },
+      "pixel-color": {
+        "$value": "{primitive.color.lime.600}",
+        "$type": "color"
+      },
+      "secondary-edge": {
+        "$value": "{semantic.color.border-strong}",
+        "$type": "color"
+      },
+      "secondary-fill": {
+        "$value": "{semantic.color.background}",
+        "$type": "color"
+      },
+      "ghost-hover-bg": {
+        "$value": "{semantic.color.accent}",
+        "$type": "color"
+      },
+      "notch": {
+        "$value": "{primitive.pixel.unit}",
+        "$type": "dimension"
+      },
+      "height": {
+        "$value": "2.5rem",
+        "$type": "dimension"
+      },
+      "padding-x": {
+        "$value": "{primitive.spacing.5}",
+        "$type": "dimension"
+      },
+      "font-size": {
+        "$value": "{primitive.fontSize.sm}",
+        "$type": "dimension"
+      },
+      "hop-height": {
+        "$value": "3px",
+        "$type": "dimension"
+      },
+      "hop-stagger": {
+        "$value": "80ms",
+        "$type": "duration"
+      },
+      "hop-duration": {
+        "$value": "{primitive.duration.loop}",
+        "$type": "duration"
+      },
+      "enter-duration": {
+        "$value": "{primitive.duration.pixel-in}",
+        "$type": "duration"
+      },
+      "exit-duration": {
+        "$value": "{primitive.duration.pixel-out}",
+        "$type": "duration"
+      },
+      "stagger": {
+        "$value": "{primitive.duration.pixel-stagger}",
+        "$type": "duration"
+      },
+      "enter-ease": {
+        "$value": "{primitive.easing.pixel-in}",
+        "$type": "cubicBezier"
+      },
+      "exit-ease": {
+        "$value": "{primitive.easing.pixel-out}",
+        "$type": "cubicBezier"
+      },
+      "blink-duration": {
+        "$value": "{primitive.duration.pixel-blink}",
+        "$type": "duration"
+      }
+    },
+    "input": {
+      "bg": {
+        "$value": "{semantic.color.surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{semantic.color.input}",
+        "$type": "color"
+      },
+      "focus-ring": {
+        "$value": "{semantic.color.ring}",
+        "$type": "color"
+      },
+      "padding-x": {
+        "$value": "{primitive.spacing.3}",
+        "$type": "dimension"
+      },
+      "padding-y": {
+        "$value": "{primitive.spacing.2}",
+        "$type": "dimension"
+      },
+      "radius": {
+        "$value": "{primitive.radius.sm}",
+        "$type": "dimension"
+      }
+    },
+    "tile": {
+      "bg": {
+        "$value": "{semantic.color.surface}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{semantic.color.border}",
+        "$type": "color"
+      },
+      "hover-border": {
+        "$value": "{semantic.color.primary}",
+        "$type": "color"
+      },
+      "hover-translate-x": {
+        "$value": "-2px",
+        "$type": "dimension"
+      },
+      "hover-translate-y": {
+        "$value": "-2px",
+        "$type": "dimension"
+      },
+      "dither-color": {
+        "$value": "{semantic.color.primary}",
+        "$type": "color"
+      },
+      "dither-cell": {
+        "$value": "8px",
+        "$type": "dimension"
+      },
+      "pop-face-top": {
+        "$value": "{primitive.color.lime.500}",
+        "$type": "color"
+      },
+      "pop-face-left": {
+        "$value": "{primitive.color.lime.600}",
+        "$type": "color"
+      },
+      "pop-face-right": {
+        "$value": "{primitive.color.lime.700}",
+        "$type": "color"
+      },
+      "radius": {
+        "$value": "{primitive.radius.none}",
+        "$type": "dimension"
+      },
+      "label-padding": {
+        "$value": "{primitive.spacing.3}",
+        "$type": "dimension"
+      },
+      "shadow-color": {
+        "$value": "{primitive.color.lime.700}",
+        "$type": "color"
+      },
+      "shadow-cell": {
+        "$value": "4px",
+        "$type": "dimension"
+      },
+      "shadow-offset": {
+        "$value": "6px",
+        "$type": "dimension"
+      }
+    },
+    "sidebar-item": {
+      "fg": {
+        "$value": "{semantic.color.muted-foreground}",
+        "$type": "color"
+      },
+      "hover-fg": {
+        "$value": "{semantic.color.foreground}",
+        "$type": "color"
+      },
+      "active-bg": {
+        "$value": "{semantic.color.surface-raised}",
+        "$type": "color"
+      },
+      "active-fg": {
+        "$value": "{semantic.color.foreground}",
+        "$type": "color"
+      },
+      "pixel-color": {
+        "$value": "{semantic.color.primary}",
+        "$type": "color"
+      },
+      "height": {
+        "$value": "2.5rem",
+        "$type": "dimension"
+      },
+      "cell-size": {
+        "$value": "{primitive.pixel.cell}",
+        "$type": "dimension"
+      },
+      "padding-x": {
+        "$value": "{primitive.spacing.4}",
+        "$type": "dimension"
+      },
+      "enter-duration": {
+        "$value": "{primitive.duration.pixel-in}",
+        "$type": "duration"
+      },
+      "exit-duration": {
+        "$value": "{primitive.duration.pixel-out}",
+        "$type": "duration"
+      },
+      "stagger": {
+        "$value": "{primitive.duration.pixel-stagger}",
+        "$type": "duration"
+      },
+      "enter-ease": {
+        "$value": "{primitive.easing.pixel-in}",
+        "$type": "cubicBezier"
+      },
+      "exit-ease": {
+        "$value": "{primitive.easing.pixel-out}",
+        "$type": "cubicBezier"
+      },
+      "blink-duration": {
+        "$value": "{primitive.duration.pixel-blink}",
+        "$type": "duration"
+      }
+    },
+    "badge": {
+      "new-bg": {
+        "$value": "{semantic.color.primary}",
+        "$type": "color"
+      },
+      "new-fg": {
+        "$value": "{semantic.color.primary-foreground}",
+        "$type": "color"
+      },
+      "outline-border": {
+        "$value": "{semantic.color.border-strong}",
+        "$type": "color"
+      },
+      "radius": {
+        "$value": "{primitive.radius.none}",
+        "$type": "dimension"
+      }
+    },
+    "container-line": {
+      "color": {
+        "$value": "{semantic.color.border}",
+        "$type": "color"
+      },
+      "corner-size": {
+        "$value": "{primitive.pixel.corner-mark}",
+        "$type": "dimension"
+      }
+    },
+    "search": {
+      "edge": {
+        "$value": "{semantic.color.border-strong}",
+        "$type": "color"
+      },
+      "edge-focus": {
+        "$value": "{semantic.color.primary}",
+        "$type": "color"
+      },
+      "fill": {
+        "$value": "{semantic.color.surface}",
+        "$type": "color"
+      },
+      "fg": {
+        "$value": "{semantic.color.foreground}",
+        "$type": "color"
+      },
+      "placeholder": {
+        "$value": "{semantic.color.subtle-foreground}",
+        "$type": "color"
+      },
+      "icon": {
+        "$value": "{semantic.color.muted-foreground}",
+        "$type": "color"
+      },
+      "key-bg": {
+        "$value": "{semantic.color.surface-raised}",
+        "$type": "color"
+      },
+      "notch": {
+        "$value": "{primitive.pixel.unit}",
+        "$type": "dimension"
+      },
+      "height": {
+        "$value": "2.75rem",
+        "$type": "dimension"
+      },
+      "padding-x": {
+        "$value": "{primitive.spacing.4}",
+        "$type": "dimension"
+      }
+    },
+    "tag": {
+      "fg": {
+        "$value": "{semantic.color.muted-foreground}",
+        "$type": "color"
+      },
+      "edge": {
+        "$value": "{semantic.color.border-strong}",
+        "$type": "color"
+      },
+      "fill": {
+        "$value": "{semantic.color.background}",
+        "$type": "color"
+      },
+      "dot-color": {
+        "$value": "{semantic.color.primary}",
+        "$type": "color"
+      },
+      "hover-bg": {
+        "$value": "{semantic.color.primary}",
+        "$type": "color"
+      },
+      "hover-fg": {
+        "$value": "{semantic.color.primary-foreground}",
+        "$type": "color"
+      },
+      "notch": {
+        "$value": "3px",
+        "$type": "dimension"
+      },
+      "padding-x": {
+        "$value": "{primitive.spacing.3}",
+        "$type": "dimension"
+      },
+      "padding-y": {
+        "$value": "{primitive.spacing.1}",
+        "$type": "dimension"
+      }
+    },
+    "texture": {
+      "dot-color": {
+        "$value": "rgb(245 245 245 / 0.07)",
+        "$type": "color"
+      },
+      "dot-size": {
+        "$value": "1px",
+        "$type": "dimension"
+      },
+      "dot-gap": {
+        "$value": "22px",
+        "$type": "dimension"
+      },
+      "pixel-cell": {
+        "$value": "8px",
+        "$type": "dimension"
+      },
+      "pixel-opacity": {
+        "$value": "0.34",
+        "$type": "number"
+      }
+    }
+  }
+}

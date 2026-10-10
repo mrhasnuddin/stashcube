@@ -1,0 +1,16 @@
+{
+  "slug": "dorian-lods",
+  "title": "Dorian Lods",
+  "url": "https://www.dorianlods.com/",
+  "description": "A creative developer and design engineer in Paris, working with WebGL and generative AI.",
+  "category": "inspiration",
+  "subcategory": "portfolios",
+  "tags": [
+    "webgl",
+    "design-engineer"
+  ],
+  "thumbnail": "/thumbs/dorian-lods.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 117
+}

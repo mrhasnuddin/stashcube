@@ -1,0 +1,16 @@
+{
+  "slug": "dmitrii-dark",
+  "title": "Dmitrii Dark",
+  "url": "https://ddark.dev/",
+  "description": "Full-stack developer and technical artist.",
+  "category": "inspiration",
+  "subcategory": "portfolios",
+  "tags": [
+    "full-stack",
+    "technical-art"
+  ],
+  "thumbnail": "/thumbs/dmitrii-dark.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 113
+}

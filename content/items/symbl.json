@@ -1,0 +1,15 @@
+{
+  "slug": "symbl",
+  "title": "Symbl",
+  "url": "https://www.symbl.space/",
+  "description": "Upload a logo symbol and see how it holds up from favicon to billboard.",
+  "category": "logos",
+  "tags": [
+    "testing",
+    "tool"
+  ],
+  "thumbnail": "/thumbs/symbl.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 58
+}

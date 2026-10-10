@@ -1,0 +1,16 @@
+{
+  "slug": "mesh3d",
+  "title": "mesh3d",
+  "url": "https://mesh3d.gallery/",
+  "description": "Three.js, WebGL and AI-built interactive 3D websites.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "three.js",
+    "webgl"
+  ],
+  "thumbnail": "/thumbs/mesh3d.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 78
+}

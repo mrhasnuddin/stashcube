@@ -1,0 +1,16 @@
+{
+  "slug": "liveblocks",
+  "title": "Liveblocks",
+  "url": "https://liveblocks.io/",
+  "description": "Collaboration infrastructure for people and AI working inside your app.",
+  "category": "inspiration",
+  "subcategory": "saas-ai",
+  "tags": [
+    "collaboration",
+    "devtools"
+  ],
+  "thumbnail": "/thumbs/liveblocks.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 122
+}

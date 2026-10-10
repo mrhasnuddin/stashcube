@@ -1,0 +1,16 @@
+{
+  "slug": "hugeicons",
+  "title": "Hugeicons",
+  "url": "https://hugeicons.com/icons/stroke-rounded",
+  "description": "4,600+ free rounded stroke icons on a 24px grid.",
+  "category": "icons",
+  "tags": [
+    "stroke",
+    "react",
+    "figma"
+  ],
+  "thumbnail": "/thumbs/hugeicons.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 24
+}

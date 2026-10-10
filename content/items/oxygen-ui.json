@@ -1,0 +1,16 @@
+{
+  "slug": "oxygen-ui",
+  "title": "Oxygen UI",
+  "url": "https://oxygen-ui.vercel.app/",
+  "description": "React components with glass surfaces and fluid micro-interactions.",
+  "category": "ui-libraries",
+  "tags": [
+    "react",
+    "glass",
+    "micro-interactions"
+  ],
+  "thumbnail": "/thumbs/oxygen-ui.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 9
+}

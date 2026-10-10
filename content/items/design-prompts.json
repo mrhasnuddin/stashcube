@@ -1,0 +1,15 @@
+{
+  "slug": "design-prompts",
+  "title": "Design Prompts",
+  "url": "https://www.designprompts.dev/",
+  "description": "31+ design styles, each with an AI-ready prompt to recreate it.",
+  "category": "prompts",
+  "tags": [
+    "styles",
+    "ai"
+  ],
+  "thumbnail": "/thumbs/design-prompts.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 140
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "spark",
+  "title": "Spark",
+  "url": "https://spark.fi/",
+  "description": "Earn on stablecoins with transparent rates.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "defi",
+    "stablecoins"
+  ],
+  "thumbnail": "/thumbs/spark.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 97
+}

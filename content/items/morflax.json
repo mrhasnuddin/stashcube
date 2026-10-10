@@ -1,0 +1,16 @@
+{
+  "slug": "morflax",
+  "title": "Morflax",
+  "url": "https://morflax.com/products",
+  "description": "Browser-based tools for 3D device mockups, clothing and abstract shapes.",
+  "category": "3d-tools",
+  "tags": [
+    "3d",
+    "mockups",
+    "motion"
+  ],
+  "thumbnail": "/thumbs/morflax.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 42
+}

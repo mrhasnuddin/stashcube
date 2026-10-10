@@ -1,0 +1,16 @@
+{
+  "slug": "ascii-magic",
+  "title": "ASCII Magic",
+  "url": "https://www.ascii-magic.com/",
+  "description": "Turn images and video into ASCII art, pixel art, halftone and more.",
+  "category": "shaders-effects",
+  "tags": [
+    "ascii",
+    "image",
+    "video"
+  ],
+  "thumbnail": "/thumbs/ascii-magic.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 44
+}

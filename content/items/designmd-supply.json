@@ -1,0 +1,15 @@
+{
+  "slug": "designmd-supply",
+  "title": "designmd.supply",
+  "url": "https://www.designmd.supply/",
+  "description": "Generated DESIGN.md files for any domain.",
+  "category": "skills",
+  "tags": [
+    "design-md",
+    "generator"
+  ],
+  "thumbnail": "/thumbs/designmd-supply.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 137
+}

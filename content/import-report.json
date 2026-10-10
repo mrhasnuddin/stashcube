@@ -1,0 +1,321 @@
+{
+  "date": "2026-10-10",
+  "total": 155,
+  "withThumbnail": 119,
+  "pageFailed": [
+    {
+      "slug": "rewampui",
+      "notes": [
+        "fetch failed"
+      ]
+    },
+    {
+      "slug": "amicro",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "svg-repo",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "streamline-free",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "lapa-ninja",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "maxi-best-of",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "design-spells",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "siteinspire",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "dgrees",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "jin-su-park",
+      "notes": [
+        "HTTP 404"
+      ]
+    },
+    {
+      "slug": "the-moving-poster",
+      "notes": [
+        "HTTP 503"
+      ]
+    },
+    {
+      "slug": "soul",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "silencio",
+      "notes": [
+        "HTTP 503"
+      ]
+    },
+    {
+      "slug": "typeui",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "designmd-supply",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "uppbeat-sfx",
+      "notes": [
+        "HTTP 429"
+      ]
+    }
+  ],
+  "noThumbnail": [
+    {
+      "slug": "beautiful-ui",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "oxygen-ui",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "rewampui",
+      "notes": [
+        "fetch failed"
+      ]
+    },
+    {
+      "slug": "gradient-shimmer",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "slot-text",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "thinking-orbs",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "supahero",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "amicro",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "iconmonstr",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "font-brief",
+      "notes": [
+        "thumb: image too small: 127"
+      ]
+    },
+    {
+      "slug": "space-type-generator",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "svg-repo",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "streamline-free",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "colormind",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "lapa-ninja",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "maxi-best-of",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "design-spells",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "siteinspire",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "branding-website",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "httpster",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "taiko",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "shardeum",
+      "notes": [
+        "thumb: image HTTP 404"
+      ]
+    },
+    {
+      "slug": "dgrees",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "m-studio-paris",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "jin-su-park",
+      "notes": [
+        "HTTP 404"
+      ]
+    },
+    {
+      "slug": "matthew-yu",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "the-moving-poster",
+      "notes": [
+        "HTTP 503"
+      ]
+    },
+    {
+      "slug": "soul",
+      "notes": [
+        "HTTP 403"
+      ]
+    },
+    {
+      "slug": "illoca",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "silencio",
+      "notes": [
+        "HTTP 503"
+      ]
+    },
+    {
+      "slug": "typeui",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "promptefy",
+      "notes": [
+        "thumb: image HTTP 403"
+      ]
+    },
+    {
+      "slug": "design-engineer-tools",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "designmd-supply",
+      "notes": [
+        "HTTP 429"
+      ]
+    },
+    {
+      "slug": "krypt-cc",
+      "notes": [
+        "thumb: no social image found"
+      ]
+    },
+    {
+      "slug": "uppbeat-sfx",
+      "notes": [
+        "HTTP 429"
+      ]
+    }
+  ]
+}

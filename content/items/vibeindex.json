@@ -1,0 +1,15 @@
+{
+  "slug": "vibeindex",
+  "title": "VibeIndex",
+  "url": "https://vibeindex.dev/",
+  "description": "A directory of 285 vibe-coding tools across 16 categories.",
+  "category": "mcp-agents",
+  "tags": [
+    "directory",
+    "vibe-coding"
+  ],
+  "thumbnail": "/thumbs/vibeindex.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 143
+}

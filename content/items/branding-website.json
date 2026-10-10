@@ -1,0 +1,15 @@
+{
+  "slug": "branding-website",
+  "title": "Branding Website",
+  "url": "https://www.brandingwebsite.com/",
+  "description": "Branding examples you can filter by style, color, typeface and industry.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "branding"
+  ],
+  "thumbnail": "/thumbs/branding-website.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 81
+}

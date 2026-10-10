@@ -1,0 +1,15 @@
+{
+  "slug": "design-resources",
+  "title": "Design Resources",
+  "url": "https://designresourc.es/",
+  "description": "A curated list of design resources.",
+  "category": "tools",
+  "tags": [
+    "curated",
+    "directory"
+  ],
+  "thumbnail": "/thumbs/design-resources.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 146
+}

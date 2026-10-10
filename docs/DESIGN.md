@@ -1,0 +1,43 @@
+# Stashcube: Design Notes
+
+## Name and logo
+- Name: **Stashcube**. Wordmark is lowercase and flat, set in the heading font (Bricolage Grotesque bold, tight tracking): `stash` in off-white, `cube` in lime.
+- Mark: a flat lime **S tile** with stepped (pixel) corners and a pixel-built dark S, on a 15x15 grid. It is the favicon and app icon, and sits beside the wordmark in the lockup.
+- No 3D in the logo. Keep it crispEdges and integer-scaled (15, 30, 60 px...).
+- Files in `brand/`: `stashcube-tile.svg` (lime tile), `stashcube-tile-dark.svg` (dark tile, lime S), `favicon.svg`.
+
+## Theme
+Dark only. The theme is pixels plus isometric assets. Typography stays plain and readable. Lime `#95D914` is the only brand colour.
+
+## Design system
+Built with the `design-system` skill (three layers: primitive, semantic, component).
+- Source of truth: `design/design-tokens.json`
+- Generated CSS variables: `design/design-tokens.css`
+- Regenerate: `node .claude/skills/design-system/scripts/generate-tokens.cjs --config design/design-tokens.json -o design/design-tokens.css`
+- Living style guide: `design/preview.html` (serve the project root and open `/design/preview.html`; a `design-preview` entry is in `.claude/launch.json`).
+- Rule: never use raw hex in components, only tokens. Check with `node .claude/skills/design-system/scripts/validate-tokens.cjs --dir src/`.
+
+### Key decisions
+| Area | Decision |
+|---|---|
+| Colour | Neutral near-black (no colour tint) (`#0A0A0A` background, `#121212` surface, `#2A2A2A` border), off-white text `#F5F5F5`, muted text `#8C8C8C` (AA on background). Lime scale: `#95D914` primary, `#A8E71F` hover, `#6C9E0E` active, `#C2F25A` highlight. Status: amber `#F2B84B`, red `#F0605D`. |
+| Type | Bricolage Grotesque (headings, bold), Figtree (body), Martian Mono (small uppercase labels, counts, dates). Final choice: the Bricolage set. The alternates were dropped. The logo wordmark uses the heading font. |
+| Shape | Pixel-stepped corners on buttons, search and tags (4px / 3px notch, drawn with `clip-path` plus a 1px inset layer for the edge). Tiles and badges are square. |
+| Depth | No gradients, no blur. Tile hover casts a dithered shadow: a 4px checker pattern in dark lime offset 8px down-right behind the card (`--tile-shadow-*`), the same dither language as the sidebar block. |
+| Pixel motif | One shared motif: the "dither block", a 4x4 cell pattern (solid 2-column block plus a checker transition column), from the Figma active-state design. Sidebar item: a 4x4 grid of 16 cells at the right edge, nothing at rest. Hover (and keyboard focus) shows one of three hover patterns, picked at random on every new hover and never the same twice in a row: (1) **chevron** `>`, (2) **stair**, an anti-diagonal staircase `/`, (3) **bars**, a rising 3-bar signal whose top cells blink in sequence while hovered. Keyboard focus picks one the same way (only for `:focus-visible`). Items that are current or busy keep their shape. Press (`:active`) or `aria-current` shows the dither block (variant 1, the Figma shape). Going from the hover pattern to the active block is a pixel morph, and each variant has its own choreography. Cells that are only in the hover shape shrink away first; the rest stay. Then new cells grow in with a smooth ease-out (300ms per cell, 40ms stagger, about 450ms in total): chevron fills column by column left to right; stair grows outward from the staircase in diagonal waves (the staircase cells already belong to the block, so nothing vanishes); bars fill upward from the bottom row. The item that loses `aria-current` dissolves the same way. Shapes are per-cell custom properties (`--h` hover, `--a` active, `--d` delay), so adding a third shape is one more property. Primary CTA (only; secondary and ghost buttons have no pixel effect): same cell grid and the same morph, in darker lime (`--button-pixel-color`) at the right edge. Hover shows the same random variants, drawn on the two right columns only (the `btn` shapes in the `VAR` table in `design/preview.html`) so they stay inside the button's right padding and never touch the label; press morphs into the dither block (the label sits above the cells). The effect is hidden in the busy and done states, which use the letter hop instead. |
+| CTA process state | Separate from the dither block, and the button never changes size. Idle, busy and done labels are stacked in one grid cell (the hidden ones keep `visibility:hidden`), so the button is always as wide as the widest state. Busy (`data-state="busy"` plus `aria-busy="true"`): the label's letters hop 3px one after another in a stepped wave (80ms stagger, 1.2s loop; `--button-hop-*` tokens), the dither block is hidden and the cursor is `progress`. Done (`data-state="done"`): a pixel check glyph pops in 4px in three steps beside the new label, held about 1.4s, then back to idle. A visually hidden `role="status"` span announces the change. Letters stop hopping under `prefers-reduced-motion`. |
+| Search and tags | Search: stepped-corner field, pixel magnifier, `/` key cap, lime edge, lime key cap and lime caret on focus. Tags: stepped-corner chips with a 4px square bullet; hover or pressed fills lime. |
+| Tile hover | Lifts 2px up-left over its dither shadow (6px offset, so 8px of shadow shows), corner squares turn lime, a stepped dither sweep rises over the thumbnail, the arrow (a pixel glyph) slides right, and a small pixel cube pops out of the top edge (it sits behind the tile and slides up in 3 steps). |
+| Structure | Hairline container lines with small corner squares on tiles (container-lines skill). Sidebar groups with mono uppercase labels and NEW/FAV badges. |
+| Pixel motion (sidebar and primary CTA cells) | Smooth, not stepped. Each cell animates `transform` (scale 0 to 1, plus a 4px slide in from the right) and `opacity` together. Enter: 300ms, `cubic-bezier(0.22, 1, 0.36, 1)`, cells staggered 40ms in the variant's own order (chevron top to bottom, stair and bars left to right). Exit: 200ms, `cubic-bezier(0.4, 0, 0.2, 1)`, same stagger in reverse, so the shape ripples out. Morph: the enter curve with the morph order below. No overshoot, so cells never bulge past the grid. The bars blink is a slow 1.1s ease-in-out pulse that starts only after the enter finishes. Tokens: `--sidebar-item-*` and `--button-*` `enter-duration`, `exit-duration`, `stagger`, `enter-ease`, `exit-ease`, `blink-duration`. |
+| Background texture | Weak and local, top-right corner only. Two layers over the `#0A0A0A` background: (1) a **pixel dither mass** dissolving out of the top-right corner (Bayer 8x8 ordered dither of a noisy radial field, 8px square cells with a 1px gap, lime-500 to lime-800 plus a few pale lime sparks, drawn on a canvas at 34% opacity); (2) a very faint **dot grid** (22px, 7% white) fixed to the viewport and masked so it only shows near that corner. (A bottom-left halftone patch was tried and removed.) Both sit behind the content and are `aria-hidden`. Drawn deterministically (seeded), redrawn on resize. Tokens: `--texture-*`. In the app: `src/components/PixelTexture.tsx`. |
+| Motion (everything else) | 120/200/320 ms. The older tile effects (dither sweep, cube pop, arrow slide) still use `steps()` for a chunkier pixel feel. All motion is disabled under `prefers-reduced-motion`. |
+| Isometric pixel assets | Reserved for tile thumbnails, category headers and empty states, not for the logo. Not designed yet. |
+
+## Skills installed (`.claude/skills/`)
+container-lines, tailwindcss, threejs, frontend-design, baseline-ui, fixing-accessibility, fixing-metadata (from `npx ui-skills get <slug>`), design-system (from `npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill design-system`), and humanizer for copywriting (from `npx skills add blader/humanizer --skill humanizer`).
+
+Plugins: `ponytail@ponytail` (project scope; makes the agent reuse existing code and write less) from `DietrichGebert/ponytail`, and `claude-mem` (user scope; persistent memory across sessions, local provider, cloud sync off, data in `~/.claude-mem`). The claude-mem worker is not auto-started: run `npx claude-mem start`. The design-system skill also contains slide-deck tooling that this project does not use.
+
+## Proposed stack (confirm before build)
+Next.js + Tailwind + shadcn/ui, content as files in the repo, deployed on Vercel. The token variable names (`--color-background`, `--color-primary`, `--font-heading`) are Tailwind v4 `@theme` compatible.

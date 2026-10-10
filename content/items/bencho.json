@@ -1,0 +1,16 @@
+{
+  "slug": "bencho",
+  "title": "Bencho",
+  "url": "https://bencho.dev/",
+  "description": "Interactive UI blocks you can tweak and take straight into a project.",
+  "category": "ui-libraries",
+  "tags": [
+    "blocks",
+    "interactive",
+    "copy-paste"
+  ],
+  "thumbnail": "/thumbs/bencho.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 153
+}

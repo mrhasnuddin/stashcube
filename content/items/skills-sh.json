@@ -1,0 +1,15 @@
+{
+  "slug": "skills-sh",
+  "title": "skills.sh",
+  "url": "https://www.skills.sh/",
+  "description": "A directory of agent skills, with install commands.",
+  "category": "skills",
+  "tags": [
+    "directory",
+    "agents"
+  ],
+  "thumbnail": "/thumbs/skills-sh.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 136
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "toggles",
+  "title": "Toggles",
+  "url": "https://toggles.dev/",
+  "description": "Animated theme toggles for React, Svelte and Vue. Install with shadcn, npm or copy the source.",
+  "category": "components",
+  "tags": [
+    "toggles",
+    "react"
+  ],
+  "thumbnail": "/thumbs/toggles.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 20
+}

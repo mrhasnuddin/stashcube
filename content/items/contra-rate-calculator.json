@@ -1,0 +1,15 @@
+{
+  "slug": "contra-rate-calculator",
+  "title": "Contra Rate Calculator",
+  "url": "https://contra.com/project-rate-hiring-calculator/",
+  "description": "A calculator that compares hiring a contractor with a full-time employee.",
+  "category": "inspiration",
+  "subcategory": "saas-ai",
+  "tags": [
+    "calculator"
+  ],
+  "thumbnail": "/thumbs/contra-rate-calculator.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 123
+}

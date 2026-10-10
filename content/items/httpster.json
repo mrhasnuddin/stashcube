@@ -1,0 +1,15 @@
+{
+  "slug": "httpster",
+  "title": "Httpster",
+  "url": "https://httpster.net/",
+  "description": "A gallery of creative website designs.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "websites"
+  ],
+  "thumbnail": "/thumbs/httpster.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 83
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "hue",
+  "title": "Hue",
+  "url": "https://hueapp.io/",
+  "description": "An open-source skill that generates a full design system for Claude Code and Codex.",
+  "category": "skills",
+  "tags": [
+    "design-system",
+    "claude-code"
+  ],
+  "thumbnail": "/thumbs/hue.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 133
+}

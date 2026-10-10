@@ -1,0 +1,15 @@
+{
+  "slug": "diffusion-studio",
+  "title": "Diffusion Studio",
+  "url": "https://diffusion.studio/",
+  "description": "A video editor on an infinite canvas, with export up to 4K.",
+  "category": "tools",
+  "tags": [
+    "video",
+    "editor"
+  ],
+  "thumbnail": "/thumbs/diffusion-studio.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 148
+}

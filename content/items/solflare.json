@@ -1,0 +1,16 @@
+{
+  "slug": "solflare",
+  "title": "Solflare",
+  "url": "https://www.solflare.com/",
+  "description": "A wallet for Solana.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "wallet",
+    "solana"
+  ],
+  "thumbnail": "/thumbs/solflare.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 95
+}

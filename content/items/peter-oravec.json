@@ -1,0 +1,15 @@
+{
+  "slug": "peter-oravec",
+  "title": "Peter Oravec",
+  "url": "https://peteroravec.com/",
+  "description": "Front-end developer with 19+ years of experience.",
+  "category": "inspiration",
+  "subcategory": "portfolios",
+  "tags": [
+    "front-end"
+  ],
+  "thumbnail": "/thumbs/peter-oravec.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 114
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "slot-text",
+  "title": "slot-text",
+  "url": "https://textmotion.dev/",
+  "description": "A dependency-free text roll animation for small UI labels.",
+  "category": "components",
+  "tags": [
+    "text",
+    "animation",
+    "zero-deps"
+  ],
+  "thumbnail": "/thumbs/slot-text.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 18
+}

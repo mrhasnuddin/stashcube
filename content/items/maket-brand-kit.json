@@ -1,0 +1,15 @@
+{
+  "slug": "maket-brand-kit",
+  "title": "Maket Brand Kit",
+  "url": "https://www.maket.ai/brand-kit",
+  "description": "A brand kit page: logos, colors, typography and usage guidelines.",
+  "category": "inspiration",
+  "subcategory": "saas-ai",
+  "tags": [
+    "brand-kit"
+  ],
+  "thumbnail": "/thumbs/maket-brand-kit.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 125
+}

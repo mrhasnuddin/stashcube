@@ -1,0 +1,15 @@
+{
+  "slug": "sunmetalon",
+  "title": "Sunmetalon",
+  "url": "https://sunmetalon.com/",
+  "description": "Metal recycling that turns manufacturing waste into revenue.",
+  "category": "inspiration",
+  "subcategory": "other",
+  "tags": [
+    "industrial"
+  ],
+  "thumbnail": "/thumbs/sunmetalon.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 129
+}

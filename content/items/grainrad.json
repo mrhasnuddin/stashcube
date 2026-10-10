@@ -1,0 +1,16 @@
+{
+  "slug": "grainrad",
+  "title": "Grainrad",
+  "url": "https://grainrad.com/",
+  "description": "WebGPU ASCII, dithering and retro effects at 60fps.",
+  "category": "shaders-effects",
+  "tags": [
+    "dither",
+    "webgpu",
+    "retro"
+  ],
+  "thumbnail": "/thumbs/grainrad.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 45
+}

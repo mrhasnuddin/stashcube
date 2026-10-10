@@ -1,0 +1,16 @@
+{
+  "slug": "svg-repo",
+  "title": "SVG Repo",
+  "url": "https://www.svgrepo.com/",
+  "description": "Over 500,000 free SVG vectors and icons.",
+  "category": "icons",
+  "tags": [
+    "svg",
+    "free",
+    "vectors"
+  ],
+  "thumbnail": "/thumbs/svg-repo.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 23
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "ui-guideline",
+  "title": "UI Guideline",
+  "url": "https://www.uiguideline.com/",
+  "description": "How the largest design systems name, define and document components.",
+  "category": "design-systems",
+  "tags": [
+    "guides",
+    "figma",
+    "components"
+  ],
+  "thumbnail": "/thumbs/ui-guideline.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 59
+}

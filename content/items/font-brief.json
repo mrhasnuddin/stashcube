@@ -1,0 +1,15 @@
+{
+  "slug": "font-brief",
+  "title": "Font Brief",
+  "url": "https://www.fontbrief.com/fontbrief",
+  "description": "A curated font discovery tool for branding and editorial work.",
+  "category": "fonts",
+  "tags": [
+    "branding",
+    "editorial"
+  ],
+  "thumbnail": "/thumbs/font-brief.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 31
+}

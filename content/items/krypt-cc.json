@@ -1,0 +1,14 @@
+{
+  "slug": "krypt-cc",
+  "title": "krypt.cc",
+  "url": "https://krypt.cc/",
+  "description": "Create a personalized bio page with custom backgrounds and audio.",
+  "category": "tools",
+  "tags": [
+    "bio-pages"
+  ],
+  "thumbnail": "/thumbs/krypt-cc.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 154
+}

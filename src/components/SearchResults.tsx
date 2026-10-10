@@ -1,0 +1,65 @@
+"use client";
+
+import { useSearchParams } from "next/navigation";
+import { useMemo, useState } from "react";
+import type { ItemView } from "@/lib/content";
+import { ItemTile } from "./ItemTile";
+import { PixelSearch } from "./pixel";
+
+function score(item: ItemView, tokens: string[]) {
+  const title = item.title.toLowerCase();
+  const desc = item.description.toLowerCase();
+  const cat = `${item.categoryName} ${item.subcategory ?? ""}`.toLowerCase();
+  const tags = item.tags.join(" ").toLowerCase();
+  let total = 0;
+  for (const t of tokens) {
+    const s = (title.includes(t) ? 4 : 0) + (tags.includes(t) ? 3 : 0) + (cat.includes(t) ? 2 : 0) + (desc.includes(t) ? 1 : 0);
+    if (s === 0) return 0; // every word has to match something
+    total += s;
+  }
+  return total;
+}
+
+/** Live client-side search over the whole stash. The query lives in the URL (?q=...). */
+export function SearchResults({ items }: { items: ItemView[] }) {
+  const params = useSearchParams();
+  const [q, setQ] = useState(params.get("q") ?? "");
+  const results = useMemo(() => {
+    const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!tokens.length) return [];
+    return items
+      .map((i) => ({ i, s: score(i, tokens) }))
+      .filter((r) => r.s > 0)
+      .sort((a, b) => b.s - a.s || a.i.order - b.i.order)
+      .map((r) => r.i);
+  }, [items, q]);
+
+  return (
+    <>
+      <label className="search search-lg">
+        <PixelSearch />
+        <input
+          autoFocus
+          value={q}
+          onChange={(e) => {
+            setQ(e.target.value);
+            const v = e.target.value.trim();
+            window.history.replaceState(null, "", v ? `?q=${encodeURIComponent(v)}` : window.location.pathname);
+          }}
+          placeholder="Search names, tags and categories"
+          aria-label="Search the stash"
+          autoComplete="off"
+        />
+      </label>
+      <p className="label result-count" aria-live="polite">
+        {q.trim() ? `${results.length} ${results.length === 1 ? "result" : "results"} for “${q.trim()}”` : `${items.length} links in the stash`}
+      </p>
+      {q.trim() && results.length === 0 ? <p className="empty">Nothing found. Try a shorter word, or a tag like react or webgl.</p> : null}
+      <div className="grid">
+        {(q.trim() ? results : []).map((i, n) => (
+          <ItemTile key={i.slug} item={i} priority={n < 4} />
+        ))}
+      </div>
+    </>
+  );
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "namethatui",
+  "title": "NameThatUI",
+  "url": "https://namethatui.com/",
+  "description": "See a UI element, learn its real name, and copy a prompt for your coding agent.",
+  "category": "tools",
+  "tags": [
+    "reference",
+    "prompts"
+  ],
+  "thumbnail": "/thumbs/namethatui.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 149
+}

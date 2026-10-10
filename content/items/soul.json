@@ -1,0 +1,15 @@
+{
+  "slug": "soul",
+  "title": "Soul",
+  "url": "https://www.soul.io/",
+  "description": "A landing page built on an animated canvas.",
+  "category": "inspiration",
+  "subcategory": "saas-ai",
+  "tags": [
+    "saas"
+  ],
+  "thumbnail": "/thumbs/soul.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 127
+}

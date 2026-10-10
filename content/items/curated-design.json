@@ -1,0 +1,16 @@
+{
+  "slug": "curated-design",
+  "title": "Curated Design",
+  "url": "https://craftwork.design/curated/websites/",
+  "description": "Hundreds of selected websites and design patterns from Curated.design.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "websites",
+    "patterns"
+  ],
+  "thumbnail": "/thumbs/curated-design.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 66
+}

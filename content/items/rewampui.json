@@ -1,0 +1,17 @@
+{
+  "slug": "rewampui",
+  "title": "RewampUI",
+  "url": "https://www.rewampui.com/",
+  "description": "A component showcase in a dashboard layout.",
+  "category": "ui-libraries",
+  "tags": [
+    "react",
+    "showcase"
+  ],
+  "thumbnail": null,
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 11,
+  "status": "archived",
+  "notes": "Domain did not resolve on 2026-10-11."
+}

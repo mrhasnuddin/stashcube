@@ -1,0 +1,16 @@
+{
+  "slug": "maverick-protocol",
+  "title": "Maverick Protocol",
+  "url": "https://www.mav.xyz/",
+  "description": "A DeFi liquidity protocol aimed at lower swap gas and more order flow.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "defi",
+    "liquidity"
+  ],
+  "thumbnail": "/thumbs/maverick-protocol.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 89
+}

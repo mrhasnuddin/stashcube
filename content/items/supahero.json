@@ -1,0 +1,15 @@
+{
+  "slug": "supahero",
+  "title": "Supahero",
+  "url": "https://supahero.io/",
+  "description": "A library of website hero sections.",
+  "category": "components",
+  "tags": [
+    "hero",
+    "sections"
+  ],
+  "thumbnail": "/thumbs/supahero.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 21
+}

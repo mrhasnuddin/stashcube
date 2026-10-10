@@ -1,0 +1,15 @@
+{
+  "slug": "agency-gallery",
+  "title": "Agency Gallery",
+  "url": "https://agencygallery.com/",
+  "description": "Creative agencies and agency portfolios, updated regularly.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "agencies"
+  ],
+  "thumbnail": "/thumbs/agency-gallery.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 82
+}

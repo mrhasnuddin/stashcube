@@ -1,0 +1,15 @@
+{
+  "slug": "cosmos",
+  "title": "Cosmos",
+  "url": "https://www.cosmos.so/",
+  "description": "A place to save and collect inspiration.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "moodboard"
+  ],
+  "thumbnail": "/thumbs/cosmos.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 80
+}

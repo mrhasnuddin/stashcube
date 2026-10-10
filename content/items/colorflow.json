@@ -1,0 +1,15 @@
+{
+  "slug": "colorflow",
+  "title": "ColorFlow",
+  "url": "https://colorflow.ls.graphics/",
+  "description": "A mesh gradient editor with live preview and export.",
+  "category": "colors-gradients",
+  "tags": [
+    "mesh",
+    "editor"
+  ],
+  "thumbnail": "/thumbs/colorflow.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 52
+}

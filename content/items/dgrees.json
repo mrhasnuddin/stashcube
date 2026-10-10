@@ -1,0 +1,16 @@
+{
+  "slug": "dgrees",
+  "title": "Dgrees",
+  "url": "https://dgrees.studio/",
+  "description": "Spain's most awarded web design studio.",
+  "category": "inspiration",
+  "subcategory": "studios-agencies",
+  "tags": [
+    "awards",
+    "web-design"
+  ],
+  "thumbnail": "/thumbs/dgrees.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 106
+}

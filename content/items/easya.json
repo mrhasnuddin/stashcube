@@ -1,0 +1,15 @@
+{
+  "slug": "easya",
+  "title": "EasyA",
+  "url": "https://www.easya.io/",
+  "description": "Quests that teach blockchain development.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "learning"
+  ],
+  "thumbnail": "/thumbs/easya.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 88
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "evil-charts",
+  "title": "Evil Charts",
+  "url": "https://evilcharts.com/",
+  "description": "Animated chart components built on shadcn and Recharts.",
+  "category": "components",
+  "tags": [
+    "react",
+    "charts",
+    "shadcn"
+  ],
+  "thumbnail": "/thumbs/evil-charts.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 13
+}

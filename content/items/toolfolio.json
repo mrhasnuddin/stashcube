@@ -1,0 +1,15 @@
+{
+  "slug": "toolfolio",
+  "title": "Toolfolio",
+  "url": "https://toolfolio.io/",
+  "description": "A directory of tools for productivity, creativity and design.",
+  "category": "tools",
+  "tags": [
+    "directory",
+    "productivity"
+  ],
+  "thumbnail": "/thumbs/toolfolio.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 145
+}

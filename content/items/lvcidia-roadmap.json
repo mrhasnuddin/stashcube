@@ -1,0 +1,16 @@
+{
+  "slug": "lvcidia-roadmap",
+  "title": "Lvcidia Roadmap",
+  "url": "https://roadmap.lvcidia.xyz/",
+  "description": "The roadmap for a space-themed gaming metaverse.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "gaming",
+    "metaverse"
+  ],
+  "thumbnail": "/thumbs/lvcidia-roadmap.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 100
+}

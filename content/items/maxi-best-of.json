@@ -1,0 +1,16 @@
+{
+  "slug": "maxi-best-of",
+  "title": "Maxi Best Of",
+  "url": "https://maxibestof.one/",
+  "description": "A weekly feed of website design and font inspiration.",
+  "category": "inspiration",
+  "subcategory": "galleries",
+  "tags": [
+    "weekly",
+    "typography"
+  ],
+  "thumbnail": "/thumbs/maxi-best-of.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 69
+}

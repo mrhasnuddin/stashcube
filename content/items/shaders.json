@@ -1,0 +1,16 @@
+{
+  "slug": "shaders",
+  "title": "Shaders",
+  "url": "https://shaders.com/",
+  "description": "Composable WebGPU effects for Vue, React, Svelte, Solid and plain JS.",
+  "category": "shaders-effects",
+  "tags": [
+    "webgpu",
+    "react",
+    "vue"
+  ],
+  "thumbnail": "/thumbs/shaders.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 48
+}

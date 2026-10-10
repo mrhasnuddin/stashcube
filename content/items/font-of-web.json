@@ -1,0 +1,15 @@
+{
+  "slug": "font-of-web",
+  "title": "Font of Web",
+  "url": "https://www.fontofweb.com/",
+  "description": "A daily feed of real-world design, with the fonts behind it.",
+  "category": "fonts",
+  "tags": [
+    "inspiration",
+    "discovery"
+  ],
+  "thumbnail": "/thumbs/font-of-web.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 32
+}

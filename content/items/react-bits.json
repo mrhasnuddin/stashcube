@@ -1,0 +1,16 @@
+{
+  "slug": "react-bits",
+  "title": "React Bits",
+  "url": "https://reactbits.dev/",
+  "description": "Free animated React components: text effects, backgrounds, cards and interactions.",
+  "category": "ui-libraries",
+  "tags": [
+    "react",
+    "animation",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/react-bits.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 1
+}

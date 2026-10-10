@@ -1,0 +1,64 @@
+{
+  "groups": [
+    {
+      "slug": "build",
+      "name": "Build",
+      "categories": [
+        { "slug": "ui-libraries", "name": "UI Libraries", "description": "Component libraries and kits you can drop into a project." },
+        { "slug": "components", "name": "Components", "description": "Single components: charts, loaders, toggles, text effects." },
+        { "slug": "icons", "name": "Icons", "description": "Icon sets, animated icons and isometric packs." },
+        { "slug": "fonts", "name": "Fonts", "description": "Typefaces, type tools and typography inspiration." },
+        { "slug": "templates", "name": "Templates", "description": "Starting points: Figma kits, section blocks and site templates." }
+      ]
+    },
+    {
+      "slug": "create",
+      "name": "Create",
+      "categories": [
+        { "slug": "3d-tools", "name": "3D Tools", "description": "Tools and libraries for 3D on the web." },
+        { "slug": "shaders-effects", "name": "Shaders and Effects", "description": "Shader editors, dithering, ASCII and retro effects." },
+        { "slug": "colors-gradients", "name": "Colors and Gradients", "description": "Palette generators and gradient editors." },
+        { "slug": "illustration", "name": "Illustration", "description": "Shapes, vectors and illustration resources." },
+        { "slug": "mockups", "name": "Mockups", "description": "Free mockups for presenting work." }
+      ]
+    },
+    {
+      "slug": "brand",
+      "name": "Brand",
+      "categories": [
+        { "slug": "logos", "name": "Logos", "description": "Logo references and tools to test your own." },
+        {
+          "slug": "inspiration",
+          "name": "Inspiration",
+          "description": "Galleries and standout sites to learn from.",
+          "subcategories": [
+            { "slug": "galleries", "name": "Galleries" },
+            { "slug": "web3-crypto", "name": "Web3 and Crypto" },
+            { "slug": "studios-agencies", "name": "Studios and Agencies" },
+            { "slug": "portfolios", "name": "Portfolios" },
+            { "slug": "saas-ai", "name": "SaaS and AI" },
+            { "slug": "other", "name": "Other" }
+          ]
+        },
+        { "slug": "design-systems", "name": "Design Systems", "description": "How the big systems name, document and build things." }
+      ]
+    },
+    {
+      "slug": "ai",
+      "name": "AI",
+      "categories": [
+        { "slug": "skills", "name": "Skills and DESIGN.md", "description": "Skill files and design-system docs for AI coding agents." },
+        { "slug": "prompts", "name": "Prompts", "description": "Prompt libraries and prompt tools for design work." },
+        { "slug": "mcp-agents", "name": "MCP and Agents", "description": "Directories and tooling for agents and vibe coding." }
+      ]
+    },
+    {
+      "slug": "learn",
+      "name": "Learn",
+      "categories": [
+        { "slug": "articles", "name": "Articles", "description": "Reads worth keeping." },
+        { "slug": "tools", "name": "Tools and Utilities", "description": "Directories and utilities that don't fit elsewhere." }
+      ]
+    }
+  ]
+}

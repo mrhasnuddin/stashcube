@@ -1,0 +1,16 @@
+{
+  "slug": "active-theory",
+  "title": "Active Theory",
+  "url": "https://activetheory.net/",
+  "description": "A creative studio making immersive web experiences since 2012.",
+  "category": "inspiration",
+  "subcategory": "studios-agencies",
+  "tags": [
+    "webgl",
+    "immersive"
+  ],
+  "thumbnail": "/thumbs/active-theory.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 102
+}

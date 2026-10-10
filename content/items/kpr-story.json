@@ -1,0 +1,15 @@
+{
+  "slug": "kpr-story",
+  "title": "KPR Story",
+  "url": "https://kprverse.com/",
+  "description": "The story site for the KPR sci-fi universe, styled as a terminal.",
+  "category": "inspiration",
+  "subcategory": "other",
+  "tags": [
+    "storytelling"
+  ],
+  "thumbnail": "/thumbs/kpr-story.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 131
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "very-good-components",
+  "title": "Very Good Components",
+  "url": "https://www.goodcomponents.io/",
+  "description": "HTML UI components you can drop into a project.",
+  "category": "components",
+  "tags": [
+    "html",
+    "copy-paste"
+  ],
+  "thumbnail": "/thumbs/very-good-components.webp",
+  "addedAt": "2026-10-10",
+  "source": "notion",
+  "order": 15
+}
