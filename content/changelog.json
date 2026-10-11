@@ -26,6 +26,11 @@
         "type": "changed",
         "minor": true,
         "text": "Plamo moved to Inspiration, in the new Architecture group, and VibeIndex moved to Learning."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "img2threejs in GitHub and in My go-to stack. It is a skill that turns a reference image into a Three.js model."
       }
     ]
   },

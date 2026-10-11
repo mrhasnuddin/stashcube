@@ -1,0 +1,18 @@
+{
+  "slug": "img2threejs",
+  "title": "img2threejs",
+  "url": "https://github.com/img2threejs/img2threejs",
+  "description": "Turns a reference image into a procedural, animation-ready Three.js model, written as code.",
+  "category": "github",
+  "tags": [
+    "three.js",
+    "image-to-3d",
+    "agents",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/img2threejs.webp",
+  "addedAt": "2026-10-11",
+  "source": "manual",
+  "order": 156,
+  "pick": true
+}
