@@ -29,7 +29,7 @@ export type Item = {
   source?: string;
   order: number;
 };
-export type ItemView = Item & { isNew: boolean; categoryName: string; comingSoon: boolean };
+export type ItemView = Item & { newSince: string | null; categoryName: string; comingSoon: boolean };
 
 /*
  * Content is read once at module scope. These are synchronous local reads, so Next treats them as
@@ -55,17 +55,13 @@ const categories: Category[] = taxonomy.groups.flatMap((g) =>
 );
 const categoryBySlug = new Map(categories.map((c) => [c.slug, c]));
 
-// "New" means added in the 14 days before the latest addition, and only once there is more than one batch.
-// No clock is read, so the result is the same on every render.
-const dates = items.map((i) => i.addedAt).sort();
-const latest = dates.at(-1);
-const earliest = dates[0];
-const newCutoff = latest ? new Date(latest).getTime() - 14 * 86_400_000 : 0;
-const isNew = (i: Item) => latest !== earliest && new Date(i.addedAt).getTime() > newCutoff;
+// Only links added with a full timestamp (scripts/add-link.mjs writes one) can be NEW, and the NewBadge component
+// decides in the browser whether the last 4 days have passed. Links with a date-only addedAt never get the mark.
+const newSince = (i: Item) => (i.addedAt.includes("T") ? i.addedAt : null);
 
 const view = (i: Item): ItemView => ({
   ...i,
-  isNew: isNew(i),
+  newSince: newSince(i),
   categoryName: categoryBySlug.get(i.category)?.name ?? i.category,
   comingSoon: i.status === "coming-soon",
 });
@@ -101,7 +97,7 @@ export function groupsWithCategories() {
         .filter((c) => c.groupSlug === g.slug)
         .map((c) => {
           const inCat = items.filter((i) => i.category === c.slug);
-          return { ...c, count: inCat.length, hasNew: inCat.some(isNew) };
+          return { ...c, count: inCat.length, newSince: inCat.map(newSince).filter((d): d is string => d !== null).sort().at(-1) ?? null };
         })
         .filter((c) => c.count > 0),
     }))

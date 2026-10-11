@@ -2,6 +2,7 @@
 
 import { useMemo, useSyncExternalStore } from "react";
 import type { ItemView, Subcategory } from "@/lib/content";
+import { getSearch, getServerSearch, replaceSearch, subscribeSearch } from "@/lib/url-search";
 import { ItemTile } from "./ItemTile";
 
 function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () => void; children: React.ReactNode }) {
@@ -13,28 +14,11 @@ function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () =>
   );
 }
 
-// The URL query (?sub=...&tag=...) is the filter state. Reading it through useSyncExternalStore keeps the
-// server render unfiltered (so every tile is in the static HTML) and applies the filters right after hydration.
-const listeners = new Set<() => void>();
-const subscribe = (cb: () => void) => {
-  listeners.add(cb);
-  window.addEventListener("popstate", cb);
-  return () => {
-    listeners.delete(cb);
-    window.removeEventListener("popstate", cb);
-  };
-};
-const getSearch = () => window.location.search;
-const getServerSearch = () => "";
-function writeSearch(params: URLSearchParams) {
-  const qs = params.toString();
-  window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
-  listeners.forEach((l) => l());
-}
+// The URL query (?sub=...&tag=...) is the filter state (see src/lib/url-search.ts).
 
 /** Category gallery with a sub-category row and tag filters. */
 export function Gallery({ items, subcategories }: { items: ItemView[]; subcategories: Subcategory[] }) {
-  const search = useSyncExternalStore(subscribe, getSearch, getServerSearch);
+  const search = useSyncExternalStore(subscribeSearch, getSearch, getServerSearch);
   const params = useMemo(() => new URLSearchParams(search), [search]);
   const subParam = params.get("sub");
   const sub = subParam && subcategories.some((s) => s.slug === subParam) ? subParam : null;
@@ -44,13 +28,13 @@ export function Gallery({ items, subcategories }: { items: ItemView[]; subcatego
     const next = new URLSearchParams(params);
     if (s) next.set("sub", s);
     else next.delete("sub");
-    writeSearch(next);
+    replaceSearch(next.toString());
   };
   const toggleTag = (t: string) => {
     const next = new URLSearchParams(params);
     next.delete("tag");
     (tags.includes(t) ? tags.filter((x) => x !== t) : [...tags, t]).forEach((x) => next.append("tag", x));
-    writeSearch(next);
+    replaceSearch(next.toString());
   };
 
   const scoped = useMemo(() => (sub ? items.filter((i) => i.subcategory === sub) : items), [items, sub]);

@@ -1,0 +1,17 @@
+{
+  "slug": "drawably",
+  "title": "Drawably",
+  "url": "https://www.drawably.dev/",
+  "description": "Hand-drawn UI controls with zero dependencies, sketched fresh on every mount.",
+  "category": "ui",
+  "subcategory": "components",
+  "tags": [
+    "hand-drawn",
+    "zero-deps",
+    "controls"
+  ],
+  "thumbnail": "/thumbs/drawably.webp",
+  "addedAt": "2026-10-11",
+  "source": "manual",
+  "order": 160
+}

@@ -4,16 +4,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { DeanStudioLink } from "./DeanStudioLink";
+import { NewBadge } from "./NewBadge";
 import { PixelCells } from "./PixelCells";
 import { LogoTile } from "./pixel";
 
-type Group = { slug: string; name: string; categories: { slug: string; name: string; hasNew: boolean }[] };
+type Group = { slug: string; name: string; categories: { slug: string; name: string; newSince: string | null }[] };
 
-function NavLink({ href, active, children, badge, root }: { href: string; active: boolean; children: React.ReactNode; badge?: boolean; root?: boolean }) {
+function NavLink({ href, active, children, since, root }: { href: string; active: boolean; children: React.ReactNode; since?: string | null; root?: boolean }) {
   return (
     <Link className={root ? "nav root" : "nav"} href={href} aria-current={active ? "page" : undefined}>
       <span>{children}</span>
-      {badge ? <span className="badge">NEW</span> : null}
+      <NewBadge since={since ?? null} />
       <PixelCells kind="nav" />
     </Link>
   );
@@ -55,7 +56,7 @@ export function Sidebar({ groups }: { groups: Group[] }) {
             </div>
             <div className="grp-list">
               {g.categories.map((c) => (
-                <NavLink key={c.slug} href={`/c/${c.slug}`} active={pathname.startsWith(`/c/${c.slug}`)} badge={c.hasNew}>
+                <NavLink key={c.slug} href={`/c/${c.slug}`} active={pathname.startsWith(`/c/${c.slug}`)} since={c.newSince}>
                   {c.name}
                 </NavLink>
               ))}

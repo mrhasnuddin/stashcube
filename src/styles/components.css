@@ -143,6 +143,8 @@ a.brand{text-decoration:none;color:inherit}
 .page-head h1{font-size:var(--primitive-fontSize-4xl);margin-top:var(--primitive-spacing-3)}
 .page-head p{color:var(--color-muted-foreground);max-width:60ch;margin-top:var(--primitive-spacing-3);font-size:var(--primitive-fontSize-lg)}
 .chips{display:flex;flex-wrap:wrap;gap:var(--primitive-spacing-2);margin-bottom:var(--primitive-spacing-3)}
+/* chips share the leftover width of each row, so rows end flush with the grid instead of ragged */
+.chips .tag{flex:1 1 auto;justify-content:center}
 a.tag{text-decoration:none}
 .result-count{margin:var(--primitive-spacing-4) 0 0}
 .empty{color:var(--color-muted-foreground);padding:var(--primitive-spacing-8) 0}

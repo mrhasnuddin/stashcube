@@ -1,0 +1,17 @@
+{
+  "slug": "prompt-motion",
+  "title": "Prompt Motion",
+  "url": "https://prompt-motion.com/",
+  "description": "Motion videos made with Claude, each with the prompt or skill behind it.",
+  "category": "motion",
+  "tags": [
+    "motion",
+    "prompts",
+    "video",
+    "claude"
+  ],
+  "thumbnail": "/thumbs/prompt-motion.webp",
+  "addedAt": "2026-10-11",
+  "source": "manual",
+  "order": 158
+}

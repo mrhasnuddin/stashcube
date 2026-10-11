@@ -1,0 +1,19 @@
+{
+  "slug": "reicon",
+  "title": "Reicon",
+  "url": "https://reicon.dev/",
+  "description": "2,700+ free open-source SVG icons for React, Vue, Svelte, Angular, Flutter and Figma.",
+  "category": "icons",
+  "subcategory": "icons",
+  "tags": [
+    "svg",
+    "open-source",
+    "react",
+    "figma"
+  ],
+  "pick": true,
+  "thumbnail": "/thumbs/reicon.webp",
+  "addedAt": "2026-10-11",
+  "source": "manual",
+  "order": 157
+}

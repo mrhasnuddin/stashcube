@@ -34,5 +34,5 @@ For many links at once, run the script once per link. Pause between calls to the
 - Thumbnails are 800x500 webp, cropped to fill. They are the site's own images and belong to those sites.
 - `status` in an item can be `favorite`, `to-review`, `coming-soon` or `archived` (archived items are hidden). `pick: true` puts an item on "My go-to stack".
 - Changelog: a single link or a small batch is a minor change. Add it to the current top release in `content/changelog.json` as `{ type: "added", minor: true, text }`, and do not bump the version. Only a big update (a new page or feature, a redesign, a large batch of links) gets a new version.
-- The "NEW" mark is computed from `addedAt`; do not edit it by hand.
+- The NEW mark lasts 4 days after a link is added. It comes from the full timestamp in `addedAt` that the script writes; do not edit it by hand, and keep the timestamp if you edit an item.
 - Do not rename a slug after publishing; it is the URL.

@@ -1,0 +1,18 @@
+{
+  "slug": "evil-buttons",
+  "title": "Evil Buttons",
+  "url": "https://www.evilbuttons.com/",
+  "description": "Animated shadcn/ui buttons with Motion, installed one at a time with a CLI.",
+  "category": "ui",
+  "subcategory": "components",
+  "tags": [
+    "react",
+    "shadcn",
+    "buttons",
+    "animation"
+  ],
+  "thumbnail": "/thumbs/evil-buttons.webp",
+  "addedAt": "2026-10-11",
+  "source": "manual",
+  "order": 159
+}

@@ -29,7 +29,7 @@ Persistent left sidebar with grouped sections (small uppercase labels), Home, Re
 | Group | Categories |
 |---|---|
 | Build | UI Components (Libraries, Single components), Icons and Illustrations, Fonts, Templates and Mockups, GitHub |
-| Create | 3D Tools, Colors and Effects (Colors and gradients, Shaders and effects) |
+| Create | 3D Tools, Colors and Effects (Colors and gradients, Shaders and effects), Motion |
 | Brand | Logos, Inspiration (websites grouped by industry: Galleries, UI Details, Web3 and Crypto, SaaS and AI, 3D and Immersive, Architecture, Corporate and Industrial, Studios and Agencies, Film and Entertainment, Portfolios) |
 | AI | Skills and Prompts (Skills and DESIGN.md, Prompts), MCP and Agents |
 | Learn | Learning, Tools and Utilities |
@@ -45,7 +45,7 @@ The source of truth is `content/taxonomy.json`.
 | `tags[]` | Lowercase, short |
 | `thumbnail` | `/thumbs/<slug>.webp` (800x500), or `null` for the pixel placeholder |
 | `pricing?`, `status?`, `pick?`, `notes?` | `status`: `favorite`, `to-review`, `coming-soon` (shows a COMING SOON mark), `archived` (hidden). `pick: true` adds the link to My go-to stack and shows a PICK mark |
-| `addedAt`, `source`, `order` | `addedAt` drives the NEW mark (added within 14 days of the latest addition, once there is more than one batch) |
+| `addedAt`, `source`, `order` | `addedAt` is a date for the first import and a full ISO timestamp for links added later. Only links with a timestamp get the NEW mark, for 4 days after they are added (decided in the browser by `NewBadge`) |
 
 ## Content workflow
 - First import: `scripts/seed-links.mjs` (from the two Notion pages, deduplicated) through `scripts/import-links.mjs`, then `scripts/browser-fill.mjs` for sites that block plain requests. `scripts/apply-descriptions.mjs` writes the hand-written one-liners.

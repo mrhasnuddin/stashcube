@@ -31,6 +31,31 @@
         "type": "added",
         "minor": true,
         "text": "img2threejs in GitHub and in My go-to stack. It is a skill that turns a reference image into a Three.js model."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Reicon, an open-source icon library, in Icons and Illustrations and in My go-to stack."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "A Motion category under Create, starting with Prompt Motion, a collection of motion videos with the prompts behind them."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Evil Buttons and Drawably in UI Components, and ArtCraft and Openvid in Tools and Utilities."
+      },
+      {
+        "type": "fixed",
+        "minor": true,
+        "text": "Searching from a page you reached after a search showed the old query and results. The search page now always follows its address."
+      },
+      {
+        "type": "changed",
+        "minor": true,
+        "text": "NEW marks are gone from the current links. From now on a link gets one for 4 days after it is added, then it disappears."
       }
     ]
   },

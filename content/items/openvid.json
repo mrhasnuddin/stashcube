@@ -1,0 +1,17 @@
+{
+  "slug": "openvid",
+  "title": "Openvid",
+  "url": "https://openvid.dev/en",
+  "description": "A free online editor for screen recordings and demos, with cinematic zooms and 3D mockups.",
+  "category": "tools",
+  "tags": [
+    "video",
+    "screen-recorder",
+    "demos",
+    "free"
+  ],
+  "thumbnail": "/thumbs/openvid.webp",
+  "addedAt": "2026-10-11",
+  "source": "manual",
+  "order": 162
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "artcraft",
+  "title": "ArtCraft",
+  "url": "https://getartcraft.com/",
+  "description": "An open-source desktop app for AI video and images, with real controls for artists.",
+  "category": "tools",
+  "tags": [
+    "ai",
+    "video",
+    "image",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/artcraft.webp",
+  "addedAt": "2026-10-11",
+  "source": "manual",
+  "order": 161
+}

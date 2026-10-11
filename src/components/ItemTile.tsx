@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ItemView } from "@/lib/content";
+import { NewBadge } from "./NewBadge";
 import { PixelArrow, PixelPlaceholder, PopCube } from "./pixel";
 
 const hostOf = (url: string) => new URL(url).hostname.replace(/^www\./, "");
@@ -22,11 +23,11 @@ export function ItemTile({ item, priority = false }: { item: ItemView; priority?
           ) : (
             <PixelPlaceholder seed={item.slug} />
           )}
-          {item.comingSoon || item.pick || item.isNew ? (
+          {item.comingSoon || item.pick || item.newSince ? (
             <span className="thumb-badges">
               {item.comingSoon ? <span className="badge soon">COMING SOON</span> : null}
               {item.pick ? <span className="badge pick">PICK</span> : null}
-              {item.isNew ? <span className="badge">NEW</span> : null}
+              <NewBadge since={item.newSince} />
             </span>
           ) : null}
         </div>

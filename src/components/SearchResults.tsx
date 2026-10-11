@@ -1,8 +1,8 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useMemo, useSyncExternalStore } from "react";
 import type { ItemView } from "@/lib/content";
+import { getSearch, getServerSearch, replaceSearch, subscribeSearch } from "@/lib/url-search";
 import { ItemTile } from "./ItemTile";
 import { PixelSearch } from "./pixel";
 
@@ -20,10 +20,9 @@ function score(item: ItemView, tokens: string[]) {
   return total;
 }
 
-/** Live client-side search over the whole stash. The query lives in the URL (?q=...). */
+/** Live client-side search over the whole stash. The query lives in the URL (?q=...) and is read from it on every render. */
 export function SearchResults({ items }: { items: ItemView[] }) {
-  const params = useSearchParams();
-  const [q, setQ] = useState(params.get("q") ?? "");
+  const q = new URLSearchParams(useSyncExternalStore(subscribeSearch, getSearch, getServerSearch)).get("q") ?? "";
   const results = useMemo(() => {
     const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
     if (!tokens.length) return [];
@@ -41,11 +40,7 @@ export function SearchResults({ items }: { items: ItemView[] }) {
         <input
           autoFocus
           value={q}
-          onChange={(e) => {
-            setQ(e.target.value);
-            const v = e.target.value.trim();
-            window.history.replaceState(null, "", v ? `?q=${encodeURIComponent(v)}` : window.location.pathname);
-          }}
+          onChange={(e) => replaceSearch(e.target.value.trim() ? `q=${encodeURIComponent(e.target.value)}` : "")}
           placeholder="Search names, tags and categories"
           aria-label="Search the stash"
           autoComplete="off"

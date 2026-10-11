@@ -36,7 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   const groups = groupsWithCategories().map((g) => ({
     slug: g.slug,
     name: g.name,
-    categories: g.categories.map((c) => ({ slug: c.slug, name: c.name, hasNew: c.hasNew })),
+    categories: g.categories.map((c) => ({ slug: c.slug, name: c.name, newSince: c.newSince })),
   }));
   return (
     <html lang="en" className={`${heading.variable} ${body.variable} ${mono.variable}`}>

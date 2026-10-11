@@ -111,7 +111,7 @@ const item = {
   tags: (flag('tags') || '').split(',').map((t) => t.trim().toLowerCase()).filter(Boolean),
   ...(has('pick') ? { pick: true } : {}),
   ...(status ? { status } : {}),
-  thumbnail, addedAt: new Date().toISOString().slice(0, 10), source: 'manual',
+  thumbnail, addedAt: new Date().toISOString(), source: 'manual',
   order: Math.max(-1, ...existing.map((i) => i.order)) + 1,
 };
 await writeFile(path.join(itemsDir, finalSlug + '.json'), JSON.stringify(item, null, 2) + '\n');

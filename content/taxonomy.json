@@ -84,6 +84,11 @@
               "name": "Shaders and effects"
             }
           ]
+        },
+        {
+          "slug": "motion",
+          "name": "Motion",
+          "description": "Motion design for the web and video: animated references, templates and prompts to recreate them."
         }
       ]
     },
