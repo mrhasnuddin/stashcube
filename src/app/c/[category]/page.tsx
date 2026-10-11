@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Gallery } from "@/components/Gallery";
 import { PageHeader } from "@/components/PageHeader";
 import { getCategory, groupsWithCategories, itemsInCategory } from "@/lib/content";
+import { pageMeta } from "@/lib/site";
 
 export function generateStaticParams() {
   return groupsWithCategories().flatMap((g) => g.categories.map((c) => ({ category: c.slug })));
@@ -12,7 +13,7 @@ export async function generateMetadata(props: PageProps<"/c/[category]">): Promi
   const { category } = await props.params;
   const cat = getCategory(category);
   if (!cat) return {};
-  return { title: cat.name, description: cat.description };
+  return pageMeta({ title: cat.name, description: cat.description, path: `/c/${category}` });
 }
 
 export default async function CategoryPage(props: PageProps<"/c/[category]">) {

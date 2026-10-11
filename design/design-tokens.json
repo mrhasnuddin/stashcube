@@ -316,6 +316,10 @@
       "pixel-blink": {
         "$value": "1100ms",
         "$type": "duration"
+      },
+      "pixel-idle": {
+        "$value": "1500ms",
+        "$type": "duration"
       }
     },
     "easing": {
@@ -490,7 +494,7 @@
     },
     "layout": {
       "sidebar-width": {
-        "$value": "15rem",
+        "$value": "18rem",
         "$type": "dimension"
       },
       "content-max": {
@@ -583,6 +587,10 @@
       },
       "blink-duration": {
         "$value": "{primitive.duration.pixel-blink}",
+        "$type": "duration"
+      },
+      "idle-delay": {
+        "$value": "{primitive.duration.pixel-idle}",
         "$type": "duration"
       }
     },
@@ -730,6 +738,10 @@
       "blink-duration": {
         "$value": "{primitive.duration.pixel-blink}",
         "$type": "duration"
+      },
+      "idle-delay": {
+        "$value": "{primitive.duration.pixel-idle}",
+        "$type": "duration"
       }
     },
     "badge": {
@@ -860,6 +872,28 @@
       "pixel-opacity": {
         "$value": "0.34",
         "$type": "number"
+      }
+    },
+    "scrollbar": {
+      "size": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "inset": {
+        "$value": "4px",
+        "$type": "dimension"
+      },
+      "thumb": {
+        "$value": "{semantic.color.border-strong}",
+        "$type": "color"
+      },
+      "thumb-hover": {
+        "$value": "{semantic.color.primary}",
+        "$type": "color"
+      },
+      "thumb-active": {
+        "$value": "{semantic.color.primary-active}",
+        "$type": "color"
       }
     }
   }

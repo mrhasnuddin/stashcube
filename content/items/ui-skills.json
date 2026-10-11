@@ -11,5 +11,7 @@
   "thumbnail": "/thumbs/ui-skills.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 138
+  "order": 138,
+  "pick": true,
+  "subcategory": "skills"
 }

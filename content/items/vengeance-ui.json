@@ -3,7 +3,7 @@
   "title": "Vengeance UI",
   "url": "https://www.vengenceui.com/",
   "description": "Animated React components for landing pages.",
-  "category": "ui-libraries",
+  "category": "ui",
   "tags": [
     "react",
     "animation",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/vengeance-ui.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 6
+  "order": 6,
+  "subcategory": "libraries"
 }

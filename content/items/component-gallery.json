@@ -3,10 +3,11 @@
   "title": "Component Gallery",
   "url": "https://component.gallery/",
   "description": "A reference of UI components, with real examples from design systems.",
-  "category": "components",
+  "category": "learning",
   "tags": [
     "reference",
-    "design-systems"
+    "design-systems",
+    "education"
   ],
   "thumbnail": "/thumbs/component-gallery.webp",
   "addedAt": "2026-10-10",

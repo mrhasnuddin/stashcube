@@ -2,7 +2,7 @@
   "slug": "iconmonstr",
   "title": "iconmonstr",
   "url": "https://iconmonstr.com/",
-  "description": "Free, simple icons for any project.",
+  "description": "4,700+ free, simple icons in 316 collections.",
   "category": "icons",
   "tags": [
     "simple",
@@ -11,5 +11,6 @@
   "thumbnail": "/thumbs/iconmonstr.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 25
+  "order": 25,
+  "subcategory": "icons"
 }

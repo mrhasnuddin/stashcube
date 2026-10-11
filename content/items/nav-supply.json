@@ -4,12 +4,13 @@
   "url": "https://nav.supply/",
   "description": "Navigation patterns for Framer sites.",
   "category": "inspiration",
-  "subcategory": "galleries",
   "tags": [
+    "framer",
     "navigation"
   ],
   "thumbnail": "/thumbs/nav-supply.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 84
+  "order": 84,
+  "subcategory": "ui-details"
 }

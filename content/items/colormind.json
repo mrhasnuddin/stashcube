@@ -3,7 +3,7 @@
   "title": "Colormind",
   "url": "http://colormind.io/",
   "description": "A color palette generator driven by a neural net.",
-  "category": "colors-gradients",
+  "category": "colors-effects",
   "tags": [
     "palette",
     "generator"
@@ -11,5 +11,6 @@
   "thumbnail": "/thumbs/colormind.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 50
+  "order": 50,
+  "subcategory": "colors-gradients"
 }

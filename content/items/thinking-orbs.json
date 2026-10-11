@@ -1,9 +1,9 @@
 {
   "slug": "thinking-orbs",
   "title": "Thinking Orbs",
-  "url": "https://orbs.jakubantalik.com/",
+  "url": "https://libraries.dev/orbs",
   "description": "Dotted orb loaders for AI interfaces, in nine states.",
-  "category": "components",
+  "category": "ui",
   "tags": [
     "loaders",
     "ai-ui",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/thinking-orbs.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 19
+  "order": 19,
+  "subcategory": "components"
 }

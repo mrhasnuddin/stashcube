@@ -2,7 +2,7 @@
   "slug": "dashboard-icons",
   "title": "Dashboard Icons",
   "url": "https://dashboardicons.com/",
-  "description": "2,800+ icons for services, apps and tools, made for dashboards.",
+  "description": "9,000+ icons and logos for services, apps and tools, made for dashboards.",
   "category": "icons",
   "tags": [
     "apps",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/dashboard-icons.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 27
+  "order": 27,
+  "subcategory": "icons"
 }

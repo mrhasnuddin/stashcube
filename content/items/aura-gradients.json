@@ -3,12 +3,13 @@
   "title": "Aura Gradients",
   "url": "https://auragradients.vercel.app/",
   "description": "A CSS gradient generator: ambient and mesh gradients, copied as CSS or Tailwind.",
-  "category": "colors-gradients",
+  "category": "colors-effects",
   "tags": [
     "gradients"
   ],
   "thumbnail": "/thumbs/aura-gradients.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 53
+  "order": 53,
+  "subcategory": "colors-gradients"
 }

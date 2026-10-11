@@ -3,7 +3,7 @@
   "title": "Amicro",
   "url": "https://amicro.vercel.app/cards",
   "description": "Small React transition and micro-interaction components, added one at a time with a CLI.",
-  "category": "ui-libraries",
+  "category": "ui",
   "tags": [
     "react",
     "micro-interactions",
@@ -12,5 +12,7 @@
   "thumbnail": "/thumbs/amicro.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 10
+  "order": 10,
+  "pick": true,
+  "subcategory": "libraries"
 }

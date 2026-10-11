@@ -3,7 +3,7 @@
   "title": "NEAT",
   "url": "https://neat.firecms.co/",
   "description": "An animated 3D gradient generator that exports to React, Vue or plain JS.",
-  "category": "colors-gradients",
+  "category": "colors-effects",
   "tags": [
     "3d",
     "animated",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/neat.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 51
+  "order": 51,
+  "subcategory": "colors-gradients"
 }

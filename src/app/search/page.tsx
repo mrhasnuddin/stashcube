@@ -3,8 +3,9 @@ import { Suspense } from "react";
 import { PageHeader } from "@/components/PageHeader";
 import { SearchResults } from "@/components/SearchResults";
 import { allItems } from "@/lib/content";
+import { pageMeta } from "@/lib/site";
 
-export const metadata: Metadata = { title: "Search", description: "Search every link in the stash." };
+export const metadata: Metadata = pageMeta({ title: "Search", description: "Search every link in the stash.", path: "/search", noindex: true });
 
 export default function SearchPage() {
   return (

@@ -1,16 +1,17 @@
 {
   "slug": "illoca",
-  "title": "illoca",
+  "title": "Plamo",
   "url": "https://illoca.com/",
-  "description": "An AI design engine for architects, with editable 2D and 3D output.",
+  "description": "An agentic 3D workspace that turns sketches, photos or text into editable parametric 3D models.",
   "category": "inspiration",
-  "subcategory": "saas-ai",
   "tags": [
-    "ai",
-    "3d"
+    "architecture",
+    "3d",
+    "parametric"
   ],
   "thumbnail": "/thumbs/illoca.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 126
+  "order": 126,
+  "subcategory": "architecture"
 }

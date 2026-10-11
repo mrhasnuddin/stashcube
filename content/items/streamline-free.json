@@ -12,5 +12,7 @@
   "thumbnail": "/thumbs/streamline-free.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 26
+  "order": 26,
+  "pick": true,
+  "subcategory": "icons"
 }

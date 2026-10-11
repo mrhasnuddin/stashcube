@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/morflax.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 42
+  "order": 42,
+  "status": "archived"
 }

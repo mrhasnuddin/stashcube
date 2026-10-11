@@ -3,7 +3,7 @@
   "title": "Aceternity UI",
   "url": "https://ui.aceternity.com/",
   "description": "200+ copy-paste React and Tailwind components, blocks and landing page templates.",
-  "category": "ui-libraries",
+  "category": "ui",
   "tags": [
     "react",
     "tailwind",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/aceternity-ui.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 2
+  "order": 2,
+  "subcategory": "libraries"
 }

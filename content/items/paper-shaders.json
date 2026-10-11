@@ -3,7 +3,7 @@
   "title": "Paper Shaders",
   "url": "https://shaders.paper.design/",
   "description": "Zero-dependency shaders as React components or GLSL.",
-  "category": "shaders-effects",
+  "category": "colors-effects",
   "tags": [
     "glsl",
     "react",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/paper-shaders.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 49
+  "order": 49,
+  "subcategory": "shaders-effects"
 }

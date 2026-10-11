@@ -3,7 +3,7 @@
   "title": "Promptefy",
   "url": "https://www.promptefy.online/",
   "description": "Build detailed video prompts, with optional image references.",
-  "category": "prompts",
+  "category": "skills",
   "tags": [
     "video",
     "ai"
@@ -11,5 +11,8 @@
   "thumbnail": "/thumbs/promptefy.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 141
+  "order": 141,
+  "status": "archived",
+  "notes": "The domain expired and is for sale (checked 2026-10-11).",
+  "subcategory": "prompts"
 }

@@ -3,7 +3,7 @@
   "title": "Originkit",
   "url": "https://www.originkit.dev/",
   "description": "Free animated components for modern sites. Copy the code, use it in Framer, or connect over MCP.",
-  "category": "ui-libraries",
+  "category": "ui",
   "tags": [
     "animation",
     "framer",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/originkit.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 4
+  "order": 4,
+  "subcategory": "libraries"
 }

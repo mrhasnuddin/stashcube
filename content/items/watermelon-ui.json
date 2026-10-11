@@ -3,7 +3,7 @@
   "title": "Watermelon UI",
   "url": "https://ui.watermelon.sh/home",
   "description": "React components, dashboards and UI blocks you copy into your project.",
-  "category": "ui-libraries",
+  "category": "ui",
   "tags": [
     "react",
     "dashboards",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/watermelon-ui.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 5
+  "order": 5,
+  "subcategory": "libraries"
 }

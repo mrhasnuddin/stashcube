@@ -1,0 +1,17 @@
+{
+  "slug": "slopcheck",
+  "title": "Slopcheck",
+  "url": "https://ai-slop-checker.vercel.app/",
+  "description": "Checks a link or screenshot for the telltale signs of AI-generated design, in the markup and the pixels.",
+  "category": "tools",
+  "tags": [
+    "ai",
+    "design",
+    "checker"
+  ],
+  "thumbnail": "/thumbs/slopcheck.webp",
+  "addedAt": "2026-10-11",
+  "source": "manual",
+  "order": 155,
+  "pick": true
+}

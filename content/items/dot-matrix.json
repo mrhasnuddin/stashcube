@@ -3,7 +3,7 @@
   "title": "Dot Matrix",
   "url": "https://dotmatrix.zzzzshawn.cloud/",
   "description": "Dot-matrix loaders for React, installed through the shadcn registry.",
-  "category": "components",
+  "category": "ui",
   "tags": [
     "react",
     "loaders",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/dot-matrix.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 16
+  "order": 16,
+  "subcategory": "components"
 }

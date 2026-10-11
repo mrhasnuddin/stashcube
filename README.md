@@ -19,4 +19,6 @@ npm run build        # prerenders every category and item page
 Tokens live in `design/design-tokens.json`. After editing them run `npm run tokens`. The style guide is `design/preview.html` (open it through any static server). Decisions are written up in `docs/DESIGN.md`; the site structure is in `docs/IA.md`.
 
 ## Environment
-`NEXT_PUBLIC_SITE_URL` sets the canonical URL used for metadata, the sitemap and robots.txt (defaults to `http://localhost:3000`).
+`NEXT_PUBLIC_SITE_URL` sets the canonical URL used for metadata, the sitemap, robots.txt and share images. Set it to the real domain once one is attached. On Vercel it falls back to the production URL Vercel provides, and elsewhere to `http://localhost:3000`.
+
+Share images and icons: `node scripts/make-brand-assets.mjs` redraws `public/og/stashcube-og.png` (1200x630, 1.91:1) and `stashcube-og-square.png` (1200x1200, 1:1), `src/app/favicon.ico`, `src/app/apple-icon.png` and the manifest icons in `public/icons/`. Run it after changing the logo or the tagline. Page tags come from `pageMeta()` in `src/lib/site.ts`.

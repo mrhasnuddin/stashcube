@@ -3,7 +3,7 @@
   "title": "SVG Shapes",
   "url": "https://www.shapes.gallery/",
   "description": "Free copy-paste SVG shapes by Monika Michalczyk.",
-  "category": "illustration",
+  "category": "icons",
   "tags": [
     "svg",
     "shapes",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/svg-shapes.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 54
+  "order": 54,
+  "subcategory": "illustrations"
 }

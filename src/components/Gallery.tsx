@@ -89,7 +89,7 @@ export function Gallery({ items, subcategories }: { items: ItemView[]; subcatego
         </div>
       ) : null}
       <p className="label result-count" aria-live="polite">
-        {shown.length === items.length ? `${items.length} links` : `${shown.length} of ${items.length} links`}
+        {shown.length === items.length ? `${items.length} ${items.length === 1 ? "link" : "links"}` : `${shown.length} of ${items.length} links`}
       </p>
       {shown.length > 0 ? (
         <div className="grid">

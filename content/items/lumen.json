@@ -3,7 +3,7 @@
   "title": "LUMEN",
   "url": "https://lumenshaders.vercel.app/",
   "description": "Looping shader art in the browser, with PNG, video and GIF export.",
-  "category": "shaders-effects",
+  "category": "colors-effects",
   "tags": [
     "shaders",
     "generative",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/lumen.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 46
+  "order": 46,
+  "subcategory": "shaders-effects"
 }

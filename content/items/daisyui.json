@@ -3,7 +3,7 @@
   "title": "daisyUI",
   "url": "https://daisyui.com/",
   "description": "A Tailwind plugin that adds semantic component classes and built-in themes.",
-  "category": "ui-libraries",
+  "category": "ui",
   "tags": [
     "tailwind",
     "themes",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/daisyui.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 3
+  "order": 3,
+  "subcategory": "libraries"
 }

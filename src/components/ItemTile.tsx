@@ -22,7 +22,13 @@ export function ItemTile({ item, priority = false }: { item: ItemView; priority?
           ) : (
             <PixelPlaceholder seed={item.slug} />
           )}
-          {item.isNew ? <span className="badge thumb-badge">NEW</span> : null}
+          {item.comingSoon || item.pick || item.isNew ? (
+            <span className="thumb-badges">
+              {item.comingSoon ? <span className="badge soon">COMING SOON</span> : null}
+              {item.pick ? <span className="badge pick">PICK</span> : null}
+              {item.isNew ? <span className="badge">NEW</span> : null}
+            </span>
+          ) : null}
         </div>
         <div className="cap">
           <span>
@@ -53,7 +59,9 @@ export function CategoryTile({ slug, name, group, description, count }: { slug: 
           <p>{description}</p>
         </div>
         <div className="cap">
-          <span className="mono-count">{count} links</span>
+          <span className="mono-count">
+            {count} {count === 1 ? "link" : "links"}
+          </span>
           <PixelArrow />
         </div>
       </Link>

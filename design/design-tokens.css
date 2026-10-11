@@ -74,6 +74,7 @@
   --primitive-duration-pixel-out: 200ms;
   --primitive-duration-pixel-stagger: 40ms;
   --primitive-duration-pixel-blink: 1100ms;
+  --primitive-duration-pixel-idle: 1500ms;
   --primitive-easing-standard: cubic-bezier(0.2, 0, 0, 1);
   --primitive-easing-step: steps(4, end);
   --primitive-easing-pixel-in: cubic-bezier(0.22, 1, 0.36, 1);
@@ -118,7 +119,7 @@
   --spacing-grid-gap: 1rem;
   --spacing-page-gutter: 1.5rem;
   --spacing-section: 3rem;
-  --layout-sidebar-width: 15rem;
+  --layout-sidebar-width: 18rem;
   --layout-content-max: 80rem;
 }
 
@@ -145,6 +146,7 @@
   --button-enter-ease: cubic-bezier(0.22, 1, 0.36, 1);
   --button-exit-ease: cubic-bezier(0.4, 0, 0.2, 1);
   --button-blink-duration: 1100ms;
+  --button-idle-delay: 1500ms;
   --input-bg: #121212;
   --input-border: #2A2A2A;
   --input-focus-ring: #95D914;
@@ -180,6 +182,7 @@
   --sidebar-item-enter-ease: cubic-bezier(0.22, 1, 0.36, 1);
   --sidebar-item-exit-ease: cubic-bezier(0.4, 0, 0.2, 1);
   --sidebar-item-blink-duration: 1100ms;
+  --sidebar-item-idle-delay: 1500ms;
   --badge-new-bg: #95D914;
   --badge-new-fg: #0A0A0A;
   --badge-outline-border: #404040;
@@ -210,4 +213,9 @@
   --texture-dot-gap: 22px;
   --texture-pixel-cell: 8px;
   --texture-pixel-opacity: 0.34;
+  --scrollbar-size: 12px;
+  --scrollbar-inset: 4px;
+  --scrollbar-thumb: #404040;
+  --scrollbar-thumb-hover: #95D914;
+  --scrollbar-thumb-active: #6C9E0E;
 }

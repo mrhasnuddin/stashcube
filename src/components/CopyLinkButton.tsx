@@ -30,10 +30,10 @@ async function copyText(text: string) {
 }
 
 /*
- * Copy-link CTA. The process state lives inside the button: idle, busy and done labels share one grid cell, so the
+ * Copy-link CTA, a secondary action by default (outlined, no pixel cells). The process state lives inside the button: idle, busy and done labels share one grid cell, so the
  * button never changes size. Busy: the letters hop in a stepped wave. Done: a pixel check pops in beside the label.
  */
-export function CopyLinkButton({ url, label = "Copy link" }: { url: string; label?: string }) {
+export function CopyLinkButton({ url, label = "Copy link", variant = "secondary" }: { url: string; label?: string; variant?: "primary" | "secondary" }) {
   const [state, setState] = useState<State>("idle");
   const [announce, setAnnounce] = useState("");
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
@@ -57,7 +57,7 @@ export function CopyLinkButton({ url, label = "Copy link" }: { url: string; labe
   };
 
   return (
-    <button type="button" className="btn p" data-state={state} aria-busy={state === "busy" || undefined} onClick={run}>
+    <button type="button" className={variant === "primary" ? "btn p" : "btn s"} data-state={state} aria-busy={state === "busy" || undefined} onClick={run}>
       <span className="t cta-stack">
         <span className="cta-idle">{label}</span>
         <span className="cta-busy" aria-hidden="true">
@@ -75,7 +75,7 @@ export function CopyLinkButton({ url, label = "Copy link" }: { url: string; labe
       <span className="sr" role="status">
         {announce}
       </span>
-      <PixelCells kind="btn" />
+      {variant === "primary" ? <PixelCells kind="btn" /> : null}
     </button>
   );
 }

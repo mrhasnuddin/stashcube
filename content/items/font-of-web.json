@@ -1,15 +1,17 @@
 {
   "slug": "font-of-web",
-  "title": "Font of Web",
+  "title": "Fudge",
   "url": "https://www.fontofweb.com/",
-  "description": "A daily feed of real-world design, with the fonts behind it.",
-  "category": "fonts",
+  "description": "A growing library of real websites for your AI agent to study, so it makes better design decisions.",
+  "category": "skills",
   "tags": [
-    "inspiration",
-    "discovery"
+    "design-memory",
+    "agents",
+    "inspiration"
   ],
   "thumbnail": "/thumbs/font-of-web.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 32
+  "order": 32,
+  "subcategory": "skills"
 }

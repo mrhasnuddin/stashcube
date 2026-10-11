@@ -11,5 +11,7 @@
   "thumbnail": "/thumbs/its-hover.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 28
+  "order": 28,
+  "pick": true,
+  "subcategory": "icons"
 }

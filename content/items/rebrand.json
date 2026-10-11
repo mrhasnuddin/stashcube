@@ -3,13 +3,15 @@
   "title": "Rebrand",
   "url": "https://www.rebrand.gallery/bentos",
   "description": "Design systems and brand bentos, one image per identity.",
-  "category": "design-systems",
+  "category": "inspiration",
   "tags": [
     "brand",
-    "bento"
+    "bento",
+    "moodboard"
   ],
   "thumbnail": "/thumbs/rebrand.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 60
+  "order": 60,
+  "subcategory": "galleries"
 }

@@ -7,10 +7,13 @@
   "tags": [
     "hero",
     "3d",
-    "tool"
+    "tool",
+    "coming-soon"
   ],
   "thumbnail": "/thumbs/nacre.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 41
+  "order": 41,
+  "status": "coming-soon",
+  "notes": "A waitlist was open on the site when I checked on 2026-10-11."
 }

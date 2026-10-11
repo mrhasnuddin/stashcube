@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "tokens": "node .claude/skills/design-system/scripts/generate-tokens.cjs --config design/design-tokens.json -o src/styles/design-tokens.css",
-    "import-links": "node scripts/import-links.mjs"
+    "import-links": "node scripts/import-links.mjs",
+    "brand": "node scripts/make-brand-assets.mjs"
   },
   "dependencies": {
     "next": "16.4.0",

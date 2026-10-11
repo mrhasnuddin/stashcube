@@ -1,0 +1,152 @@
+[
+  {
+    "version": "0.3.0",
+    "date": "2026-10-11",
+    "title": "Inspiration by industry, and GitHub",
+    "summary": "The Inspiration category is now organised by the kind of site, and every GitHub link has its own category.",
+    "changes": [
+      {
+        "type": "changed",
+        "text": "Inspiration now has ten groups: Galleries, UI Details, Web3 and Crypto, SaaS and AI, 3D and Immersive, Architecture, Corporate and Industrial, Studios and Agencies, Film and Entertainment, and Portfolios. Every one of its 72 links was sorted by what the site is for. The old Other group is gone."
+      },
+      {
+        "type": "added",
+        "text": "A GitHub category under Build for every link that points to a GitHub repo. Web Clone Skill is the first one."
+      },
+      {
+        "type": "changed",
+        "text": "Nav.Supply and Avande moved from Templates to Inspiration, since they are Framer sites to learn from. Nav.Supply is in UI Details and Avande is in SaaS and AI."
+      },
+      {
+        "type": "changed",
+        "minor": true,
+        "text": "Removed three paid links: VibeUI, Morflax and TypeUI."
+      },
+      {
+        "type": "changed",
+        "minor": true,
+        "text": "Plamo moved to Inspiration, in the new Architecture group, and VibeIndex moved to Learning."
+      }
+    ]
+  },
+  {
+    "version": "0.2.0",
+    "date": "2026-10-11",
+    "title": "My go-to stack, a changelog and a category audit",
+    "summary": "Every link was checked against its own site, and the ones filed in the wrong category were moved. Plus a go-to stack and this changelog.",
+    "changes": [
+      {
+        "type": "added",
+        "text": "My go-to stack: the most-used and most-recommended libraries, skills and resources in one place. Eight links to start."
+      },
+      {
+        "type": "added",
+        "text": "A Changelog page, which is this one."
+      },
+      {
+        "type": "added",
+        "text": "COMING SOON marks for links whose site is not live yet. Oxygen UI and Nacre have one."
+      },
+      {
+        "type": "added",
+        "text": "PICK marks on tiles for links that are in the go-to stack."
+      },
+      {
+        "type": "added",
+        "text": "A Learning category under Learn, for references and guides."
+      },
+      {
+        "type": "changed",
+        "text": "Combined related categories to go from 17 to 12. UI Libraries and Components are now UI Components, Icons and Illustration are Icons and Illustrations, Templates and Mockups are one, Colors and Gradients joined Shaders and Effects as Colors and Effects, and Prompts joined Skills. The old splits are filters inside each category, and the old addresses redirect."
+      },
+      {
+        "type": "changed",
+        "text": "Moved 14 links to better categories after reading each official site. Component Gallery, UI Guideline and NameThatUI went to Learning, Rebrand to Inspiration, Kitbitz to Icons and Illustrations, Bencho and Toolcraft to UI Components, Canvas UI to Colors and Effects, Plamo to 3D Tools, Fudge to Skills and Prompts, Diffusion Studio to MCP and Agents, Nav.Supply to Templates and Mockups, Fancy to Studios and Agencies, and Bequant to SaaS and AI."
+      },
+      {
+        "type": "changed",
+        "text": "Renamed Font of Web to Fudge and illoca to Plamo, which is what their sites call them now. Thinking Orbs links to its new home.",
+        "minor": true
+      },
+      {
+        "type": "changed",
+        "text": "Updated descriptions and counts that were out of date, such as the number of icons in Hugeicons, Dashboard Icons and iconmonstr.",
+        "minor": true
+      },
+      {
+        "type": "changed",
+        "text": "Hid three links whose sites are gone: Rewamp UI, Jin Su Park's portfolio and Promptefy, whose domain expired.",
+        "minor": true
+      },
+      {
+        "type": "changed",
+        "text": "Rewrote the home and About copy for AI-native designers and builders, with a credit to DeanStudio."
+      },
+      {
+        "type": "changed",
+        "text": "Sidebar groups are easier to scan: a parent label, a guide line and indented links. The sidebar is a little wider so labels stay on one line."
+      },
+      {
+        "type": "changed",
+        "text": "Slimmer scrollbars that turn lime on hover.",
+        "minor": true
+      },
+      {
+        "type": "changed",
+        "text": "Copy link is now a secondary button, next to the primary Visit site button."
+      },
+      {
+        "type": "fixed",
+        "text": "Counts read \"1 link\" instead of \"1 links\".",
+        "minor": true
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Slopcheck, a tool that reads a link or screenshot and points out what looks AI-generated. It is in Tools and Utilities and in My go-to stack."
+      },
+      {
+        "type": "fixed",
+        "minor": true,
+        "text": "Every hover shape on sidebar items and primary buttons now starts moving 1.5 seconds after the hover begins. Before, only the bars shape did, and it started at an uneven time."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "A favicon and app icons, and share images for links to the site: a wide one for most apps and a square one for WhatsApp, Telegram and iMessage. Every page also has its own title, description and canonical link, and the sitemap now includes My go-to stack and the changelog."
+      }
+    ]
+  },
+  {
+    "version": "0.1.0",
+    "date": "2026-10-11",
+    "title": "First build",
+    "summary": "The first version of Stashcube, a public library of 153 links collected from two Notion lists.",
+    "changes": [
+      {
+        "type": "added",
+        "text": "153 links in 18 categories, each with a one-line description and a thumbnail from the site itself."
+      },
+      {
+        "type": "added",
+        "text": "Category galleries with sub-category and tag filters, item pages with related links, live search and a recently added feed."
+      },
+      {
+        "type": "added",
+        "text": "A pixel design system: lime on black, a hover and press effect on sidebar items and buttons, and a dithered texture in the top-right corner."
+      },
+      {
+        "type": "added",
+        "text": "A Copy link button that shows its progress inside the button without changing size."
+      },
+      {
+        "type": "added",
+        "text": "An About page, a sitemap, and a Menu button for small screens."
+      },
+      {
+        "type": "added",
+        "text": "Scripts to add a link, fetch its thumbnail and keep the whole library as plain files in the repo."
+      }
+    ]
+  }
+]

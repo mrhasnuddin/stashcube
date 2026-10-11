@@ -1,9 +1,21 @@
 import Link from "next/link";
 import { CategoryTile, ItemTile } from "@/components/ItemTile";
 import { PageHeader } from "@/components/PageHeader";
+import { DeanStudioLink, STUDIO_URL } from "@/components/DeanStudioLink";
 import { PixelCells } from "@/components/PixelCells";
 import { PixelArrow } from "@/components/pixel";
 import { groupsWithCategories, latestItems, totalCount } from "@/lib/content";
+import { SITE_NAME, SITE_URL, STUDIO_NAME } from "@/lib/site";
+
+// Describes only what the page really is: a site with a search page, published by DeanStudio.
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_NAME,
+  url: SITE_URL,
+  publisher: { "@type": "Organization", name: STUDIO_NAME, url: STUDIO_URL },
+  potentialAction: { "@type": "SearchAction", target: `${SITE_URL}/search?q={search_term_string}`, "query-input": "required name=search_term_string" },
+}).replace(/</g, "\\u003c");
 
 export default function Home() {
   const groups = groupsWithCategories();
@@ -11,19 +23,21 @@ export default function Home() {
   const latest = latestItems(8);
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
       <PageHeader trail={[{ label: "Home" }]} />
       <section className="hero">
-        <span className="label">Public library</span>
+        <span className="label">
+          Curated by <DeanStudioLink />
+        </span>
         <h1 style={{ marginTop: "var(--primitive-spacing-4)" }}>
-          Every good link,
-          <br />
-          <span style={{ color: "var(--color-primary)" }}>stashed.</span>
+          Tools and libraries for <span style={{ color: "var(--color-primary)" }}>AI-native designers and builders.</span>
         </h1>
         <p>
-          UI libraries, 3D tools, icons, fonts and sites worth studying. {totalCount()} links in {categoryCount} categories, saved one at a time.
+          UI libraries, 3D tools, icons, fonts, AI skills and inspiration for starting a new project, picked for people who design and build with AI. {totalCount()} links
+          across {categoryCount} categories.
         </p>
         <div className="row" style={{ marginTop: "var(--primitive-spacing-8)" }}>
-          <Link className="btn p" href="/c/ui-libraries">
+          <Link className="btn p" href="/c/ui">
             <span className="t">
               Browse the stash <PixelArrow />
             </span>

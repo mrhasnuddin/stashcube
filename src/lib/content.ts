@@ -21,13 +21,15 @@ export type Item = {
   tags: string[];
   thumbnail: string | null;
   pricing?: "free" | "freemium" | "paid" | "open-source";
-  status?: "favorite" | "to-review" | "archived";
+  status?: "favorite" | "to-review" | "archived" | "coming-soon";
+  /** Part of "My go-to stack" */
+  pick?: boolean;
   notes?: string;
   addedAt: string;
   source?: string;
   order: number;
 };
-export type ItemView = Item & { isNew: boolean; categoryName: string };
+export type ItemView = Item & { isNew: boolean; categoryName: string; comingSoon: boolean };
 
 /*
  * Content is read once at module scope. These are synchronous local reads, so Next treats them as
@@ -61,7 +63,12 @@ const earliest = dates[0];
 const newCutoff = latest ? new Date(latest).getTime() - 14 * 86_400_000 : 0;
 const isNew = (i: Item) => latest !== earliest && new Date(i.addedAt).getTime() > newCutoff;
 
-const view = (i: Item): ItemView => ({ ...i, isNew: isNew(i), categoryName: categoryBySlug.get(i.category)?.name ?? i.category });
+const view = (i: Item): ItemView => ({
+  ...i,
+  isNew: isNew(i),
+  categoryName: categoryBySlug.get(i.category)?.name ?? i.category,
+  comingSoon: i.status === "coming-soon",
+});
 
 export const allItems = (): ItemView[] => items.map(view);
 export const getItem = (slug: string): ItemView | undefined => {
@@ -69,7 +76,18 @@ export const getItem = (slug: string): ItemView | undefined => {
   return i && view(i);
 };
 export const getCategory = (slug: string) => categoryBySlug.get(slug);
-export const itemsInCategory = (slug: string): ItemView[] => items.filter((i) => i.category === slug).map(view);
+// Grouped by sub-category in the taxonomy order (so "All" reads as industries, not import order), then by import order.
+export const itemsInCategory = (slug: string): ItemView[] => {
+  const subs = categoryBySlug.get(slug)?.subcategories ?? [];
+  const rank = (i: Item) => {
+    const r = subs.findIndex((s) => s.slug === i.subcategory);
+    return r === -1 ? subs.length : r;
+  };
+  return items
+    .filter((i) => i.category === slug)
+    .sort((a, b) => rank(a) - rank(b))
+    .map(view);
+};
 export const latestItems = (n: number): ItemView[] =>
   [...items].sort((a, b) => b.addedAt.localeCompare(a.addedAt) || b.order - a.order).slice(0, n).map(view);
 
@@ -106,3 +124,24 @@ export function related(item: Item, n: number): ItemView[] {
 }
 
 export const totalCount = () => items.length;
+
+/** The order categories appear in on the "My go-to stack" page; any other category follows in taxonomy order. */
+const PICK_ORDER = ["skills", "ui", "icons", "fonts"];
+
+export function picksByCategory() {
+  const picked = items.filter((i) => i.pick);
+  const rank = (slug: string) => {
+    const r = PICK_ORDER.indexOf(slug);
+    return r === -1 ? PICK_ORDER.length + categories.findIndex((c) => c.slug === slug) : r;
+  };
+  return [...new Set(picked.map((i) => i.category))]
+    .sort((a, b) => rank(a) - rank(b))
+    .map((slug) => ({ category: categoryBySlug.get(slug)!, items: picked.filter((i) => i.category === slug).map(view) }));
+}
+export const pickCount = () => items.filter((i) => i.pick).length;
+
+export type ChangeType = "added" | "changed" | "fixed";
+export type ChangelogEntry = { version: string; date: string; title: string; summary?: string; changes: { type: ChangeType; text: string; minor?: boolean }[] };
+const changelogFile = path.join(process.cwd(), "content", "changelog.json");
+const changelog: ChangelogEntry[] = fs.existsSync(changelogFile) ? JSON.parse(fs.readFileSync(changelogFile, "utf8")) : [];
+export const getChangelog = (): ChangelogEntry[] => changelog;

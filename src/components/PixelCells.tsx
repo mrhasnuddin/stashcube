@@ -63,8 +63,9 @@ function fill(zone: HTMLElement, name: string, kind: Kind) {
       const hv = +hover[r][c];
       const ac = +ACTIVE[r][c];
       const e = v.e(r, c);
-      const b = blink && hv && top[c] === r ? `;--b:${c}" data-b="` : "";
-      html += `<i style="--h:${hv};--a:${ac};--d:${v.d(r, c, hv, ac)};--de:${e};--dx:${3 - e}${b}"></i>`;
+      const isTop = blink && hv && top[c] === r;
+      const style = `--h:${hv};--a:${ac};--d:${v.d(r, c, hv, ac)};--de:${e};--dx:${3 - e}${isTop ? `;--b:${c}` : ""}`;
+      html += `<i style="${style}"${hv ? " data-h" : ""}${isTop ? " data-b" : ""}></i>`;
     }
   zone.innerHTML = html;
 }

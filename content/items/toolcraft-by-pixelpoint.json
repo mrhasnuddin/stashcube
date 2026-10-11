@@ -2,14 +2,16 @@
   "slug": "toolcraft-by-pixelpoint",
   "title": "Toolcraft by Pixelpoint",
   "url": "https://pixelpoint.io/blog/how-to-craft-personal-design-tools-with-toolcraft/",
-  "description": "How to build personal design tools with Toolcraft.",
-  "category": "articles",
+  "description": "A starter kit and UI library from Pixel Point for building creative tools with AI.",
+  "category": "ui",
   "tags": [
-    "tools",
-    "blog"
+    "starter-kit",
+    "ai",
+    "creative-tools"
   ],
   "thumbnail": "/thumbs/toolcraft-by-pixelpoint.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 144
+  "order": 144,
+  "subcategory": "libraries"
 }

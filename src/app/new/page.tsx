@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { ItemTile } from "@/components/ItemTile";
 import { PageHeader } from "@/components/PageHeader";
 import { latestItems } from "@/lib/content";
+import { pageMeta } from "@/lib/site";
 
-export const metadata: Metadata = { title: "Recently added", description: "The newest links in the stash." };
+export const metadata: Metadata = pageMeta({ title: "Recently added", description: "The newest links in the stash.", path: "/new" });
 
 export default function NewPage() {
   const items = latestItems(48);

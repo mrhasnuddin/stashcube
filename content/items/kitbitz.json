@@ -3,7 +3,7 @@
   "title": "Kitbitz",
   "url": "https://kitbitz.art/",
   "description": "2,000+ free hand-drawn illustrations.",
-  "category": "illustration",
+  "category": "icons",
   "tags": [
     "illustrations",
     "free",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/kitbitz.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 152
+  "order": 152,
+  "subcategory": "illustrations"
 }

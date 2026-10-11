@@ -3,7 +3,7 @@
   "title": "Frakt",
   "url": "https://frakt.app/",
   "description": "A layer-based shader editor that exports code for web, Android and iOS.",
-  "category": "shaders-effects",
+  "category": "colors-effects",
   "tags": [
     "shaders",
     "editor",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/frakt.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 47
+  "order": 47,
+  "subcategory": "shaders-effects"
 }

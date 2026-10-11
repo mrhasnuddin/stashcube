@@ -2,10 +2,11 @@
   "slug": "diffusion-studio",
   "title": "Diffusion Studio",
   "url": "https://diffusion.studio/",
-  "description": "A video editor on an infinite canvas, with export up to 4K.",
-  "category": "tools",
+  "description": "A video editor built for agents: use it from Claude Code, Codex or Cursor.",
+  "category": "mcp-agents",
   "tags": [
     "video",
+    "agents",
     "editor"
   ],
   "thumbnail": "/thumbs/diffusion-studio.webp",

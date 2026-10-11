@@ -3,7 +3,7 @@
   "title": "Gradient Shimmer",
   "url": "https://gradient-shimmer.vercel.app/",
   "description": "Multi-stop text shimmer for React.",
-  "category": "components",
+  "category": "ui",
   "tags": [
     "react",
     "text",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/gradient-shimmer.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 17
+  "order": 17,
+  "subcategory": "components"
 }

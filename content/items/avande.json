@@ -3,7 +3,7 @@
   "title": "Avande",
   "url": "https://collaborative-patterns-858685.framer.app/",
   "description": "A Framer template for an AI automation agency.",
-  "category": "templates",
+  "category": "inspiration",
   "tags": [
     "framer",
     "ai-agency"
@@ -11,5 +11,6 @@
   "thumbnail": "/thumbs/avande.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 39
+  "order": 39,
+  "subcategory": "saas-ai"
 }

@@ -4,9 +4,10 @@
   "url": "https://fancy.design/",
   "description": "A design subscription service for web, apps, branding and 3D.",
   "category": "inspiration",
-  "subcategory": "other",
+  "subcategory": "studios-agencies",
   "tags": [
-    "design"
+    "design-subscription",
+    "branding"
   ],
   "thumbnail": "/thumbs/fancy-design.webp",
   "addedAt": "2026-10-10",

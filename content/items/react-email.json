@@ -3,7 +3,7 @@
   "title": "React Email",
   "url": "https://react.email/",
   "description": "Unstyled React and TypeScript components for building email.",
-  "category": "ui-libraries",
+  "category": "ui",
   "tags": [
     "react",
     "email",
@@ -12,5 +12,6 @@
   "thumbnail": "/thumbs/react-email.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 12
+  "order": 12,
+  "subcategory": "libraries"
 }

@@ -8,6 +8,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { PixelCells } from "@/components/PixelCells";
 import { PixelArrow, PixelPlaceholder } from "@/components/pixel";
 import { allItems, getCategory, getItem, neighbours, related } from "@/lib/content";
+import { OG_LANDSCAPE, pageMeta } from "@/lib/site";
 
 export function generateStaticParams() {
   return allItems().map((i) => ({ slug: i.slug }));
@@ -17,11 +18,12 @@ export async function generateMetadata(props: PageProps<"/item/[slug]">): Promis
   const { slug } = await props.params;
   const item = getItem(slug);
   if (!item) return {};
-  return {
+  return pageMeta({
     title: item.title,
     description: item.description || `${item.title} in ${item.categoryName}`,
-    openGraph: item.thumbnail ? { images: [{ url: item.thumbnail, width: 800, height: 500 }] } : undefined,
-  };
+    path: `/item/${slug}`,
+    images: item.thumbnail ? [{ url: item.thumbnail, width: 800, height: 500, alt: item.title }, OG_LANDSCAPE] : undefined,
+  });
 }
 
 const host = (url: string) => new URL(url).hostname.replace(/^www\./, "");
@@ -44,6 +46,12 @@ export default async function ItemPage(props: PageProps<"/item/[slug]">) {
             {cat.name}
             {sub ? ` / ${sub.name}` : ""}
           </span>
+          {item.comingSoon || item.pick ? (
+            <p className="badges">
+              {item.comingSoon ? <span className="badge soon">COMING SOON</span> : null}
+              {item.pick ? <span className="badge pick">PICK</span> : null}
+            </p>
+          ) : null}
           <h1>{item.title}</h1>
           {item.description ? <p className="lede">{item.description}</p> : null}
           <p className="label host">

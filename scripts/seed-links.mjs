@@ -1,3 +1,5 @@
+// INITIAL IMPORT ONLY. content/items/*.json is the source of truth now: many items were recategorised, renamed or flagged after the first import.
+// Do not re-run scripts/import-links.mjs with --force, it would overwrite those edits.
 // Initial import from the two Notion pages ("Useful Link", "Inspo Website"), deduplicated.
 // Row: [name, url, category, tags, subcategory?]
 // Tracking params (ref=...) are stripped. Items the Notion pages listed twice appear once.
@@ -19,7 +21,7 @@ export const seed = [
 
   // Build / Components
   ['Evil Charts', 'https://evilcharts.com/', 'components', ['react', 'charts', 'shadcn']],
-  ['Component Gallery', 'https://component.gallery/', 'components', ['reference', 'design-systems']],
+  ['Component Gallery', 'https://component.gallery/', 'learning', ['reference', 'design-systems', 'education']],
   ['Very Good Components', 'https://www.goodcomponents.io/', 'components', ['html', 'copy-paste']],
   ['Dot Matrix', 'https://dotmatrix.zzzzshawn.cloud/', 'components', ['react', 'loaders', 'shadcn']],
   ['Gradient Shimmer', 'https://gradient-shimmer.vercel.app/', 'components', ['react', 'text', 'animation']],

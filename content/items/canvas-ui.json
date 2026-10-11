@@ -3,15 +3,16 @@
   "title": "Canvas UI",
   "url": "https://canvasui.dev/components",
   "description": "Canvas effects as components for React, Vue, Svelte, Solid and plain JS.",
-  "category": "ui-libraries",
+  "category": "colors-effects",
   "tags": [
     "canvas",
-    "react",
-    "vue",
-    "svelte"
+    "webgl",
+    "ascii",
+    "react"
   ],
   "thumbnail": "/thumbs/canvas-ui.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 7
+  "order": 7,
+  "subcategory": "shaders-effects"
 }

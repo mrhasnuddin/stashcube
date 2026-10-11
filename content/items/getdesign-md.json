@@ -11,5 +11,7 @@
   "thumbnail": "/thumbs/getdesign-md.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 134
+  "order": 134,
+  "pick": true,
+  "subcategory": "skills"
 }

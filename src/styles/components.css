@@ -21,8 +21,6 @@ aside{border-right:1px solid var(--color-border);padding:var(--primitive-spacing
 .brand{display:flex;align-items:center;gap:var(--primitive-spacing-3);padding:0 var(--primitive-spacing-2) var(--primitive-spacing-6)}
 .wm{font:var(--font-heading-weight) 1.5rem/1 var(--font-heading);letter-spacing:-0.04em}
 .wm b{color:var(--color-primary);font-weight:inherit}
-.grp{margin-top:var(--primitive-spacing-6)}
-.grp .label{display:block;padding:0 var(--primitive-spacing-4) var(--primitive-spacing-2)}
 .nav{position:relative;display:flex;align-items:center;justify-content:space-between;height:var(--sidebar-item-height);padding:0 calc(var(--sidebar-item-cell-size) * 4 + 12px) 0 var(--sidebar-item-padding-x);color:var(--sidebar-item-fg);font-size:var(--primitive-fontSize-sm);font-weight:500;text-decoration:none;overflow:hidden;margin-bottom:2px}
 .nav>span{position:relative;z-index:1}
 .nav .pxz{position:absolute;right:0;top:0;width:calc(var(--sidebar-item-cell-size) * 4);height:100%;display:grid;grid:repeat(4,1fr)/repeat(4,1fr)}
@@ -41,7 +39,7 @@ main{position:relative;isolation:isolate;padding:var(--spacing-page-gutter) var(
 .crumb .cur{background:var(--color-foreground);color:var(--color-background);padding:3px 6px}
 section{margin-bottom:var(--spacing-section)}
 section>.label{display:block;margin-bottom:var(--primitive-spacing-4)}
-.hero h1{font-size:var(--primitive-fontSize-5xl)}
+.hero h1{font-size:var(--primitive-fontSize-5xl);text-wrap:balance;max-width:16ch}
 .hero p{color:var(--color-muted-foreground);max-width:46ch;margin-top:var(--primitive-spacing-4);font-size:var(--primitive-fontSize-lg)}
 .sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:var(--primitive-spacing-3)}
 .sw div{height:72px;padding:var(--primitive-spacing-2);display:flex;flex-direction:column;justify-content:flex-end;font:var(--primitive-fontSize-xs)/1.3 var(--font-mono);border:1px solid var(--color-border)}
@@ -56,8 +54,15 @@ section>.label{display:block;margin-bottom:var(--primitive-spacing-4)}
 .btn .pxz i{background:var(--button-pixel-color);opacity:var(--s,0);transform:translateX(calc((1 - var(--s,0)) * 4px)) scale(var(--s,0));transition:transform var(--button-exit-duration) var(--button-exit-ease) calc(var(--dx) * var(--button-stagger)),opacity var(--button-exit-duration) linear calc(var(--dx) * var(--button-stagger))}
 .btn:hover .pxz i,.btn:focus-visible .pxz i{--s:var(--h);transition:transform var(--button-enter-duration) var(--button-enter-ease) calc(var(--de) * var(--button-stagger)),opacity var(--button-enter-duration) ease-out calc(var(--de) * var(--button-stagger))}
 .btn:active .pxz i{--s:var(--a);transition:transform var(--button-enter-duration) var(--button-enter-ease) calc(var(--d) * var(--button-stagger)),opacity var(--button-enter-duration) ease-out calc(var(--d) * var(--button-stagger))}
-.nav[data-pv="bars"]:hover:not([aria-current]):not(:active) i[data-b]{animation:bar-blink var(--sidebar-item-blink-duration) ease-in-out infinite;animation-delay:calc(var(--sidebar-item-enter-duration) + var(--b) * 160ms)}
-.btn[data-pv="bars"]:hover:not(:active) i[data-b]{animation:bar-blink var(--button-blink-duration) ease-in-out infinite;animation-delay:calc(var(--button-enter-duration) + var(--b) * 160ms)}
+/* idle loops: whichever shape was picked, it starts moving 1.5s after the hover begins and stops on leave or press */
+.nav[data-pv="chevron"]:hover:not([aria-current]):not(:active) i[data-h]{animation:px-nudge var(--sidebar-item-blink-duration) ease-in-out infinite;animation-delay:calc(var(--sidebar-item-idle-delay) + var(--de) * 110ms)}
+.nav[data-pv="stair"]:hover:not([aria-current]):not(:active) i[data-h]{animation:px-pulse var(--sidebar-item-blink-duration) ease-in-out infinite;animation-delay:calc(var(--sidebar-item-idle-delay) + var(--de) * 130ms)}
+.nav[data-pv="bars"]:hover:not([aria-current]):not(:active) i[data-b]{animation:bar-blink var(--sidebar-item-blink-duration) ease-in-out infinite;animation-delay:calc(var(--sidebar-item-idle-delay) + var(--b) * 160ms)}
+.btn[data-pv="chevron"]:hover:not(:active) i[data-h]{animation:px-nudge var(--button-blink-duration) ease-in-out infinite;animation-delay:calc(var(--button-idle-delay) + var(--de) * 110ms)}
+.btn[data-pv="stair"]:hover:not(:active) i[data-h]{animation:px-pulse var(--button-blink-duration) ease-in-out infinite;animation-delay:calc(var(--button-idle-delay) + var(--de) * 130ms)}
+.btn[data-pv="bars"]:hover:not(:active) i[data-b]{animation:bar-blink var(--button-blink-duration) ease-in-out infinite;animation-delay:calc(var(--button-idle-delay) + var(--b) * 160ms)}
+@keyframes px-nudge{0%,100%{transform:translateX(0) scale(1)}50%{transform:translateX(4px) scale(1)}}
+@keyframes px-pulse{0%,100%{transform:translateX(0) scale(1)}50%{transform:translateX(0) scale(.35)}}
 @keyframes bar-blink{0%,100%{transform:scale(1)}50%{transform:scale(.25)}}
 .legend{display:flex;gap:var(--primitive-spacing-8);flex-wrap:wrap}
 .legend figure{display:flex;align-items:center;gap:var(--primitive-spacing-3);margin:0}
@@ -178,3 +183,79 @@ a.tag{text-decoration:none}
   aside nav{display:none;padding-top:var(--primitive-spacing-4)}
   aside[data-open="true"] nav{display:block}
 }
+
+/* ---------- sidebar groups: parent label, guide line, indented children ---------- */
+.grp{margin-top:var(--primitive-spacing-8)}
+.grp-head{display:flex;align-items:center;gap:var(--primitive-spacing-2);padding:0 var(--primitive-spacing-4) var(--primitive-spacing-2)}
+.grp-head::before{content:"";width:6px;height:6px;flex:none;background:var(--color-primary)}
+.grp-head::after{content:"";flex:1;height:1px;background:var(--color-border)}
+.grp-head .label{color:var(--color-foreground);font-weight:500}
+.grp-list{margin-left:19px;border-left:1px solid var(--color-border)}
+.grp-list .nav{font-weight:400}
+.nav>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav.root{font-weight:500;color:var(--color-foreground)}
+
+/* ---------- scrollbars: slim square thumb, lime on hover ---------- */
+::-webkit-scrollbar{width:var(--scrollbar-size);height:var(--scrollbar-size);background:transparent}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{min-height:48px;border:var(--scrollbar-inset) solid transparent;border-radius:0;background:var(--scrollbar-thumb);background-clip:padding-box}
+::-webkit-scrollbar-thumb:hover{background:var(--scrollbar-thumb-hover);background-clip:padding-box}
+::-webkit-scrollbar-thumb:active{background:var(--scrollbar-thumb-active);background-clip:padding-box}
+::-webkit-scrollbar-corner{background:transparent}
+@supports (-moz-appearance:none){*{scrollbar-width:thin;scrollbar-color:var(--scrollbar-thumb) transparent}}
+
+/* ---------- text links inside mono labels (credit lines) ---------- */
+.label a{color:inherit;text-decoration:underline;text-decoration-color:var(--color-border-strong);text-underline-offset:3px}
+.label a:hover,.label a:focus-visible{color:var(--color-primary);text-decoration-color:var(--color-primary)}
+.credit{margin:var(--primitive-spacing-8) var(--primitive-spacing-4) var(--primitive-spacing-2)}
+.prose a{color:var(--color-foreground);text-decoration:underline;text-decoration-color:var(--color-primary);text-underline-offset:3px}
+.prose a:hover{color:var(--color-primary)}
+
+/* ---------- badges on thumbnails ---------- */
+.thumb-badges{position:absolute;top:8px;left:8px;z-index:2;display:flex;gap:4px;flex-wrap:wrap;max-width:calc(100% - 16px)}
+.badge.pick{background:var(--color-background);color:var(--color-primary);box-shadow:inset 0 0 0 1px var(--color-primary)}
+.badge.soon{background:var(--color-warning);color:var(--color-primary-foreground)}
+
+/* ---------- changelog ---------- */
+.log-box{max-width:760px;margin-top:var(--primitive-spacing-12)}
+.log-flag{display:block;margin-bottom:var(--primitive-spacing-6);color:var(--color-muted-foreground)}
+.log-latest .log-flag{color:var(--color-primary)}
+.log-entry + .log-entry{margin-top:var(--primitive-spacing-12)}
+.log-meta{display:flex;gap:var(--primitive-spacing-4);align-items:center}
+.log-version{color:var(--color-foreground);font-weight:500}
+.log-entry h2{font-size:var(--primitive-fontSize-2xl);margin-top:var(--primitive-spacing-3)}
+.log-summary{color:var(--color-muted-foreground);margin-top:var(--primitive-spacing-2)}
+.log-group{margin-top:var(--primitive-spacing-5)}
+.log-type{display:inline-block;padding:3px 6px;margin-bottom:var(--primitive-spacing-2);background:var(--color-surface-raised);color:var(--color-foreground)}
+.log-added{box-shadow:inset 2px 0 0 var(--color-primary)}
+.log-changed{box-shadow:inset 2px 0 0 var(--color-border-strong)}
+.log-fixed{box-shadow:inset 2px 0 0 var(--color-warning)}
+.log-small{margin-top:var(--primitive-spacing-8)}
+.log-small .log-type{background:none;padding-left:0;color:var(--color-muted-foreground)}
+.log-small li{font-size:var(--primitive-fontSize-sm)}
+.log-group ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--primitive-spacing-2)}
+.log-group li{color:var(--color-muted-foreground);padding-left:var(--primitive-spacing-4);position:relative}
+.log-group li::before{content:"";position:absolute;left:0;top:0.7em;width:4px;height:4px;background:var(--color-border-strong)}
+/* earlier builds: invisible accordion (native details). A pixel plus and a Show/Hide label on the right say the row opens. */
+.log-fold + .log-fold{margin-top:var(--primitive-spacing-2)}
+.log-fold summary{display:flex;align-items:flex-start;gap:var(--primitive-spacing-6);padding:var(--primitive-spacing-4) 0;cursor:pointer;list-style:none}
+.log-fold summary::-webkit-details-marker{display:none}
+.log-fold summary:focus-visible{outline:1px solid var(--color-primary);outline-offset:4px}
+.log-fold h2,.log-fold .log-version{color:var(--color-muted-foreground);transition:color var(--primitive-duration-fast) linear}
+.log-fold h2{font-size:var(--primitive-fontSize-xl);margin-top:var(--primitive-spacing-2)}
+.log-fold[open] h2,.log-fold[open] .log-version{color:var(--color-foreground)}
+.log-toggle{margin-left:auto;display:flex;align-items:center;gap:var(--primitive-spacing-3);padding-top:2px;color:var(--color-primary);font-family:var(--font-mono);font-size:var(--primitive-fontSize-xs);text-transform:uppercase;letter-spacing:.08em;transition:color var(--primitive-duration-fast) linear}
+.log-toggle::after{content:"Show";order:-1}
+.log-fold[open] .log-toggle::after{content:"Hide"}
+.log-plus{position:relative;width:10px;height:10px;flex:none}
+.log-plus::before,.log-plus::after{content:"";position:absolute;background:currentColor}
+.log-plus::before{left:0;top:4px;width:10px;height:2px}
+.log-plus::after{left:4px;top:0;width:2px;height:10px;transition:transform var(--primitive-duration-fast) steps(2)}
+.log-fold[open] .log-plus::after{transform:scaleY(0)}
+.log-fold summary:hover h2,.log-fold summary:hover .log-version{color:var(--color-primary)}
+.log-fold summary:hover .log-toggle{color:var(--color-primary-hover)}
+.log-body{padding-bottom:var(--primitive-spacing-8)}
+@media (prefers-reduced-motion:reduce){.log-plus::after,.log-fold h2,.log-fold .log-version,.log-toggle{transition:none}}
+
+.grp-foot{margin-top:var(--primitive-spacing-8)}
+.item .badges{display:flex;gap:var(--primitive-spacing-2);margin-top:var(--primitive-spacing-3)}

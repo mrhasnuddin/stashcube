@@ -1,13 +1,13 @@
 {
   "slug": "ui-guideline",
   "title": "UI Guideline",
-  "url": "https://www.uiguideline.com/",
+  "url": "https://www.uiguideline.com/components",
   "description": "How the largest design systems name, define and document components.",
-  "category": "design-systems",
+  "category": "learning",
   "tags": [
     "guides",
-    "figma",
-    "components"
+    "components",
+    "education"
   ],
   "thumbnail": "/thumbs/ui-guideline.webp",
   "addedAt": "2026-10-10",

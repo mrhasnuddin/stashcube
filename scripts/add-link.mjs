@@ -1,5 +1,5 @@
 // Add one link to the stash: reads the page, saves a thumbnail, writes content/items/<slug>.json.
-//   node scripts/add-link.mjs <url> --category=<slug> [--sub=<slug>] [--tags=a,b,c] [--name="Name"] [--desc="One line."] [--force]
+//   node scripts/add-link.mjs <url> --category=<slug> [--sub=<slug>] [--tags=a,b,c] [--name="Name"] [--desc="One line."] [--pick] [--status=coming-soon] [--force]
 // Thumbnail: the page's social image if it has one, otherwise a screenshot taken in your installed Chrome.
 // Categories live in content/taxonomy.json. Run without --category to list them.
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
@@ -30,9 +30,12 @@ function listCategories() {
 }
 
 if (!url) { console.error('Usage: node scripts/add-link.mjs <url> --category=<slug> [--sub=<slug>] [--tags=a,b] [--name="Name"] [--desc="One line."]\n\nCategories:'); listCategories(); process.exit(2); }
-const category = flag('category');
+// A github.com link goes to the GitHub tab unless told otherwise
+const category = flag('category') ?? (url && new URL(url).hostname === 'github.com' ? 'github' : undefined);
 const cat = categories.find((c) => c.slug === category);
 if (!cat) { console.error(category ? `Unknown category "${category}".` : 'Missing --category.', 'Pick one of:'); listCategories(); process.exit(2); }
+const status = flag('status');
+if (status && !['favorite', 'to-review', 'archived', 'coming-soon'].includes(status)) { console.error(`Unknown --status "${status}". Use favorite, to-review, archived or coming-soon.`); process.exit(2); }
 const sub = flag('sub');
 if (sub && !cat.subcategories?.some((s) => s.slug === sub)) { console.error(`"${sub}" is not a sub-category of ${cat.slug}.`); process.exit(2); }
 if (cat.subcategories && !sub) console.warn(`Note: ${cat.slug} has sub-categories (${cat.subcategories.map((s) => s.slug).join(', ')}). Add --sub=... to file it properly.`);
@@ -106,6 +109,8 @@ const item = {
   slug: finalSlug, title: title || slug, url, description, category: cat.slug,
   ...(sub ? { subcategory: sub } : {}),
   tags: (flag('tags') || '').split(',').map((t) => t.trim().toLowerCase()).filter(Boolean),
+  ...(has('pick') ? { pick: true } : {}),
+  ...(status ? { status } : {}),
   thumbnail, addedAt: new Date().toISOString().slice(0, 10), source: 'manual',
   order: Math.max(-1, ...existing.map((i) => i.order)) + 1,
 };

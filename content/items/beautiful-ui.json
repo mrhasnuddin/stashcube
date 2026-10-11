@@ -3,7 +3,7 @@
   "title": "Beautiful UI",
   "url": "https://www.beautifului.dev/",
   "description": "Copy-paste components for chat agents: thinking states, approvals and other agent UI.",
-  "category": "ui-libraries",
+  "category": "ui",
   "tags": [
     "ai-ui",
     "agents",
@@ -12,5 +12,7 @@
   "thumbnail": "/thumbs/beautiful-ui.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 8
+  "order": 8,
+  "pick": true,
+  "subcategory": "libraries"
 }
