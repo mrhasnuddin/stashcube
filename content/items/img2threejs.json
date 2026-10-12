@@ -14,5 +14,8 @@
   "addedAt": "2026-10-11",
   "source": "manual",
   "order": 156,
-  "pick": true
+  "pick": true,
+  "install": [
+    "npx --yes img2threejs@latest install --host claude"
+  ]
 }

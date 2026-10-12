@@ -17,7 +17,9 @@ The library is plain files in this repo: `content/items/<slug>.json` for each li
    node scripts/add-link.mjs <url> --category=<slug> [--sub=<slug>] [--tags=a,b,c] [--name="Name"] [--desc="One line."] [--pick] [--status=coming-soon]
    ```
 
-   Add `--pick` when the user says the link is one of their go-to tools (it appears on the "My go-to stack" page). Add `--status=coming-soon` when the site is not live yet (the tile and item page show a COMING SOON mark).
+   Add `--pick` when the user says the link is one of their go-to tools (it appears on the "My go-to stack" page). For a skill or plugin, add the install command from its README with `--install="..."` (repeat the flag for several lines). It shows in the list view and on the item page with a copy button. Use the Claude Code command when the README gives one.
+
+   Add `--status=coming-soon` when the site is not live yet (the tile and item page show a COMING SOON mark).
 
    Run it once per link. Add `--force` only when the user wants a duplicate. Without `--category` it prints the category list.
 4. **Write the description yourself.** The fetched description is usually marketing copy. Replace it with one plain sentence, under about 100 characters, that says what the link is and what it is for. Pass it with `--desc=` or edit the JSON afterwards. No hype words ("powerful", "seamless", "cutting-edge"), no lists of three, no closing flourish. Use the `humanizer` skill if the draft sounds generated.

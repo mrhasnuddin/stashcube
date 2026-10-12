@@ -261,3 +261,42 @@ a.tag{text-decoration:none}
 
 .grp-foot{margin-top:var(--primitive-spacing-8)}
 .item .badges{display:flex;gap:var(--primitive-spacing-2);margin-top:var(--primitive-spacing-3)}
+
+/* ---------- list view ---------- */
+.listing-bar{display:flex;align-items:center;justify-content:space-between;gap:var(--primitive-spacing-4);margin:var(--primitive-spacing-3) 0}
+.listing-bar .result-count{margin:0}
+.view-toggle{display:inline-flex;border:1px solid var(--color-border-strong)}
+.view-toggle button{display:inline-flex;align-items:center;gap:var(--primitive-spacing-2);padding:6px 10px;background:none;border:0;cursor:pointer;color:var(--color-muted-foreground);font:var(--primitive-fontWeight-medium) 0.6875rem/1.2 var(--font-mono);letter-spacing:.04em;text-transform:uppercase;transition:color var(--primitive-duration-fast) linear,background var(--primitive-duration-fast) steps(2,end)}
+.view-toggle button + button{border-left:1px solid var(--color-border-strong)}
+.view-toggle button:hover{color:var(--color-foreground)}
+.view-toggle button[aria-pressed="true"]{background:var(--color-primary);color:var(--color-primary-foreground)}
+.view-toggle button:focus-visible{outline:2px solid var(--color-ring);outline-offset:2px}
+.list{list-style:none;padding:0;margin:0;border-top:1px solid var(--color-border)}
+.list > li{border-bottom:1px solid var(--color-border)}
+.lrow summary{display:grid;grid-template-columns:44px minmax(150px,230px) 1fr auto 12px;align-items:center;gap:var(--primitive-spacing-5);padding:var(--primitive-spacing-4) var(--primitive-spacing-2);cursor:pointer;list-style:none;transition:background var(--primitive-duration-fast) linear}
+.lrow summary::-webkit-details-marker{display:none}
+.lrow summary:hover,.lrow[open] summary{background:var(--color-surface)}
+.lrow summary:focus-visible{outline:1px solid var(--color-primary);outline-offset:-1px}
+.row-thumb{position:relative;display:block;width:44px;height:44px;overflow:hidden;background:var(--color-surface-raised)}
+.row-thumb img{width:100%;height:100%;object-fit:cover;object-position:left top}
+.row-title{display:flex;flex-direction:column;gap:2px;min-width:0}
+.row-title b{font:var(--font-heading-weight) var(--primitive-fontSize-lg)/1.15 var(--font-heading);letter-spacing:var(--primitive-tracking-tight);transition:color var(--primitive-duration-fast) linear;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lrow summary:hover .row-title b,.lrow[open] .row-title b{color:var(--color-primary)}
+.row-title small{font:var(--primitive-fontWeight-medium) 0.6875rem/1.2 var(--font-mono);color:var(--color-muted-foreground);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row-desc{color:var(--color-muted-foreground);font-size:var(--primitive-fontSize-sm)}
+.row-meta{display:flex;gap:var(--primitive-spacing-2);flex-wrap:wrap;justify-content:flex-end}
+.row-plus{color:var(--color-primary)}
+.lrow[open] .row-plus::after{transform:scaleY(0)}
+.row-body{display:flex;flex-direction:column;gap:var(--primitive-spacing-4);padding:var(--primitive-spacing-4) var(--primitive-spacing-2) var(--primitive-spacing-6) calc(44px + var(--primitive-spacing-5) + var(--primitive-spacing-2));background:var(--color-surface)}
+.row-actions{display:flex;gap:var(--primitive-spacing-3);flex-wrap:wrap}
+.install{display:flex;align-items:flex-start;gap:var(--primitive-spacing-4);background:var(--color-background);border:1px solid var(--color-border-strong);padding:var(--primitive-spacing-3) var(--primitive-spacing-3) var(--primitive-spacing-3) var(--primitive-spacing-4)}
+.install pre{margin:0;flex:1;min-width:0;overflow-x:auto;font:var(--primitive-fontWeight-regular) var(--primitive-fontSize-sm)/1.6 var(--font-mono);color:var(--color-foreground);scrollbar-width:thin}
+.install .btn{flex:none}
+@media (max-width:820px){
+  .lrow summary{grid-template-columns:44px 1fr 12px;row-gap:var(--primitive-spacing-2)}
+  .row-desc,.row-meta{grid-column:2 / 3}
+  .row-meta{justify-content:flex-start}
+  .row-plus{grid-column:3;grid-row:1}
+  .row-body{padding-left:var(--primitive-spacing-2)}
+  .install{flex-direction:column}
+}

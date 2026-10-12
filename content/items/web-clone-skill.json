@@ -12,5 +12,8 @@
   "thumbnail": "/thumbs/web-clone-skill.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 139
+  "order": 139,
+  "install": [
+    "git clone https://github.com/Jane-xiaoer/claude-skill-web-clone.git ~/.claude/skills/web-clone"
+  ]
 }

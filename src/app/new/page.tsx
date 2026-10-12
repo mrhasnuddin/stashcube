@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ItemTile } from "@/components/ItemTile";
+import { ItemCollection } from "@/components/ItemCollection";
+import { ViewToggle } from "@/components/ViewToggle";
 import { PageHeader } from "@/components/PageHeader";
 import { latestItems } from "@/lib/content";
 import { pageMeta } from "@/lib/site";
@@ -16,11 +17,11 @@ export default function NewPage() {
         <h1>Recently added</h1>
         <p>The newest links, most recent first.</p>
       </div>
-      <div className="grid">
-        {items.map((i, n) => (
-          <ItemTile key={i.slug} item={i} priority={n < 4} />
-        ))}
+      <div className="listing-bar">
+        <p className="label result-count">{items.length} links</p>
+        <ViewToggle />
       </div>
+      <ItemCollection items={items} />
     </>
   );
 }

@@ -3,7 +3,8 @@
 import { useMemo, useSyncExternalStore } from "react";
 import type { ItemView } from "@/lib/content";
 import { getSearch, getServerSearch, replaceSearch, subscribeSearch } from "@/lib/url-search";
-import { ItemTile } from "./ItemTile";
+import { ItemCollection } from "./ItemCollection";
+import { ViewToggle } from "./ViewToggle";
 import { PixelSearch } from "./pixel";
 
 function score(item: ItemView, tokens: string[]) {
@@ -46,15 +47,14 @@ export function SearchResults({ items }: { items: ItemView[] }) {
           autoComplete="off"
         />
       </label>
-      <p className="label result-count" aria-live="polite">
-        {q.trim() ? `${results.length} ${results.length === 1 ? "result" : "results"} for “${q.trim()}”` : `${items.length} links in the stash`}
-      </p>
-      {q.trim() && results.length === 0 ? <p className="empty">Nothing found. Try a shorter word, or a tag like react or webgl.</p> : null}
-      <div className="grid">
-        {(q.trim() ? results : []).map((i, n) => (
-          <ItemTile key={i.slug} item={i} priority={n < 4} />
-        ))}
+      <div className="listing-bar">
+        <p className="label result-count" aria-live="polite">
+          {q.trim() ? `${results.length} ${results.length === 1 ? "result" : "results"} for “${q.trim()}”` : `${items.length} links in the stash`}
+        </p>
+        <ViewToggle />
       </div>
+      {q.trim() && results.length === 0 ? <p className="empty">Nothing found. Try a shorter word, or a tag like react or webgl.</p> : null}
+      <ItemCollection items={q.trim() ? results : []} />
     </>
   );
 }

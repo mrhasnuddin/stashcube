@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CopyLinkButton } from "@/components/CopyLinkButton";
+import { CopyButton } from "@/components/CopyButton";
+import { InstallBlock } from "@/components/InstallBlock";
 import { ItemTile } from "@/components/ItemTile";
 import { PageHeader } from "@/components/PageHeader";
 import { PixelCells } from "@/components/PixelCells";
@@ -64,8 +65,14 @@ export default async function ItemPage(props: PageProps<"/item/[slug]">) {
               </span>
               <PixelCells kind="btn" />
             </a>
-            <CopyLinkButton url={item.url} />
+            <CopyButton text={item.url} />
           </div>
+          {item.install?.length ? (
+            <div style={{ marginTop: "var(--primitive-spacing-6)" }}>
+              <span className="label">Install</span>
+              <InstallBlock lines={item.install} />
+            </div>
+          ) : null}
           {item.tags.length > 0 ? (
             <div className="chips" style={{ marginTop: "var(--primitive-spacing-6)" }}>
               {item.tags.map((t) => (

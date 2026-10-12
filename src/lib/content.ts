@@ -25,6 +25,8 @@ export type Item = {
   /** Part of "My go-to stack" */
   pick?: boolean;
   notes?: string;
+  /** Commands to install it (skills, plugins), shown with a copy button */
+  install?: string[];
   addedAt: string;
   source?: string;
   order: number;

@@ -1,0 +1,20 @@
+{
+  "slug": "superpowers",
+  "title": "Superpowers",
+  "url": "https://github.com/obra/superpowers",
+  "description": "A skills framework and software development method for coding agents.",
+  "category": "github",
+  "tags": [
+    "agents",
+    "skills",
+    "methodology",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/superpowers.webp",
+  "addedAt": "2026-10-12T10:10:16.710Z",
+  "source": "manual",
+  "order": 168,
+  "install": [
+    "/plugin install superpowers@claude-plugins-official"
+  ]
+}

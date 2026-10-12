@@ -1,0 +1,21 @@
+{
+  "slug": "ponytail",
+  "title": "Ponytail",
+  "url": "https://github.com/DietrichGebert/ponytail",
+  "description": "A plugin that makes an AI agent write less code, reusing what the project already has.",
+  "category": "github",
+  "tags": [
+    "agents",
+    "skills",
+    "claude-code",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/ponytail.webp",
+  "addedAt": "2026-10-12T09:12:22.767Z",
+  "source": "manual",
+  "order": 164,
+  "install": [
+    "/plugin marketplace add DietrichGebert/ponytail",
+    "/plugin install ponytail@ponytail"
+  ]
+}

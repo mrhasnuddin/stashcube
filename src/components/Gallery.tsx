@@ -3,7 +3,8 @@
 import { useMemo, useSyncExternalStore } from "react";
 import type { ItemView, Subcategory } from "@/lib/content";
 import { getSearch, getServerSearch, replaceSearch, subscribeSearch } from "@/lib/url-search";
-import { ItemTile } from "./ItemTile";
+import { ItemCollection } from "./ItemCollection";
+import { ViewToggle } from "./ViewToggle";
 
 function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
@@ -72,15 +73,14 @@ export function Gallery({ items, subcategories }: { items: ItemView[]; subcatego
           ))}
         </div>
       ) : null}
-      <p className="label result-count" aria-live="polite">
-        {shown.length === items.length ? `${items.length} ${items.length === 1 ? "link" : "links"}` : `${shown.length} of ${items.length} links`}
-      </p>
+      <div className="listing-bar">
+        <p className="label result-count" aria-live="polite">
+          {shown.length === items.length ? `${items.length} ${items.length === 1 ? "link" : "links"}` : `${shown.length} of ${items.length} links`}
+        </p>
+        <ViewToggle />
+      </div>
       {shown.length > 0 ? (
-        <div className="grid">
-          {shown.map((i, n) => (
-            <ItemTile key={i.slug} item={i} priority={n < 4} />
-          ))}
-        </div>
+        <ItemCollection items={shown} showCategory={false} />
       ) : (
         <p className="empty">Nothing matches those filters. Clear a tag or switch sub-category.</p>
       )}

@@ -13,5 +13,9 @@
   "thumbnail": "/thumbs/text-to-cad.webp",
   "addedAt": "2026-10-12T08:18:29.458Z",
   "source": "manual",
-  "order": 163
+  "order": 163,
+  "install": [
+    "claude plugin marketplace add earthtojake/text-to-cad#latest",
+    "claude plugin install text-to-cad@earthtojake"
+  ]
 }

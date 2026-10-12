@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ItemTile } from "@/components/ItemTile";
+import { ItemCollection } from "@/components/ItemCollection";
+import { ViewToggle } from "@/components/ViewToggle";
 import { PageHeader } from "@/components/PageHeader";
 import { pickCount, picksByCategory } from "@/lib/content";
 import { pageMeta } from "@/lib/site";
@@ -23,17 +24,17 @@ export default function PicksPage() {
           The most-used and most-recommended libraries, skills and resources, kept short on purpose. {pickCount()} links.
         </p>
       </div>
+      <div className="listing-bar">
+        <span />
+        <ViewToggle />
+      </div>
       {groups.map((g) => (
         <section key={g.category.slug}>
           <div className="section-head">
             <span className="label">{g.category.name}</span>
             <Link href={`/c/${g.category.slug}`}>See all {g.category.name}</Link>
           </div>
-          <div className="grid">
-            {g.items.map((i) => (
-              <ItemTile key={i.slug} item={i} />
-            ))}
-          </div>
+          <ItemCollection items={g.items} showCategory={false} />
         </section>
       ))}
     </>

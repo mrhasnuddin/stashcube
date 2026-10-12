@@ -46,6 +46,7 @@ The source of truth is `content/taxonomy.json`.
 | `thumbnail` | `/thumbs/<slug>.webp` (800x500), or `null` for the pixel placeholder |
 | `pricing?`, `status?`, `pick?`, `notes?` | `status`: `favorite`, `to-review`, `coming-soon` (shows a COMING SOON mark), `archived` (hidden). `pick: true` adds the link to My go-to stack and shows a PICK mark |
 | `addedAt`, `source`, `order` | `addedAt` is a date for the first import and a full ISO timestamp for links added later. Only links with a timestamp get the NEW mark, for 4 days after they are added (decided in the browser by `NewBadge`) |
+| `install` | Optional list of install command lines (skills, plugins). Shown in the list view and on the item page with a copy button |
 
 ## Content workflow
 - First import: `scripts/seed-links.mjs` (from the two Notion pages, deduplicated) through `scripts/import-links.mjs`, then `scripts/browser-fill.mjs` for sites that block plain requests. `scripts/apply-descriptions.mjs` writes the hand-written one-liners.

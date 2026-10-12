@@ -30,10 +30,10 @@ async function copyText(text: string) {
 }
 
 /*
- * Copy-link CTA, a secondary action by default (outlined, no pixel cells). The process state lives inside the button: idle, busy and done labels share one grid cell, so the
+ * Copy CTA (a link, or an install command), a secondary action by default (outlined, no pixel cells). The process state lives inside the button: idle, busy and done labels share one grid cell, so the
  * button never changes size. Busy: the letters hop in a stepped wave. Done: a pixel check pops in beside the label.
  */
-export function CopyLinkButton({ url, label = "Copy link", variant = "secondary" }: { url: string; label?: string; variant?: "primary" | "secondary" }) {
+export function CopyButton({ text, label = "Copy link", variant = "secondary" }: { text: string; label?: string; variant?: "primary" | "secondary" }) {
   const [state, setState] = useState<State>("idle");
   const [announce, setAnnounce] = useState("");
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
@@ -44,7 +44,7 @@ export function CopyLinkButton({ url, label = "Copy link", variant = "secondary"
     setState("busy");
     setAnnounce("Copying");
     const started = performance.now();
-    const ok = await copyText(url);
+    const ok = await copyText(text);
     // keep the busy state visible long enough to read, even though copying is instant
     const wait = Math.max(0, 700 - (performance.now() - started));
     timers.current.push(

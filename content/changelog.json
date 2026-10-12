@@ -11,6 +11,10 @@
       },
       {
         "type": "added",
+        "text": "A list view next to the grid on every listing. Each row opens straight to the official link or the GitHub repo, and for skills and plugins it shows the install command with a copy button. The choice is remembered in your browser."
+      },
+      {
+        "type": "added",
         "text": "A GitHub category under Build for every link that points to a GitHub repo. Web Clone Skill is the first one."
       },
       {
@@ -61,6 +65,11 @@
         "type": "added",
         "minor": true,
         "text": "text-to-cad in GitHub, a plugin that lets an AI agent generate CAD models."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Ponytail, flightcn, Security Audit Skill, gstack and Superpowers in GitHub."
       }
     ]
   },

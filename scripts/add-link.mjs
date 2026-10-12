@@ -1,5 +1,5 @@
 // Add one link to the stash: reads the page, saves a thumbnail, writes content/items/<slug>.json.
-//   node scripts/add-link.mjs <url> --category=<slug> [--sub=<slug>] [--tags=a,b,c] [--name="Name"] [--desc="One line."] [--pick] [--status=coming-soon] [--force]
+//   node scripts/add-link.mjs <url> --category=<slug> [--sub=<slug>] [--tags=a,b,c] [--name="Name"] [--desc="One line."] [--pick] [--status=coming-soon] [--install="command" (repeat for several lines)] [--force]
 // Thumbnail: the page's social image if it has one, otherwise a screenshot taken in your installed Chrome.
 // Categories live in content/taxonomy.json. Run without --category to list them.
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
@@ -110,6 +110,7 @@ const item = {
   ...(sub ? { subcategory: sub } : {}),
   tags: (flag('tags') || '').split(',').map((t) => t.trim().toLowerCase()).filter(Boolean),
   ...(has('pick') ? { pick: true } : {}),
+  ...(args.some((a) => a.startsWith('--install=')) ? { install: args.filter((a) => a.startsWith('--install=')).map((a) => a.slice(10)) } : {}),
   ...(status ? { status } : {}),
   thumbnail, addedAt: new Date().toISOString(), source: 'manual',
   order: Math.max(-1, ...existing.map((i) => i.order)) + 1,
