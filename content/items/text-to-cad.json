@@ -1,0 +1,17 @@
+{
+  "slug": "text-to-cad",
+  "title": "text-to-cad",
+  "url": "https://github.com/earthtojake/text-to-cad",
+  "description": "A plugin that lets an AI agent generate CAD models as STEP, STL or 3MF files and check them for manufacturing.",
+  "category": "github",
+  "tags": [
+    "cad",
+    "3d",
+    "agents",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/text-to-cad.webp",
+  "addedAt": "2026-10-12T08:18:29.458Z",
+  "source": "manual",
+  "order": 163
+}

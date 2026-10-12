@@ -56,6 +56,11 @@
         "type": "changed",
         "minor": true,
         "text": "NEW marks are gone from the current links. From now on a link gets one for 4 days after it is added, then it disappears."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "text-to-cad in GitHub, a plugin that lets an AI agent generate CAD models."
       }
     ]
   },
