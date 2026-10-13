@@ -70,6 +70,16 @@
         "type": "added",
         "minor": true,
         "text": "Ponytail, flightcn, Security Audit Skill, gstack and Superpowers in GitHub."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Heron AI in Inspiration, under Architecture."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "public-apis in GitHub."
       }
     ]
   },

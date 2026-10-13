@@ -1,0 +1,18 @@
+{
+  "slug": "heron-ai",
+  "title": "Heron AI",
+  "url": "https://heronaiapp.com/",
+  "description": "An AI agent that works inside design tools, shown with architectural drawings and building-code checks.",
+  "category": "inspiration",
+  "subcategory": "architecture",
+  "tags": [
+    "architecture",
+    "ai",
+    "design-tools",
+    "agency-built"
+  ],
+  "thumbnail": "/thumbs/heron-ai.webp",
+  "addedAt": "2026-10-13T10:35:13.053Z",
+  "source": "manual",
+  "order": 169
+}

@@ -10,7 +10,7 @@ function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () =>
   return (
     <button type="button" className="tag" aria-pressed={pressed} onClick={onClick}>
       <i />
-      {children}
+      <span>{children}</span>
     </button>
   );
 }
@@ -53,7 +53,7 @@ export function Gallery({ items, subcategories }: { items: ItemView[]; subcatego
   return (
     <>
       {subcategories.length > 0 ? (
-        <div className="chips" role="group" aria-label="Sub-category">
+        <div className="chips fill" style={{ "--chip-min": "14rem" } as React.CSSProperties} role="group" aria-label="Sub-category">
           <Chip pressed={sub === null} onClick={() => pickSub(null)}>
             All
           </Chip>
@@ -65,7 +65,7 @@ export function Gallery({ items, subcategories }: { items: ItemView[]; subcatego
         </div>
       ) : null}
       {topTags.length > 0 ? (
-        <div className="chips" role="group" aria-label="Tags">
+        <div className="chips fill" style={{ "--chip-min": "9.5rem" } as React.CSSProperties} role="group" aria-label="Tags">
           {topTags.map((t) => (
             <Chip key={t} pressed={tags.includes(t)} onClick={() => toggleTag(t)}>
               {t}
