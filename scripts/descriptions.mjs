@@ -139,6 +139,7 @@ export const descriptions = {
   'space': 'Keep every project on your Mac without filling your disk.',
   'soul': 'A landing page built on an animated canvas.',
   'sunmetalon': 'Metal recycling that turns manufacturing waste into revenue.',
+  'united-carriers': 'Freight forwarding, land transport and customs brokerage across APAC.',
   // AI
   'typeui': '94 design skill files for AI tools like Claude, Codex and Cursor.',
   'hue': 'An open-source skill that generates a full design system for Claude Code and Codex.',
