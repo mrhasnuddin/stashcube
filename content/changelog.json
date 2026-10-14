@@ -85,6 +85,11 @@
         "type": "added",
         "minor": true,
         "text": "United Carriers in Inspiration, under Corporate and Industrial."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "diagram-design in GitHub."
       }
     ]
   },

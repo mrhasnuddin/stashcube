@@ -1,0 +1,23 @@
+{
+  "slug": "diagram-design",
+  "title": "diagram-design",
+  "url": "https://github.com/cathrynlavery/diagram-design",
+  "description": "Editorial diagram design for coding agents: 44 diagram types as self-contained HTML and SVG.",
+  "category": "github",
+  "tags": [
+    "diagrams",
+    "agents",
+    "skills",
+    "open-source",
+    "svg"
+  ],
+  "install": [
+    "npx skills add cathrynlavery/diagram-design",
+    "/plugin marketplace add cathrynlavery/diagram-design",
+    "/plugin install diagram-design@diagram-design"
+  ],
+  "thumbnail": "/thumbs/diagram-design.webp",
+  "addedAt": "2026-10-14T16:58:01.470Z",
+  "source": "manual",
+  "order": 172
+}

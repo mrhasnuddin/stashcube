@@ -150,6 +150,7 @@ export const descriptions = {
   'ui-skills': 'A curated directory of UI skills for design engineers.',
   'web-clone-skill': 'A Claude skill for cloning websites.',
   'public-apis': 'A collective list of free APIs for use in software and web development.',
+  'diagram-design': 'Editorial diagram design for coding agents: 44 diagram types as self-contained HTML and SVG.',
   'design-prompts': '31+ design styles, each with an AI-ready prompt to recreate it.',
   'promptefy': 'Build detailed video prompts, with optional image references.',
   'graphify': 'Your codebase as a knowledge graph your AI assistant can query. Open source and on-device.',
