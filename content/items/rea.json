@@ -1,0 +1,16 @@
+{
+  "slug": "rea",
+  "title": "REA",
+  "url": "https://rea.tools/",
+  "description": "Reverse-engineering tools for coding agents.",
+  "category": "tools",
+  "tags": [
+    "agents",
+    "reverse-engineering",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/rea.webp",
+  "addedAt": "2026-10-16T17:10:24.412Z",
+  "source": "manual",
+  "order": 186
+}

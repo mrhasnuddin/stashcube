@@ -1,0 +1,18 @@
+{
+  "slug": "audiocn",
+  "title": "audiocn",
+  "url": "https://www.audiocn.dev/",
+  "description": "259 audio components for React and shadcn/ui: mixers, meters, knobs and waveforms.",
+  "category": "ui",
+  "subcategory": "components",
+  "tags": [
+    "react",
+    "shadcn",
+    "audio",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/audiocn.webp",
+  "addedAt": "2026-10-16T17:10:14.050Z",
+  "source": "manual",
+  "order": 180
+}

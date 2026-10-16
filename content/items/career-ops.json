@@ -1,0 +1,17 @@
+{
+  "slug": "career-ops",
+  "title": "career-ops",
+  "url": "https://career-ops.org/",
+  "description": "An open-source AI job search agent that runs in your CLI and tailors your CV.",
+  "category": "tools",
+  "tags": [
+    "ai",
+    "agents",
+    "career",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/career-ops.webp",
+  "addedAt": "2026-10-16T17:10:23.545Z",
+  "source": "manual",
+  "order": 185
+}

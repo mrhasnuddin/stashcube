@@ -1,0 +1,21 @@
+{
+  "slug": "agent-skills",
+  "title": "Agent Skills",
+  "url": "https://skills.addy.ie/",
+  "description": "24 production-grade engineering skills for AI coding agents, by Addy Osmani.",
+  "category": "skills",
+  "subcategory": "skills",
+  "tags": [
+    "engineering",
+    "skills",
+    "agents",
+    "open-source"
+  ],
+  "install": [
+    "npx skills add addyosmani/agent-skills"
+  ],
+  "thumbnail": "/thumbs/agent-skills.webp",
+  "addedAt": "2026-10-16T17:10:10.774Z",
+  "source": "manual",
+  "order": 178
+}

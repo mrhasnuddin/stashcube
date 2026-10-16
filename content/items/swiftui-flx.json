@@ -1,0 +1,18 @@
+{
+  "slug": "swiftui-flx",
+  "title": "swiftui-flx",
+  "url": "https://swiftui.flexnative.com/",
+  "description": "Open-source SwiftUI components for iPhone, iPad and Mac, copied in the shadcn way.",
+  "category": "ui",
+  "subcategory": "components",
+  "tags": [
+    "swiftui",
+    "ios",
+    "macos",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/swiftui-flx.webp",
+  "addedAt": "2026-10-16T17:10:18.976Z",
+  "source": "manual",
+  "order": 182
+}

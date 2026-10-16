@@ -1,0 +1,17 @@
+{
+  "slug": "sitereel",
+  "title": "sitereel",
+  "url": "https://sitereel.ai/#library",
+  "description": "Website designs with interactive previews and copyable AI prompts.",
+  "category": "skills",
+  "subcategory": "prompts",
+  "tags": [
+    "prompts",
+    "websites",
+    "ai"
+  ],
+  "thumbnail": "/thumbs/sitereel.webp",
+  "addedAt": "2026-10-16T17:10:32.574Z",
+  "source": "manual",
+  "order": 188
+}

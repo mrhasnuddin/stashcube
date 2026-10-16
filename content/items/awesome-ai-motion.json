@@ -1,0 +1,18 @@
+{
+  "slug": "awesome-ai-motion",
+  "title": "Awesome AI Motion",
+  "url": "https://gongnyang.github.io/awesome-ai-motion/site/index.html",
+  "description": "A catalogue of motion techniques for AI agents, each with parameters, code and a prompt.",
+  "category": "motion",
+  "tags": [
+    "motion",
+    "prompts",
+    "skills",
+    "catalogue",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/awesome-ai-motion.webp",
+  "addedAt": "2026-10-16T17:09:34.304Z",
+  "source": "manual",
+  "order": 173
+}

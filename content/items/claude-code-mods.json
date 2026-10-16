@@ -1,0 +1,16 @@
+{
+  "slug": "claude-code-mods",
+  "title": "Claude Code Mods",
+  "url": "https://mods.aidojo.si/",
+  "description": "A catalogue of 4,000+ Claude Code mods scanned from GitHub, with what each one can access.",
+  "category": "learning",
+  "tags": [
+    "claude-code",
+    "directory",
+    "mods"
+  ],
+  "thumbnail": "/thumbs/claude-code-mods.webp",
+  "addedAt": "2026-10-16T17:10:13.062Z",
+  "source": "manual",
+  "order": 179
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "boardui",
+  "title": "BoardUI",
+  "url": "https://www.boardui.com/",
+  "description": "85 React components and blocks for dashboards, including 19 chart cards.",
+  "category": "ui",
+  "subcategory": "libraries",
+  "tags": [
+    "react",
+    "dashboards",
+    "charts",
+    "tailwind"
+  ],
+  "thumbnail": "/thumbs/boardui.webp",
+  "addedAt": "2026-10-16T17:10:20.126Z",
+  "source": "manual",
+  "order": 183
+}
