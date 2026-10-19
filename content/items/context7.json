@@ -1,0 +1,21 @@
+{
+  "slug": "context7",
+  "title": "Context7",
+  "url": "https://github.com/upstash/context7",
+  "description": "Up-to-date, version-specific documentation and code examples fetched directly into your AI coding agent.",
+  "category": "github",
+  "tags": [
+    "ai",
+    "agents",
+    "mcp",
+    "docs",
+    "developer-tools"
+  ],
+  "install": [
+    "npx ctx7 setup"
+  ],
+  "thumbnail": "/thumbs/context7.webp",
+  "addedAt": "2026-10-19T16:29:00.319Z",
+  "source": "manual",
+  "order": 200
+}

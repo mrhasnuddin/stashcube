@@ -1,0 +1,22 @@
+{
+  "slug": "habblaud",
+  "title": "Habblaud",
+  "url": "https://github.com/marmottajr/habblaud",
+  "description": "A virtual pixel-art office for Claude Code and Codex agents to visualize background tasks in real time.",
+  "category": "learning",
+  "tags": [
+    "agents",
+    "claude-code",
+    "dashboards",
+    "retro",
+    "open-source"
+  ],
+  "install": [
+    "git clone https://github.com/marmottajr/habblaud.git",
+    "cd habblaud && npm install"
+  ],
+  "thumbnail": "/thumbs/habblaud.webp",
+  "addedAt": "2026-10-19T16:16:37.513Z",
+  "source": "manual",
+  "order": 197
+}

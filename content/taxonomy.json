@@ -55,6 +55,11 @@
           ]
         },
         {
+          "slug": "backend",
+          "name": "Backend",
+          "description": "Databases, authentication, APIs and serverless infrastructure for your stack."
+        },
+        {
           "slug": "github",
           "name": "GitHub",
           "description": "Repositories worth cloning, forking or learning from."

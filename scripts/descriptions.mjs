@@ -25,6 +25,7 @@ export const descriptions = {
   'thinking-orbs': 'Dotted orb loaders for AI interfaces, in nine states.',
   'toggles': 'Animated theme toggles for React, Svelte and Vue. Install with shadcn, npm or copy the source.',
   'supahero': 'A library of website hero sections.',
+  'transitions-dev': 'A collection of essential UI transitions and micro-interactions for web apps and AI coding agents.',
   // Icons
   'isocons': 'Carefully crafted isometric icons.',
   'svg-repo': 'Over 500,000 free SVG vectors and icons.',
@@ -47,6 +48,9 @@ export const descriptions = {
   'lander-studio-blocks': 'Free Figma blocks, website sections, app screens and dashboards.',
   'saas-landing-page': 'Curated landing page examples, templates and UI patterns from SaaS companies.',
   'avande': 'A Framer template for an AI automation agency.',
+  // Backend
+  'hornethive': 'Managed PostgreSQL hosting with instant REST and GraphQL APIs and an MCP server for AI agents.',
+  'supabase': 'An open-source Firebase alternative with PostgreSQL database, authentication, instant APIs, realtime and storage.',
   // Create
   'cobe': 'A 5KB WebGL globe.',
   'nacre': 'A tool for making 3D hero sections.',
@@ -63,6 +67,7 @@ export const descriptions = {
   'colorflow': 'A mesh gradient editor with live preview and export.',
   'aura-gradients': 'A CSS gradient generator: ambient and mesh gradients, copied as CSS or Tailwind.',
   'svg-shapes': 'Free copy-paste SVG shapes by Monika Michalczyk.',
+  'playthru': 'Run animated product demos on your real UI with a gliding cursor and camera zoom, in 5 KB.',
   'mockups-design': 'Free premium mockups for personal and commercial work.',
   // Brand
   'logoinspo': '1,200+ logos you can search by style, industry and color.',
@@ -94,6 +99,7 @@ export const descriptions = {
   'branding-website': 'Branding examples you can filter by style, color, typeface and industry.',
   'agency-gallery': 'Creative agencies and agency portfolios, updated regularly.',
   'inspora': 'An archive of recent visual design and creative work.',
+  'regards-design': '2,770+ website sections from curated sites, searchable by look in plain words or over MCP.',
   // Inspiration: web3 and crypto
   'taiko': 'A permissionless, Ethereum-equivalent rollup.',
   'shardeum': 'A layer 1 blockchain run by community nodes.',
@@ -109,6 +115,7 @@ export const descriptions = {
   'tenbin': 'A tokenization protocol for FX, commodities and precious metals.',
   'drip': 'A platform for creators and communities, built on Solana.',
   'lvcidia-roadmap': 'The roadmap for a space-themed gaming metaverse.',
+  'x6sense': 'A curated reference board and design inspiration canvas for crypto and Web3 landing pages.',
   // Inspiration: studios and agencies
   'fantik-studio': 'A branding, web and motion studio for startups, SaaS and web3.',
   'active-theory': 'A creative studio making immersive web experiences since 2012.',
@@ -121,6 +128,7 @@ export const descriptions = {
   'hype': 'A crypto and emerging-tech marketing agency.',
   'electra-filmworks': 'A Los Angeles production studio.',
   'm-studio-paris': 'Three daylight photo studios in Paris.',
+  'kargul-studio': 'A design and engineering studio for websites, digital products and branding.',
   // Inspiration: portfolios
   'jin-su-park': 'Portfolio of a product designer focused on craft and AI experiences.',
   'dmitrii-dark': 'Full-stack developer and technical artist.',
@@ -134,6 +142,7 @@ export const descriptions = {
   'glaido': 'Voice dictation that types in any app.',
   'eternacloud': 'Design standards software for data center equipment teams.',
   'liveblocks': 'Collaboration infrastructure for people and AI working inside your app.',
+  'overseer': 'A monitoring dashboard for AI agents tracking evaluations, traces, token budgets and latency.',
   'contra-rate-calculator': 'A calculator that compares hiring a contractor with a full-time employee.',
   'greptile': 'AI code review that knows your whole codebase.',
   'maket-brand-kit': 'A brand kit page: logos, colors, typography and usage guidelines.',
@@ -157,6 +166,8 @@ export const descriptions = {
   'favstash-creator-skills': 'AI skills for coding agents to research, script, edit and publish short-form video.',
   'harvey': 'Autonomous AI sales agent for Claude Code and Codex to prospect, write emails and book meetings.',
   'axe-core': 'Accessibility engine for automated web UI testing.',
+  'earshot': 'A CPU-only audio toolkit and MCP server for coding agents to hear, review and generate sound.',
+  'context7': 'Up-to-date, version-specific documentation and code examples fetched directly into your AI coding agent.',
   'design-prompts': '31+ design styles, each with an AI-ready prompt to recreate it.',
   'promptefy': 'Build detailed video prompts, with optional image references.',
   'graphify': 'Your codebase as a knowledge graph your AI assistant can query. Open source and on-device.',
@@ -168,8 +179,12 @@ export const descriptions = {
   'design-engineer-tools': 'Useful tools for web-focused design engineers, curated by James Warner.',
   'diffusion-studio': 'A video editor built for agents: use it from Claude Code, Codex or Cursor.',
   'namethatui': 'See a UI element, learn its real name, and copy a prompt for your coding agent.',
+  'habblaud': 'A virtual pixel-art office for Claude Code and Codex agents to visualize background tasks in real time.',
+  'openstore': 'A curated directory of open-source alternatives to everyday commercial software.',
   'coolify': 'A self-hosting platform and open-source alternative to Heroku.',
   'cap': 'An open-source, self-hosted CAPTCHA alternative with proof-of-work and no visual puzzles.',
+  'gem-search': 'An open-source crawler that turns your X feed into research leads with verifiable trails.',
+  'feralui': 'Playful, physics-driven React elements: ceiling pull-cords with Verlet ropes, claw-machine captchas, and micro-interactions.',
   'kitbitz': '2,000+ free hand-drawn illustrations.',
   'bencho': 'Interactive UI blocks you can tweak and take straight into a project.',
   'krypt-cc': 'Create a personalized bio page with custom backgrounds and audio.',

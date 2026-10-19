@@ -1,0 +1,22 @@
+{
+  "slug": "transitions-dev",
+  "title": "Transitions.dev",
+  "url": "https://transitions.dev/",
+  "description": "A collection of essential UI transitions and micro-interactions for web apps and AI coding agents.",
+  "category": "ui",
+  "subcategory": "components",
+  "tags": [
+    "transitions",
+    "animations",
+    "microinteractions",
+    "components",
+    "motion"
+  ],
+  "install": [
+    "npx skills add Jakubantalik/transitions.dev"
+  ],
+  "thumbnail": "/thumbs/transitions-dev.webp",
+  "addedAt": "2026-10-19T16:46:51.594Z",
+  "source": "manual",
+  "order": 204
+}

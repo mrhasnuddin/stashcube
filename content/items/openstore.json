@@ -1,0 +1,18 @@
+{
+  "slug": "openstore",
+  "title": "OpenStore",
+  "url": "https://www.openstore.site/",
+  "description": "A curated directory of open-source alternatives to everyday commercial software.",
+  "category": "learning",
+  "tags": [
+    "open-source",
+    "alternatives",
+    "directory",
+    "software",
+    "tools"
+  ],
+  "thumbnail": "/thumbs/openstore.webp",
+  "addedAt": "2026-10-19T17:00:33.234Z",
+  "source": "manual",
+  "order": 206
+}

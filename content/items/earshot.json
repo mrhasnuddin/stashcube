@@ -1,0 +1,22 @@
+{
+  "slug": "earshot",
+  "title": "earshot",
+  "url": "https://github.com/Leonxlnx/earshot",
+  "description": "A CPU-only audio toolkit and MCP server for coding agents to hear, review and generate sound.",
+  "category": "github",
+  "tags": [
+    "audio",
+    "agents",
+    "mcp",
+    "open-source",
+    "creative-tools"
+  ],
+  "install": [
+    "git clone https://github.com/Leonxlnx/earshot.git",
+    "claude mcp add earshot -- /path/to/earshot/.venv/bin/python -m earshot mcp"
+  ],
+  "thumbnail": "/thumbs/earshot.webp",
+  "addedAt": "2026-10-19T16:13:11.589Z",
+  "source": "manual",
+  "order": 196
+}

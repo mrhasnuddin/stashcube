@@ -1,0 +1,21 @@
+{
+  "slug": "supabase",
+  "title": "Supabase",
+  "url": "https://supabase.com/",
+  "description": "An open-source Firebase alternative with PostgreSQL database, authentication, instant APIs, realtime and storage.",
+  "category": "backend",
+  "tags": [
+    "database",
+    "postgres",
+    "auth",
+    "api",
+    "realtime",
+    "storage",
+    "backend",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/supabase.webp",
+  "addedAt": "2026-10-19T16:40:37.541Z",
+  "source": "manual",
+  "order": 203
+}

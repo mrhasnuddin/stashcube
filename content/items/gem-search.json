@@ -1,0 +1,18 @@
+{
+  "slug": "gem-search",
+  "title": "Gem Search",
+  "url": "https://gemsearch.fun/",
+  "description": "An open-source crawler that turns your X feed into research leads with verifiable trails.",
+  "category": "tools",
+  "tags": [
+    "research",
+    "search",
+    "crawler",
+    "open-source",
+    "tools"
+  ],
+  "thumbnail": "/thumbs/gem-search.webp",
+  "addedAt": "2026-10-19T17:05:14.174Z",
+  "source": "manual",
+  "order": 207
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "hornethive",
+  "title": "HornetHive",
+  "url": "https://hornethive.io/",
+  "description": "Managed PostgreSQL hosting with instant REST and GraphQL APIs and an MCP server for AI agents.",
+  "category": "backend",
+  "tags": [
+    "database",
+    "postgres",
+    "api",
+    "graphql",
+    "mcp",
+    "backend"
+  ],
+  "thumbnail": "/thumbs/hornethive.webp",
+  "addedAt": "2026-10-19T16:40:27.591Z",
+  "source": "manual",
+  "order": 202
+}

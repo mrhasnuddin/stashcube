@@ -1,0 +1,23 @@
+{
+  "slug": "playthru",
+  "title": "playthru",
+  "url": "https://playthrou.diip3sh.xyz/",
+  "description": "Run animated product demos on your real UI with a gliding cursor and camera zoom, in 5 KB.",
+  "category": "motion",
+  "tags": [
+    "motion",
+    "demos",
+    "cursor",
+    "interactive",
+    "animation",
+    "open-source"
+  ],
+  "install": [
+    "npm i playthru",
+    "npx skills add diip3sh/playthrou"
+  ],
+  "thumbnail": "/thumbs/playthru.webp",
+  "addedAt": "2026-10-19T16:19:24.512Z",
+  "source": "manual",
+  "order": 198
+}

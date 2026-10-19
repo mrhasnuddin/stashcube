@@ -1,0 +1,19 @@
+{
+  "slug": "kargul-studio",
+  "title": "Kargul Studio",
+  "url": "https://kargul.studio/work",
+  "description": "A design and engineering studio for websites, digital products and branding.",
+  "category": "inspiration",
+  "subcategory": "studios-agencies",
+  "tags": [
+    "studios",
+    "design",
+    "agencies",
+    "portfolio",
+    "branding"
+  ],
+  "thumbnail": "/thumbs/kargul-studio.webp",
+  "addedAt": "2026-10-19T16:57:39.338Z",
+  "source": "manual",
+  "order": 205
+}

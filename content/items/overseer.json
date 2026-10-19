@@ -1,0 +1,18 @@
+{
+  "slug": "overseer",
+  "title": "Overseer",
+  "url": "https://overseer-dashboard-psi.vercel.app/#/overview",
+  "description": "A monitoring dashboard for AI agents tracking evaluations, traces, token budgets and latency.",
+  "category": "inspiration",
+  "subcategory": "saas-ai",
+  "tags": [
+    "dashboards",
+    "ai",
+    "agents",
+    "saas"
+  ],
+  "thumbnail": "/thumbs/overseer.webp",
+  "addedAt": "2026-10-19T16:24:18.013Z",
+  "source": "manual",
+  "order": 199
+}
