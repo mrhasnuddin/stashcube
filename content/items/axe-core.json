@@ -1,0 +1,20 @@
+{
+  "slug": "axe-core",
+  "title": "axe-core",
+  "url": "https://github.com/dequelabs/axe-core",
+  "description": "Accessibility engine for automated web UI testing.",
+  "category": "github",
+  "tags": [
+    "accessibility",
+    "testing",
+    "open-source",
+    "devtools"
+  ],
+  "install": [
+    "npm install axe-core --save-dev"
+  ],
+  "thumbnail": "/thumbs/axe-core.webp",
+  "addedAt": "2026-10-19T14:55:43.886Z",
+  "source": "manual",
+  "order": 195
+}

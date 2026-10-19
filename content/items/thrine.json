@@ -1,0 +1,18 @@
+{
+  "slug": "thrine",
+  "title": "Thrine",
+  "url": "https://thrine.app/",
+  "description": "Customize free 3D website templates in the browser and export them as embeds, images or video.",
+  "category": "inspiration",
+  "subcategory": "3d-immersive",
+  "tags": [
+    "3d",
+    "templates",
+    "interactive",
+    "webgl"
+  ],
+  "thumbnail": "/thumbs/thrine.webp",
+  "addedAt": "2026-10-19T14:51:03.823Z",
+  "source": "manual",
+  "order": 192
+}

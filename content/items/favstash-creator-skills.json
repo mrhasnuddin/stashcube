@@ -1,0 +1,22 @@
+{
+  "slug": "favstash-creator-skills",
+  "title": "FavStash Creator Skills",
+  "url": "https://github.com/alisadiq-ai/favstash-ai-video-editing-skills",
+  "description": "AI skills for coding agents to research, script, edit and publish short-form video.",
+  "category": "github",
+  "tags": [
+    "video",
+    "agents",
+    "skills",
+    "motion",
+    "open-source"
+  ],
+  "install": [
+    "npx skills add https://github.com/alisadiq-ai/favstash-ai-video-editing-skills",
+    "npm install -g @sketric/favstash-mcp@latest"
+  ],
+  "thumbnail": "/thumbs/favstash-creator-skills.webp",
+  "addedAt": "2026-10-19T14:48:23.858Z",
+  "source": "manual",
+  "order": 191
+}

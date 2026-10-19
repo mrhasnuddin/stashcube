@@ -1,0 +1,20 @@
+{
+  "slug": "harvey",
+  "title": "Harvey",
+  "url": "https://github.com/ethanplusai/harvey",
+  "description": "Autonomous AI sales agent for Claude Code and Codex to prospect, write emails and book meetings.",
+  "category": "github",
+  "tags": [
+    "agents",
+    "claude-code",
+    "sales",
+    "open-source"
+  ],
+  "install": [
+    "git clone https://github.com/ethanplusai/harvey.git"
+  ],
+  "thumbnail": "/thumbs/harvey.webp",
+  "addedAt": "2026-10-19T14:55:10.711Z",
+  "source": "manual",
+  "order": 194
+}

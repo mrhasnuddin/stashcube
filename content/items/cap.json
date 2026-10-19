@@ -1,0 +1,18 @@
+{
+  "slug": "cap",
+  "title": "Cap",
+  "url": "https://trycap.dev/",
+  "description": "An open-source, self-hosted CAPTCHA alternative with proof-of-work and no visual puzzles.",
+  "category": "tools",
+  "tags": [
+    "captcha",
+    "privacy",
+    "self-hosting",
+    "open-source",
+    "security"
+  ],
+  "thumbnail": "/thumbs/cap.webp",
+  "addedAt": "2026-10-19T09:52:57.893Z",
+  "source": "manual",
+  "order": 189
+}

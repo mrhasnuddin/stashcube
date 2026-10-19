@@ -1,0 +1,23 @@
+{
+  "slug": "ethskills",
+  "title": "ETHSKILLS",
+  "url": "https://ethskills.com/",
+  "description": "Ethereum knowledge pack and skill files for AI coding agents shipping onchain.",
+  "category": "skills",
+  "subcategory": "skills",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "solidity",
+    "skills",
+    "agents"
+  ],
+  "install": [
+    "/plugin marketplace add austintgriffith/ethskills",
+    "/plugin install ethskills@ethskills"
+  ],
+  "thumbnail": "/thumbs/ethskills.webp",
+  "addedAt": "2026-10-19T11:40:57.966Z",
+  "source": "manual",
+  "order": 190
+}
