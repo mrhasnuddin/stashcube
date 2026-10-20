@@ -1,0 +1,22 @@
+{
+  "slug": "anti-slop",
+  "title": "anti-slop",
+  "url": "https://github.com/miqdadbadjuber/anti-slop",
+  "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, filler copy and AI-shaped code.",
+  "category": "github",
+  "tags": [
+    "ai",
+    "agents",
+    "skills",
+    "design-rules",
+    "ui"
+  ],
+  "install": [
+    "npx antislop-ai",
+    "npx skills add miqdadbadjuber/anti-slop"
+  ],
+  "thumbnail": "/thumbs/anti-slop.webp",
+  "addedAt": "2026-10-20T13:33:15.817Z",
+  "source": "manual",
+  "order": 210
+}

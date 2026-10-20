@@ -168,6 +168,7 @@ export const descriptions = {
   'axe-core': 'Accessibility engine for automated web UI testing.',
   'earshot': 'A CPU-only audio toolkit and MCP server for coding agents to hear, review and generate sound.',
   'context7': 'Up-to-date, version-specific documentation and code examples fetched directly into your AI coding agent.',
+  'anti-slop': 'Rules for an AI coding agent to filter out generic AI-generated UI designs, filler copy and AI-shaped code.',
   'design-prompts': '31+ design styles, each with an AI-ready prompt to recreate it.',
   'promptefy': 'Build detailed video prompts, with optional image references.',
   'graphify': 'Your codebase as a knowledge graph your AI assistant can query. Open source and on-device.',

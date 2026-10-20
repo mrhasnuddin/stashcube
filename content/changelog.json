@@ -189,6 +189,11 @@
         "type": "added",
         "minor": true,
         "text": "x6sense in Inspiration, under Web3 and Crypto."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "anti-slop in GitHub."
       }
     ]
   },
