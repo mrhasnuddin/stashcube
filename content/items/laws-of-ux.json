@@ -1,0 +1,18 @@
+{
+  "slug": "laws-of-ux",
+  "title": "Laws of UX",
+  "url": "https://lawsofux.com/",
+  "description": "A collection of best practices and psychological principles for designing user interfaces.",
+  "category": "learning",
+  "tags": [
+    "ux",
+    "design",
+    "psychology",
+    "guides",
+    "reference"
+  ],
+  "thumbnail": "/thumbs/laws-of-ux.webp",
+  "addedAt": "2026-10-22T13:20:31.720Z",
+  "source": "manual",
+  "order": 211
+}

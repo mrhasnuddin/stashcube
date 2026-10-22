@@ -194,6 +194,11 @@
         "type": "added",
         "minor": true,
         "text": "anti-slop in GitHub."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Laws of UX in Learning."
       }
     ]
   },

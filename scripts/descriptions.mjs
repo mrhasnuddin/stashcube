@@ -182,6 +182,7 @@ export const descriptions = {
   'namethatui': 'See a UI element, learn its real name, and copy a prompt for your coding agent.',
   'habblaud': 'A virtual pixel-art office for Claude Code and Codex agents to visualize background tasks in real time.',
   'openstore': 'A curated directory of open-source alternatives to everyday commercial software.',
+  'laws-of-ux': 'A collection of best practices and psychological principles for designing user interfaces.',
   'coolify': 'A self-hosting platform and open-source alternative to Heroku.',
   'cap': 'An open-source, self-hosted CAPTCHA alternative with proof-of-work and no visual puzzles.',
   'gem-search': 'An open-source crawler that turns your X feed into research leads with verifiable trails.',
