@@ -3,7 +3,7 @@
   "title": "earshot",
   "url": "https://github.com/Leonxlnx/earshot",
   "description": "A CPU-only audio toolkit and MCP server for coding agents to hear, review and generate sound.",
-  "category": "github",
+  "category": "mcp-agents",
   "tags": [
     "audio",
     "agents",
@@ -18,5 +18,20 @@
   "thumbnail": "/thumbs/earshot.webp",
   "addedAt": "2026-10-19T16:13:11.589Z",
   "source": "manual",
-  "order": 196
+  "order": 196,
+  "subcategory": "mcp-servers",
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "creative-media"
+    },
+    {
+      "category": "tools",
+      "subcategory": "audio"
+    },
+    {
+      "category": "github",
+      "subcategory": "mcp-servers"
+    }
+  ]
 }

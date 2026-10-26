@@ -3,7 +3,7 @@
   "title": "OpenStore",
   "url": "https://www.openstore.site/",
   "description": "A curated directory of open-source alternatives to everyday commercial software.",
-  "category": "learning",
+  "category": "tools",
   "tags": [
     "open-source",
     "alternatives",
@@ -14,5 +14,6 @@
   "thumbnail": "/thumbs/openstore.webp",
   "addedAt": "2026-10-19T17:00:33.234Z",
   "source": "manual",
-  "order": 206
+  "order": 206,
+  "subcategory": "directories"
 }

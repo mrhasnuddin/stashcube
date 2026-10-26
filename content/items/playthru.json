@@ -19,5 +19,6 @@
   "thumbnail": "/thumbs/playthru.webp",
   "addedAt": "2026-10-19T16:19:24.512Z",
   "source": "manual",
-  "order": 198
+  "order": 198,
+  "subcategory": "demo-video"
 }

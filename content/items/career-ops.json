@@ -13,5 +13,12 @@
   "thumbnail": "/thumbs/career-ops.webp",
   "addedAt": "2026-10-16T17:10:23.545Z",
   "source": "manual",
-  "order": 185
+  "order": 185,
+  "subcategory": "productivity",
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "business-web3"
+    }
+  ]
 }

@@ -5,7 +5,8 @@ const merged: [string, string, string][] = [
   ["ui-libraries", "ui", "libraries"],
   ["components", "ui", "components"],
   ["illustration", "icons", "illustrations"],
-  ["mockups", "templates", "mockups"],
+  ["mockups", "galleries", "templates-mockups"],
+  ["templates", "galleries", "templates-mockups"],
   ["colors-gradients", "colors-effects", "colors-gradients"],
   ["shaders-effects", "colors-effects", "shaders-effects"],
   ["prompts", "skills", "prompts"],
@@ -13,7 +14,14 @@ const merged: [string, string, string][] = [
 
 const nextConfig: NextConfig = {
   async redirects() {
-    return merged.map(([from, to, sub]) => ({ source: `/c/${from}`, destination: `/c/${to}?sub=${sub}`, permanent: true }));
+    // 2026-10: the gallery and UI-details groups of Inspiration became the Galleries category
+    const split = ["galleries", "ui-details"].map((sub) => ({
+      source: "/c/inspiration",
+      has: [{ type: "query" as const, key: "sub", value: sub }],
+      destination: sub === "galleries" ? "/c/galleries" : "/c/galleries?sub=ui-details",
+      permanent: true,
+    }));
+    return [...split, ...merged.map(([from, to, sub]) => ({ source: `/c/${from}`, destination: `/c/${to}?sub=${sub}`, permanent: true }))];
   },
   /* config options here */
   cacheComponents: true,

@@ -13,5 +13,12 @@
   "thumbnail": "/thumbs/prompt-motion.webp",
   "addedAt": "2026-10-11",
   "source": "manual",
-  "order": 158
+  "order": 158,
+  "subcategory": "ai-motion",
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "prompts"
+    }
+  ]
 }

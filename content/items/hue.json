@@ -12,7 +12,7 @@
   "addedAt": "2026-10-10",
   "source": "notion",
   "order": 133,
-  "subcategory": "skills",
+  "subcategory": "design-skills",
   "install": [
     "git clone https://github.com/dominikmartn/hue ~/.claude/skills/hue"
   ]

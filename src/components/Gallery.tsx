@@ -38,7 +38,7 @@ export function Gallery({ items, subcategories }: { items: ItemView[]; subcatego
     replaceSearch(next.toString());
   };
 
-  const scoped = useMemo(() => (sub ? items.filter((i) => i.subcategory === sub) : items), [items, sub]);
+  const scoped = useMemo(() => (sub ? items.filter((i) => i.subs.includes(sub)) : items), [items, sub]);
   const topTags = useMemo(() => {
     const counts = new Map<string, number>();
     scoped.forEach((i) => i.tags.forEach((t) => counts.set(t, (counts.get(t) ?? 0) + 1)));

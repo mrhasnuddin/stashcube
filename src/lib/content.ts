@@ -18,6 +18,8 @@ export type Item = {
   description: string;
   category: string;
   subcategory?: string;
+  /** Extra places the link is listed, besides its main category and sub-category */
+  also?: { category: string; subcategory?: string }[];
   tags: string[];
   thumbnail: string | null;
   pricing?: "free" | "freemium" | "paid" | "open-source";
@@ -31,7 +33,8 @@ export type Item = {
   source?: string;
   order: number;
 };
-export type ItemView = Item & { newSince: string | null; categoryName: string; comingSoon: boolean };
+/** `subs`: the groups the link is in within the category being viewed. `home`: its main category, when it is listed here as an extra. `alsoNames`: names of its extra categories. */
+export type ItemView = Item & { newSince: string | null; categoryName: string; comingSoon: boolean; subs: string[]; home: { slug: string; name: string } | null; alsoNames: string[] };
 
 /*
  * Content is read once at module scope. These are synchronous local reads, so Next treats them as
@@ -61,12 +64,22 @@ const categoryBySlug = new Map(categories.map((c) => [c.slug, c]));
 // decides in the browser whether the last 4 days have passed. Links with a date-only addedAt never get the mark.
 const newSince = (i: Item) => (i.addedAt.includes("T") ? i.addedAt : null);
 
-const view = (i: Item): ItemView => ({
+const placements = (i: Item) => [{ category: i.category, subcategory: i.subcategory }, ...(i.also ?? [])];
+const nameOf = (slug: string) => categoryBySlug.get(slug)?.name ?? slug;
+
+// ctx: the category page the link is shown on, so its groups there (main or extra) come along
+const viewIn = (i: Item, ctx?: string): ItemView => ({
   ...i,
   newSince: newSince(i),
-  categoryName: categoryBySlug.get(i.category)?.name ?? i.category,
+  categoryName: nameOf(i.category),
   comingSoon: i.status === "coming-soon",
+  subs: placements(i)
+    .filter((p) => (ctx ?? i.category) === p.category && p.subcategory)
+    .map((p) => p.subcategory as string),
+  home: ctx && ctx !== i.category ? { slug: i.category, name: nameOf(i.category) } : null,
+  alsoNames: [...new Set((i.also ?? []).map((a) => nameOf(a.category)))],
 });
+const view = (i: Item): ItemView => viewIn(i);
 
 export const allItems = (): ItemView[] => items.map(view);
 export const getItem = (slug: string): ItemView | undefined => {
@@ -74,17 +87,17 @@ export const getItem = (slug: string): ItemView | undefined => {
   return i && view(i);
 };
 export const getCategory = (slug: string) => categoryBySlug.get(slug);
-// Grouped by sub-category in the taxonomy order (so "All" reads as industries, not import order), then by import order.
+// Every link listed in the category (main or extra), grouped by sub-category in the taxonomy order, then by import order.
 export const itemsInCategory = (slug: string): ItemView[] => {
   const subs = categoryBySlug.get(slug)?.subcategories ?? [];
   const rank = (i: Item) => {
-    const r = subs.findIndex((s) => s.slug === i.subcategory);
-    return r === -1 ? subs.length : r;
+    const r = Math.min(...placements(i).filter((p) => p.category === slug).map((p) => subs.findIndex((s) => s.slug === p.subcategory)).map((n) => (n === -1 ? subs.length : n)));
+    return r;
   };
   return items
-    .filter((i) => i.category === slug)
+    .filter((i) => placements(i).some((p) => p.category === slug))
     .sort((a, b) => rank(a) - rank(b))
-    .map(view);
+    .map((i) => viewIn(i, slug));
 };
 export const latestItems = (n: number): ItemView[] =>
   [...items].sort((a, b) => b.addedAt.localeCompare(a.addedAt) || b.order - a.order).slice(0, n).map(view);
@@ -98,7 +111,7 @@ export function groupsWithCategories() {
       categories: categories
         .filter((c) => c.groupSlug === g.slug)
         .map((c) => {
-          const inCat = items.filter((i) => i.category === c.slug);
+          const inCat = items.filter((i) => placements(i).some((p) => p.category === c.slug));
           return { ...c, count: inCat.length, newSince: inCat.map(newSince).filter((d): d is string => d !== null).sort().at(-1) ?? null };
         })
         .filter((c) => c.count > 0),

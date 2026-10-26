@@ -14,5 +14,12 @@
   "thumbnail": "/thumbs/awesome-ai-motion.webp",
   "addedAt": "2026-10-16T17:09:34.304Z",
   "source": "manual",
-  "order": 173
+  "order": 173,
+  "subcategory": "ai-motion",
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "prompts"
+    }
+  ]
 }

@@ -4,7 +4,7 @@
   "url": "https://transitions.dev/",
   "description": "A collection of essential UI transitions and micro-interactions for web apps and AI coding agents.",
   "category": "ui",
-  "subcategory": "components",
+  "subcategory": "transitions",
   "tags": [
     "transitions",
     "animations",
@@ -18,5 +18,11 @@
   "thumbnail": "/thumbs/transitions-dev.webp",
   "addedAt": "2026-10-19T16:46:51.594Z",
   "source": "manual",
-  "order": 204
+  "order": 204,
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "ui-motion"
+    }
+  ]
 }

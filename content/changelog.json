@@ -1,5 +1,39 @@
 [
   {
+    "version": "0.4.0",
+    "date": "2026-10-26",
+    "title": "Links in more than one place, and groups everywhere",
+    "summary": "A link can now live in several categories, and every category is split into groups.",
+    "changes": [
+      {
+        "type": "added",
+        "text": "A link can be listed in more than one category. Its Hover is in Icons and in MCP and Agents, Arc UI is in UI Components and MCP and Agents, and every GitHub repo is also in GitHub. A tile shows its home category when you meet it somewhere else, and the item page lists where else it appears."
+      },
+      {
+        "type": "added",
+        "text": "Groups inside every category, such as Dashboards and charts in UI Components, Design skills in Skills and Prompts, and Audio in Tools and Utilities. A link can sit in several groups of a category."
+      },
+      {
+        "type": "changed",
+        "text": "GitHub repos now live under their real topic, such as Skills and Prompts, 3D Tools or Motion, and show up in GitHub as well. The GitHub category is split into Skills and plugins, MCP servers, and Libraries and lists."
+      },
+      {
+        "type": "changed",
+        "text": "Inspiration is now two categories. Website Inspiration keeps the individual sites worth studying, grouped by industry. The new Galleries category holds the libraries and collections of sites, such as Awwwards, Lapa Ninja and Siteinspire, in five groups. The old Inspiration addresses redirect. Templates and Mockups moved into Galleries as a group, and its old address redirects."
+      },
+      {
+        "type": "changed",
+        "minor": true,
+        "text": "Moved FeralUI to UI Components, flightcn to UI Components, and Habblaud to MCP and Agents. Search now also finds a link by the categories it is cross-listed in."
+      },
+      {
+        "type": "fixed",
+        "minor": true,
+        "text": "Updated Next.js to 16.4.3, which fixes security advisories in 16.4.0, and two other dependencies."
+      }
+    ]
+  },
+  {
     "version": "0.3.0",
     "date": "2026-10-11",
     "title": "Inspiration by industry, and GitHub",

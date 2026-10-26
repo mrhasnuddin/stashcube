@@ -4,7 +4,7 @@
   "url": "https://www.drawably.dev/",
   "description": "Hand-drawn UI controls with zero dependencies, sketched fresh on every mount.",
   "category": "ui",
-  "subcategory": "components",
+  "subcategory": "controls",
   "tags": [
     "hand-drawn",
     "zero-deps",

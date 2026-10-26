@@ -3,8 +3,8 @@
   "title": "mesh3d",
   "url": "https://mesh3d.gallery/",
   "description": "Three.js, WebGL and AI-built interactive 3D websites.",
-  "category": "inspiration",
-  "subcategory": "3d-immersive",
+  "category": "galleries",
+  "subcategory": "websites",
   "tags": [
     "three.js",
     "webgl"

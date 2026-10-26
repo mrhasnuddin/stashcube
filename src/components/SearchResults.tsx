@@ -10,7 +10,7 @@ import { PixelSearch } from "./pixel";
 function score(item: ItemView, tokens: string[]) {
   const title = item.title.toLowerCase();
   const desc = item.description.toLowerCase();
-  const cat = `${item.categoryName} ${item.subcategory ?? ""}`.toLowerCase();
+  const cat = `${item.categoryName} ${item.alsoNames.join(" ")} ${item.subcategory ?? ""}`.toLowerCase();
   const tags = item.tags.join(" ").toLowerCase();
   let total = 0;
   for (const t of tokens) {

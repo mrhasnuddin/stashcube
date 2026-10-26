@@ -3,7 +3,7 @@
   "title": "Context7",
   "url": "https://github.com/upstash/context7",
   "description": "Up-to-date, version-specific documentation and code examples fetched directly into your AI coding agent.",
-  "category": "github",
+  "category": "mcp-agents",
   "tags": [
     "ai",
     "agents",
@@ -17,5 +17,16 @@
   "thumbnail": "/thumbs/context7.webp",
   "addedAt": "2026-10-19T16:29:00.319Z",
   "source": "manual",
-  "order": 200
+  "order": 200,
+  "subcategory": "mcp-servers",
+  "also": [
+    {
+      "category": "learning",
+      "subcategory": "claude-code"
+    },
+    {
+      "category": "github",
+      "subcategory": "mcp-servers"
+    }
+  ]
 }

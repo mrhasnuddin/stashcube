@@ -3,7 +3,7 @@
   "title": "public-apis",
   "url": "https://github.com/public-apis/public-apis",
   "description": "A collective list of free APIs for use in software and web development.",
-  "category": "github",
+  "category": "backend",
   "tags": [
     "apis",
     "directory",
@@ -14,5 +14,16 @@
   "thumbnail": "/thumbs/public-apis.webp",
   "addedAt": "2026-10-13T12:08:19.067Z",
   "source": "manual",
-  "order": 170
+  "order": 170,
+  "subcategory": "apis",
+  "also": [
+    {
+      "category": "tools",
+      "subcategory": "directories"
+    },
+    {
+      "category": "github",
+      "subcategory": "libraries-lists"
+    }
+  ]
 }

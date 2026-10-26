@@ -23,11 +23,12 @@ export function ItemTile({ item, priority = false }: { item: ItemView; priority?
           ) : (
             <PixelPlaceholder seed={item.slug} />
           )}
-          {item.comingSoon || item.pick || item.newSince ? (
+          {item.comingSoon || item.pick || item.newSince || item.home ? (
             <span className="thumb-badges">
               {item.comingSoon ? <span className="badge soon">COMING SOON</span> : null}
               {item.pick ? <span className="badge pick">PICK</span> : null}
               <NewBadge since={item.newSince} />
+              {item.home ? <span className="badge out home">{item.home.name}</span> : null}
             </span>
           ) : null}
         </div>

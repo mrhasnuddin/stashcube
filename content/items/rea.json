@@ -12,5 +12,12 @@
   "thumbnail": "/thumbs/rea.webp",
   "addedAt": "2026-10-16T17:10:24.412Z",
   "source": "manual",
-  "order": 186
+  "order": 186,
+  "subcategory": "developer",
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "agent-tools"
+    }
+  ]
 }

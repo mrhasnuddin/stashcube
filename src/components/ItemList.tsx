@@ -28,7 +28,7 @@ export function ItemList({ items, showCategory = true }: { items: ItemView[]; sh
                   {i.comingSoon ? <span className="badge soon">COMING SOON</span> : null}
                   {i.pick ? <span className="badge pick">PICK</span> : null}
                   <NewBadge since={i.newSince} />
-                  {showCategory ? <span className="badge out">{i.categoryName}</span> : null}
+                  {showCategory || i.home ? <span className="badge out">{i.categoryName}</span> : null}
                 </span>
                 <span className="row-plus log-plus" aria-hidden="true" />
               </summary>

@@ -15,5 +15,12 @@
   "thumbnail": "/thumbs/hornethive.webp",
   "addedAt": "2026-10-19T16:40:27.591Z",
   "source": "manual",
-  "order": 202
+  "order": 202,
+  "subcategory": "platform",
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "mcp-servers"
+    }
+  ]
 }

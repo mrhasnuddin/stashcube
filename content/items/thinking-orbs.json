@@ -13,5 +13,11 @@
   "addedAt": "2026-10-10",
   "source": "notion",
   "order": 19,
-  "subcategory": "components"
+  "subcategory": "ai-ui",
+  "also": [
+    {
+      "category": "ui",
+      "subcategory": "loaders"
+    }
+  ]
 }

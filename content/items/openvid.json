@@ -13,5 +13,12 @@
   "thumbnail": "/thumbs/openvid.webp",
   "addedAt": "2026-10-11",
   "source": "manual",
-  "order": 162
+  "order": 162,
+  "subcategory": "ai-creative",
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "demo-video"
+    }
+  ]
 }

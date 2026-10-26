@@ -14,5 +14,11 @@
   "source": "notion",
   "order": 10,
   "pick": true,
-  "subcategory": "libraries"
+  "subcategory": "transitions",
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "ui-motion"
+    }
+  ]
 }

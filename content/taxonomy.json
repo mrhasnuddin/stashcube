@@ -10,12 +10,40 @@
           "description": "Component libraries, kits and single components you can drop into a project.",
           "subcategories": [
             {
-              "slug": "libraries",
-              "name": "Libraries"
+              "slug": "animated-libraries",
+              "name": "Animated libraries"
             },
             {
-              "slug": "components",
-              "name": "Single components"
+              "slug": "dashboards-charts",
+              "name": "Dashboards and charts"
+            },
+            {
+              "slug": "ai-ui",
+              "name": "AI and agent UI"
+            },
+            {
+              "slug": "controls",
+              "name": "Buttons and controls"
+            },
+            {
+              "slug": "loaders",
+              "name": "Loaders"
+            },
+            {
+              "slug": "text-effects",
+              "name": "Text effects"
+            },
+            {
+              "slug": "transitions",
+              "name": "Transitions and micro-interactions"
+            },
+            {
+              "slug": "frameworks",
+              "name": "Frameworks and kits"
+            },
+            {
+              "slug": "specialty",
+              "name": "Specialty"
             }
           ]
         },
@@ -25,44 +53,71 @@
           "description": "Icon sets, animated icons, isometric packs and illustration resources.",
           "subcategories": [
             {
-              "slug": "icons",
-              "name": "Icons"
+              "slug": "icon-sets",
+              "name": "Icon sets"
+            },
+            {
+              "slug": "animated",
+              "name": "Animated icons"
             },
             {
               "slug": "illustrations",
-              "name": "Illustrations"
+              "name": "Illustrations and shapes"
+            },
+            {
+              "slug": "specialty",
+              "name": "Specialty"
             }
           ]
         },
         {
           "slug": "fonts",
           "name": "Fonts",
-          "description": "Typefaces, type tools and typography inspiration."
-        },
-        {
-          "slug": "templates",
-          "name": "Templates and Mockups",
-          "description": "Starting points and presentation kits: Figma blocks and free mockups.",
+          "description": "Typefaces, type tools and typography inspiration.",
           "subcategories": [
             {
-              "slug": "templates",
-              "name": "Templates"
+              "slug": "libraries",
+              "name": "Font libraries"
             },
             {
-              "slug": "mockups",
-              "name": "Mockups"
+              "slug": "typefaces-tools",
+              "name": "Typefaces and type tools"
             }
           ]
         },
         {
           "slug": "backend",
           "name": "Backend",
-          "description": "Databases, authentication, APIs and serverless infrastructure for your stack."
+          "description": "Databases, authentication, APIs and serverless infrastructure for your stack.",
+          "subcategories": [
+            {
+              "slug": "platform",
+              "name": "Databases and hosting"
+            },
+            {
+              "slug": "apis",
+              "name": "APIs"
+            }
+          ]
         },
         {
           "slug": "github",
           "name": "GitHub",
-          "description": "Repositories worth cloning, forking or learning from."
+          "description": "Repositories worth cloning, forking or learning from.",
+          "subcategories": [
+            {
+              "slug": "skills-plugins",
+              "name": "Skills and plugins"
+            },
+            {
+              "slug": "mcp-servers",
+              "name": "MCP servers"
+            },
+            {
+              "slug": "libraries-lists",
+              "name": "Libraries and lists"
+            }
+          ]
         }
       ]
     },
@@ -73,7 +128,17 @@
         {
           "slug": "3d-tools",
           "name": "3D Tools",
-          "description": "Tools and libraries for 3D on the web."
+          "description": "Tools and libraries for 3D on the web.",
+          "subcategories": [
+            {
+              "slug": "web-3d",
+              "name": "Web 3D"
+            },
+            {
+              "slug": "ai-3d",
+              "name": "AI 3D and CAD"
+            }
+          ]
         },
         {
           "slug": "colors-effects",
@@ -81,19 +146,45 @@
           "description": "Palette and gradient generators, shader editors, dithering, ASCII and retro effects.",
           "subcategories": [
             {
-              "slug": "colors-gradients",
-              "name": "Colors and gradients"
+              "slug": "gradients",
+              "name": "Gradients and palettes"
             },
             {
-              "slug": "shaders-effects",
-              "name": "Shaders and effects"
+              "slug": "shader-libraries",
+              "name": "Shader libraries"
+            },
+            {
+              "slug": "editors",
+              "name": "Editors and generators"
+            },
+            {
+              "slug": "retro",
+              "name": "ASCII, dither and retro"
             }
           ]
         },
         {
           "slug": "motion",
           "name": "Motion",
-          "description": "Motion design for the web and video: animated references, templates and prompts to recreate them."
+          "description": "Motion design for the web and video: animated references, templates and prompts to recreate them.",
+          "subcategories": [
+            {
+              "slug": "ai-motion",
+              "name": "AI motion catalogues"
+            },
+            {
+              "slug": "motion-skills",
+              "name": "Motion skills"
+            },
+            {
+              "slug": "demo-video",
+              "name": "Demos and video tools"
+            },
+            {
+              "slug": "ui-motion",
+              "name": "UI motion"
+            }
+          ]
         }
       ]
     },
@@ -108,17 +199,9 @@
         },
         {
           "slug": "inspiration",
-          "name": "Inspiration",
-          "description": "Websites to learn from, grouped by industry, plus galleries and libraries of UI details.",
+          "name": "Website Inspiration",
+          "description": "Individual websites worth keeping for reference, grouped by industry.",
           "subcategories": [
-            {
-              "slug": "galleries",
-              "name": "Galleries"
-            },
-            {
-              "slug": "ui-details",
-              "name": "UI Details"
-            },
             {
               "slug": "web3-crypto",
               "name": "Web3 and Crypto"
@@ -152,6 +235,37 @@
               "name": "Portfolios"
             }
           ]
+        },
+        {
+          "slug": "galleries",
+          "name": "Galleries",
+          "description": "Libraries and collections: great websites, landing pages, UI details, templates and mockups.",
+          "subcategories": [
+            {
+              "slug": "websites",
+              "name": "Website galleries"
+            },
+            {
+              "slug": "landing-pages",
+              "name": "Landing page galleries"
+            },
+            {
+              "slug": "ui-details",
+              "name": "UI details"
+            },
+            {
+              "slug": "templates-mockups",
+              "name": "Templates and mockups"
+            },
+            {
+              "slug": "brand-agency",
+              "name": "Brand and agencies"
+            },
+            {
+              "slug": "moodboards",
+              "name": "Moodboards and posters"
+            }
+          ]
         }
       ]
     },
@@ -165,8 +279,28 @@
           "description": "Skill files, DESIGN.md libraries and prompts that give AI coding agents design direction.",
           "subcategories": [
             {
-              "slug": "skills",
-              "name": "Skills and DESIGN.md"
+              "slug": "design-md",
+              "name": "DESIGN.md libraries"
+            },
+            {
+              "slug": "directories",
+              "name": "Skill directories"
+            },
+            {
+              "slug": "engineering",
+              "name": "Engineering and workflow"
+            },
+            {
+              "slug": "design-skills",
+              "name": "Design skills"
+            },
+            {
+              "slug": "creative-media",
+              "name": "Creative and media"
+            },
+            {
+              "slug": "business-web3",
+              "name": "Business and web3"
             },
             {
               "slug": "prompts",
@@ -177,7 +311,17 @@
         {
           "slug": "mcp-agents",
           "name": "MCP and Agents",
-          "description": "Directories and tooling for agents and vibe coding."
+          "description": "Directories and tooling for agents and vibe coding.",
+          "subcategories": [
+            {
+              "slug": "mcp-servers",
+              "name": "MCP servers"
+            },
+            {
+              "slug": "agent-tools",
+              "name": "Agent tools and apps"
+            }
+          ]
         }
       ]
     },
@@ -188,12 +332,44 @@
         {
           "slug": "learning",
           "name": "Learning",
-          "description": "References and guides for learning how interfaces are built."
+          "description": "References and guides for learning how interfaces are built.",
+          "subcategories": [
+            {
+              "slug": "guides",
+              "name": "Guides and references"
+            },
+            {
+              "slug": "claude-code",
+              "name": "Claude Code and agents"
+            }
+          ]
         },
         {
           "slug": "tools",
           "name": "Tools and Utilities",
-          "description": "Directories and utilities that don't fit elsewhere."
+          "description": "Directories and utilities that don't fit elsewhere.",
+          "subcategories": [
+            {
+              "slug": "ai-creative",
+              "name": "AI creative tools"
+            },
+            {
+              "slug": "developer",
+              "name": "Developer tools"
+            },
+            {
+              "slug": "productivity",
+              "name": "Productivity and career"
+            },
+            {
+              "slug": "audio",
+              "name": "Audio"
+            },
+            {
+              "slug": "directories",
+              "name": "Directories"
+            }
+          ]
         }
       ]
     }

@@ -3,7 +3,7 @@
   "title": "img2threejs",
   "url": "https://github.com/img2threejs/img2threejs",
   "description": "Turns a reference image into a procedural, animation-ready Three.js model, written as code.",
-  "category": "github",
+  "category": "3d-tools",
   "tags": [
     "three.js",
     "image-to-3d",
@@ -17,5 +17,16 @@
   "pick": true,
   "install": [
     "npx --yes img2threejs@latest install --host claude"
+  ],
+  "subcategory": "ai-3d",
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "creative-media"
+    },
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
   ]
 }

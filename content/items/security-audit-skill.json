@@ -3,7 +3,7 @@
   "title": "Security Audit Skill",
   "url": "https://github.com/cloudflare/security-audit-skill",
   "description": "A skill that has coding agents run a multi-phase security audit and verify each finding.",
-  "category": "github",
+  "category": "skills",
   "tags": [
     "security",
     "skills",
@@ -16,5 +16,12 @@
   "order": 166,
   "install": [
     "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit"
+  ],
+  "subcategory": "engineering",
+  "also": [
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
   ]
 }

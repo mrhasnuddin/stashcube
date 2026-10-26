@@ -3,7 +3,7 @@
   "title": "Web Clone Skill",
   "url": "https://github.com/Jane-xiaoer/claude-skill-web-clone",
   "description": "A Claude skill for cloning websites.",
-  "category": "github",
+  "category": "skills",
   "tags": [
     "claude",
     "cloning",
@@ -15,5 +15,12 @@
   "order": 139,
   "install": [
     "git clone https://github.com/Jane-xiaoer/claude-skill-web-clone.git ~/.claude/skills/web-clone"
+  ],
+  "subcategory": "design-skills",
+  "also": [
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
   ]
 }

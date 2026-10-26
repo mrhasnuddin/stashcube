@@ -11,5 +11,6 @@
   "thumbnail": "/thumbs/graphify.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 142
+  "order": 142,
+  "subcategory": "agent-tools"
 }

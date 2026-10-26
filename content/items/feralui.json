@@ -3,7 +3,7 @@
   "title": "FeralUI",
   "url": "https://feralui.dev/",
   "description": "Playful, physics-driven React elements: ceiling pull-cords with Verlet ropes, claw-machine captchas, and micro-interactions.",
-  "category": "tools",
+  "category": "ui",
   "tags": [
     "react",
     "physics",
@@ -15,5 +15,6 @@
   "thumbnail": "/thumbs/feralui.webp",
   "addedAt": "2026-10-19T17:09:22.016Z",
   "source": "manual",
-  "order": 208
+  "order": 208,
+  "subcategory": "controls"
 }

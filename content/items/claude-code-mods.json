@@ -3,7 +3,7 @@
   "title": "Claude Code Mods",
   "url": "https://mods.aidojo.si/",
   "description": "A catalogue of 4,000+ Claude Code mods scanned from GitHub, with what each one can access.",
-  "category": "learning",
+  "category": "tools",
   "tags": [
     "claude-code",
     "directory",
@@ -12,5 +12,16 @@
   "thumbnail": "/thumbs/claude-code-mods.webp",
   "addedAt": "2026-10-16T17:10:13.062Z",
   "source": "manual",
-  "order": 179
+  "order": 179,
+  "subcategory": "directories",
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "agent-tools"
+    },
+    {
+      "category": "learning",
+      "subcategory": "claude-code"
+    }
+  ]
 }

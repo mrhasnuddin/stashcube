@@ -3,7 +3,7 @@
   "title": "Habblaud",
   "url": "https://github.com/marmottajr/habblaud",
   "description": "A virtual pixel-art office for Claude Code and Codex agents to visualize background tasks in real time.",
-  "category": "learning",
+  "category": "mcp-agents",
   "tags": [
     "agents",
     "claude-code",
@@ -18,5 +18,16 @@
   "thumbnail": "/thumbs/habblaud.webp",
   "addedAt": "2026-10-19T16:16:37.513Z",
   "source": "manual",
-  "order": 197
+  "order": 197,
+  "subcategory": "agent-tools",
+  "also": [
+    {
+      "category": "learning",
+      "subcategory": "claude-code"
+    },
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
+  ]
 }

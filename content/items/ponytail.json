@@ -3,7 +3,7 @@
   "title": "Ponytail",
   "url": "https://github.com/DietrichGebert/ponytail",
   "description": "A plugin that makes an AI agent write less code, reusing what the project already has.",
-  "category": "github",
+  "category": "skills",
   "tags": [
     "agents",
     "skills",
@@ -17,5 +17,12 @@
   "install": [
     "/plugin marketplace add DietrichGebert/ponytail",
     "/plugin install ponytail@ponytail"
+  ],
+  "subcategory": "engineering",
+  "also": [
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
   ]
 }

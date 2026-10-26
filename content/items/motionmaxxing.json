@@ -16,5 +16,16 @@
   "thumbnail": "/thumbs/motionmaxxing.webp",
   "addedAt": "2026-10-16T17:09:44.731Z",
   "source": "manual",
-  "order": 174
+  "order": 174,
+  "subcategory": "motion-skills",
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "creative-media"
+    },
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
+  ]
 }

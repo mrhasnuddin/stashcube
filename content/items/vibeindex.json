@@ -3,7 +3,7 @@
   "title": "VibeIndex",
   "url": "https://vibeindex.dev/",
   "description": "A directory of 285 vibe-coding tools across 16 categories.",
-  "category": "learning",
+  "category": "tools",
   "tags": [
     "directory",
     "vibe-coding"
@@ -11,5 +11,16 @@
   "thumbnail": "/thumbs/vibeindex.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 143
+  "order": 143,
+  "subcategory": "directories",
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "agent-tools"
+    },
+    {
+      "category": "learning",
+      "subcategory": "claude-code"
+    }
+  ]
 }

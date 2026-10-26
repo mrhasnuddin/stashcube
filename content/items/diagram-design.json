@@ -3,7 +3,7 @@
   "title": "diagram-design",
   "url": "https://github.com/cathrynlavery/diagram-design",
   "description": "Editorial diagram design for coding agents: 44 diagram types as self-contained HTML and SVG.",
-  "category": "github",
+  "category": "skills",
   "tags": [
     "diagrams",
     "agents",
@@ -19,5 +19,12 @@
   "thumbnail": "/thumbs/diagram-design.webp",
   "addedAt": "2026-10-14T16:58:01.470Z",
   "source": "manual",
-  "order": 172
+  "order": 172,
+  "subcategory": "design-skills",
+  "also": [
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
+  ]
 }

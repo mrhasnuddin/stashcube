@@ -3,7 +3,7 @@
   "title": "Refactoring UI Skill",
   "url": "https://github.com/s0xDk/refactoring-ui-skill",
   "description": "A Claude Code skill that applies the design rules from the Refactoring UI book.",
-  "category": "github",
+  "category": "skills",
   "tags": [
     "design",
     "skills",
@@ -16,5 +16,12 @@
   "thumbnail": "/thumbs/refactoring-ui-skill.webp",
   "addedAt": "2026-10-16T17:10:02.206Z",
   "source": "manual",
-  "order": 176
+  "order": 176,
+  "subcategory": "design-skills",
+  "also": [
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
+  ]
 }

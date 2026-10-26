@@ -3,7 +3,7 @@
   "title": "Coolify",
   "url": "https://coolify.io/",
   "description": "A self-hosting platform and open-source alternative to Heroku.",
-  "category": "tools",
+  "category": "backend",
   "tags": [
     "self-hosting",
     "open-source"
@@ -11,5 +11,12 @@
   "thumbnail": "/thumbs/coolify.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 150
+  "order": 150,
+  "subcategory": "platform",
+  "also": [
+    {
+      "category": "tools",
+      "subcategory": "developer"
+    }
+  ]
 }

@@ -3,7 +3,7 @@
   "title": "flightcn",
   "url": "https://github.com/ridemountainpig/flightcn",
   "description": "Flight route, tracking and satellite map components for React, installed with shadcn.",
-  "category": "github",
+  "category": "ui",
   "tags": [
     "react",
     "maps",
@@ -16,5 +16,12 @@
   "order": 165,
   "install": [
     "npx shadcn@latest add @flightcn/flight"
+  ],
+  "subcategory": "specialty",
+  "also": [
+    {
+      "category": "github",
+      "subcategory": "libraries-lists"
+    }
   ]
 }

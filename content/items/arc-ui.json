@@ -4,7 +4,7 @@
   "url": "https://uiarc.dev/",
   "description": "Animated React components and blocks for shadcn and Next.js, with an MCP server for agents.",
   "category": "ui",
-  "subcategory": "libraries",
+  "subcategory": "animated-libraries",
   "tags": [
     "react",
     "shadcn",
@@ -14,5 +14,11 @@
   "thumbnail": "/thumbs/arc-ui.webp",
   "addedAt": "2026-10-16T17:10:22.118Z",
   "source": "manual",
-  "order": 184
+  "order": 184,
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "mcp-servers"
+    }
+  ]
 }

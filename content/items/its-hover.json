@@ -13,5 +13,11 @@
   "source": "notion",
   "order": 28,
   "pick": true,
-  "subcategory": "icons"
+  "subcategory": "animated",
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "mcp-servers"
+    }
+  ]
 }

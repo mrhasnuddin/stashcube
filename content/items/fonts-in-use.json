@@ -11,5 +11,6 @@
   "thumbnail": "/thumbs/fonts-in-use.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 33
+  "order": 33,
+  "subcategory": "libraries"
 }

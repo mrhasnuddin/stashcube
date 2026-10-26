@@ -13,5 +13,6 @@
   "addedAt": "2026-10-11",
   "source": "manual",
   "order": 155,
-  "pick": true
+  "pick": true,
+  "subcategory": "ai-creative"
 }

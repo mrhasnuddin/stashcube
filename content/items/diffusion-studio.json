@@ -12,5 +12,12 @@
   "thumbnail": "/thumbs/diffusion-studio.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 148
+  "order": 148,
+  "subcategory": "agent-tools",
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "demo-video"
+    }
+  ]
 }

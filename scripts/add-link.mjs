@@ -1,5 +1,5 @@
 // Add one link to the stash: reads the page, saves a thumbnail, writes content/items/<slug>.json.
-//   node scripts/add-link.mjs <url> --category=<slug> [--sub=<slug>] [--tags=a,b,c] [--name="Name"] [--desc="One line."] [--pick] [--status=coming-soon] [--install="command" (repeat for several lines)] [--force]
+//   node scripts/add-link.mjs <url> --category=<slug> [--sub=<slug>] [--tags=a,b,c] [--name="Name"] [--desc="One line."] [--pick] [--status=coming-soon] [--also=cat:sub,cat2] [--install="command" (repeat for several lines)] [--force]
 // Thumbnail: the page's social image if it has one, otherwise a screenshot taken in your installed Chrome.
 // Categories live in content/taxonomy.json. Run without --category to list them.
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
@@ -104,11 +104,17 @@ if (!thumbnail || !title || !description) {
   } catch (e) { console.warn('Chrome pass failed: ' + (e.message || e)); }
 }
 
+// extra listings: --also=cat:sub,cat2; a github.com link is also listed under GitHub
+const alsoList = (flag('also') || '').split(',').map((x) => x.trim()).filter(Boolean).map((x) => { const [category, subcategory] = x.split(':'); return subcategory ? { category, subcategory } : { category }; });
+if (new URL(url).hostname === 'github.com' && cat.slug !== 'github' && !alsoList.some((a) => a.category === 'github')) alsoList.push({ category: 'github', subcategory: 'skills-plugins' });
+for (const a of alsoList) if (!categories.some((c) => c.slug === a.category)) { console.error(`Unknown category in --also: ${a.category}`); process.exit(2); }
+
 const finalSlug = slugify(title || slug);
 const item = {
   slug: finalSlug, title: title || slug, url, description, category: cat.slug,
   ...(sub ? { subcategory: sub } : {}),
   tags: (flag('tags') || '').split(',').map((t) => t.trim().toLowerCase()).filter(Boolean),
+  ...(alsoList.length ? { also: alsoList } : {}),
   ...(has('pick') ? { pick: true } : {}),
   ...(args.some((a) => a.startsWith('--install=')) ? { install: args.filter((a) => a.startsWith('--install=')).map((a) => a.slice(10)) } : {}),
   ...(status ? { status } : {}),

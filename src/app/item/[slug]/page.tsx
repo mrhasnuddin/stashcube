@@ -73,6 +73,17 @@ export default async function ItemPage(props: PageProps<"/item/[slug]">) {
               <InstallBlock lines={item.install} />
             </div>
           ) : null}
+          {item.also?.length ? (
+            <p className="label host" style={{ marginTop: "var(--primitive-spacing-4)" }}>
+              Also in{" "}
+              {[...new Set(item.also.map((a) => a.category))].map((c, n) => (
+                <span key={c}>
+                  {n > 0 ? ", " : ""}
+                  <Link href={`/c/${c}`}>{getCategory(c)?.name ?? c}</Link>
+                </span>
+              ))}
+            </p>
+          ) : null}
           {item.tags.length > 0 ? (
             <div className="chips" style={{ marginTop: "var(--primitive-spacing-6)" }}>
               {item.tags.map((t) => (

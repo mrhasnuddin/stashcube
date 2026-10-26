@@ -3,7 +3,7 @@
   "title": "gstack",
   "url": "https://github.com/garrytan/gstack",
   "description": "Garry Tan's Claude Code setup: 23 skills that act as CEO, designer, engineering manager and QA.",
-  "category": "github",
+  "category": "skills",
   "tags": [
     "agents",
     "claude-code",
@@ -17,5 +17,12 @@
   "install": [
     "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/gstack",
     "cd ~/gstack && ./setup"
+  ],
+  "subcategory": "engineering",
+  "also": [
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
   ]
 }

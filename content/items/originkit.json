@@ -13,5 +13,11 @@
   "addedAt": "2026-10-10",
   "source": "notion",
   "order": 4,
-  "subcategory": "libraries"
+  "subcategory": "animated-libraries",
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "mcp-servers"
+    }
+  ]
 }

@@ -17,5 +17,6 @@
   "thumbnail": "/thumbs/supabase.webp",
   "addedAt": "2026-10-19T16:40:37.541Z",
   "source": "manual",
-  "order": 203
+  "order": 203,
+  "subcategory": "platform"
 }

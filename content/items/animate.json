@@ -17,5 +17,16 @@
   "thumbnail": "/thumbs/animate.webp",
   "addedAt": "2026-10-16T17:09:53.457Z",
   "source": "manual",
-  "order": 175
+  "order": 175,
+  "subcategory": "motion-skills",
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "creative-media"
+    },
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
+  ]
 }

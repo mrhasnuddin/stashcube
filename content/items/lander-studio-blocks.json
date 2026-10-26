@@ -3,7 +3,7 @@
   "title": "Lander Studio Blocks",
   "url": "https://blocks.lander.studio/",
   "description": "Free Figma blocks, website sections, app screens and dashboards.",
-  "category": "templates",
+  "category": "galleries",
   "tags": [
     "figma",
     "free",
@@ -13,5 +13,5 @@
   "addedAt": "2026-10-10",
   "source": "notion",
   "order": 38,
-  "subcategory": "templates"
+  "subcategory": "templates-mockups"
 }

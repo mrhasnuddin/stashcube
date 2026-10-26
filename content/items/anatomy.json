@@ -3,7 +3,7 @@
   "title": "Anatomy",
   "url": "https://github.com/wheresryan22/anatomy",
   "description": "An agent skill that draws detailed, interactive isometric SVG figures of machines and systems.",
-  "category": "github",
+  "category": "skills",
   "tags": [
     "isometric",
     "svg",
@@ -16,5 +16,16 @@
   "thumbnail": "/thumbs/anatomy.webp",
   "addedAt": "2026-10-16T17:10:10.052Z",
   "source": "manual",
-  "order": 177
+  "order": 177,
+  "subcategory": "design-skills",
+  "also": [
+    {
+      "category": "icons",
+      "subcategory": "illustrations"
+    },
+    {
+      "category": "github",
+      "subcategory": "skills-plugins"
+    }
+  ]
 }

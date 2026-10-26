@@ -3,7 +3,7 @@
   "title": "Mockups Design",
   "url": "https://mockups-design.com/",
   "description": "Free premium mockups for personal and commercial work.",
-  "category": "templates",
+  "category": "galleries",
   "tags": [
     "free",
     "psd"
@@ -12,5 +12,5 @@
   "addedAt": "2026-10-10",
   "source": "notion",
   "order": 55,
-  "subcategory": "mockups"
+  "subcategory": "templates-mockups"
 }

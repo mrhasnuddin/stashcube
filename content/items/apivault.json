@@ -3,7 +3,7 @@
   "title": "ApiVault",
   "url": "https://apivault.dev",
   "description": "A categorized list of free and public APIs.",
-  "category": "tools",
+  "category": "backend",
   "tags": [
     "apis",
     "directory",
@@ -12,5 +12,12 @@
   "thumbnail": "/thumbs/apivault.webp",
   "addedAt": "2026-10-16T17:10:26.969Z",
   "source": "manual",
-  "order": 187
+  "order": 187,
+  "subcategory": "apis",
+  "also": [
+    {
+      "category": "tools",
+      "subcategory": "directories"
+    }
+  ]
 }

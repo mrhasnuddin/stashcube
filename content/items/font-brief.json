@@ -11,5 +11,6 @@
   "thumbnail": "/thumbs/font-brief.webp",
   "addedAt": "2026-10-10",
   "source": "notion",
-  "order": 31
+  "order": 31,
+  "subcategory": "libraries"
 }

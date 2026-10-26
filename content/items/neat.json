@@ -13,5 +13,11 @@
   "addedAt": "2026-10-10",
   "source": "notion",
   "order": 51,
-  "subcategory": "colors-gradients"
+  "subcategory": "gradients",
+  "also": [
+    {
+      "category": "3d-tools",
+      "subcategory": "web-3d"
+    }
+  ]
 }
