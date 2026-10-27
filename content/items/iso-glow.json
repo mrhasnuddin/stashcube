@@ -1,0 +1,23 @@
+{
+  "slug": "iso-glow",
+  "title": "iso-glow",
+  "url": "https://isoglow.dev/",
+  "description": "A Claude skill for interactive isometric line drawings with glow lighting in 2D and 3D.",
+  "category": "skills",
+  "subcategory": "creative-media",
+  "tags": [
+    "isometric",
+    "3d",
+    "claude-code",
+    "skills",
+    "creative-coding",
+    "glow"
+  ],
+  "install": [
+    "mkdir -p ~/.claude/skills && curl -fsSL https://iso-glow.vercel.app/iso-glow.tar.gz | tar -xz -C ~/.claude/skills"
+  ],
+  "thumbnail": "/thumbs/iso-glow.webp",
+  "addedAt": "2026-10-27T13:42:54.818Z",
+  "source": "manual",
+  "order": 215
+}

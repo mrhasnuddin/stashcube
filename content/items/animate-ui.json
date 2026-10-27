@@ -1,0 +1,20 @@
+{
+  "slug": "animate-ui",
+  "title": "Animate UI",
+  "url": "https://animate-ui.com/",
+  "description": "Animated drop-in primitives for Radix UI, Base UI and React Aria, built with Motion.",
+  "category": "ui",
+  "subcategory": "animated-libraries",
+  "tags": [
+    "react",
+    "animation",
+    "components",
+    "radix-ui",
+    "motion",
+    "tailwind"
+  ],
+  "thumbnail": "/thumbs/animate-ui.webp",
+  "addedAt": "2026-10-27T13:42:13.074Z",
+  "source": "manual",
+  "order": 213
+}

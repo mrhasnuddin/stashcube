@@ -1,0 +1,23 @@
+{
+  "slug": "hallmark",
+  "title": "Hallmark",
+  "url": "https://github.com/Nutlope/hallmark",
+  "description": "An anti-AI-slop design skill with forty-eight themes, layout rules and real browser checks for coding agents.",
+  "category": "github",
+  "subcategory": "skills-plugins",
+  "tags": [
+    "ai",
+    "skills",
+    "agents",
+    "design-rules",
+    "claude-code",
+    "themes"
+  ],
+  "install": [
+    "npx skills add nutlope/hallmark -g"
+  ],
+  "thumbnail": "/thumbs/hallmark.webp",
+  "addedAt": "2026-10-27T13:41:34.721Z",
+  "source": "manual",
+  "order": 212
+}
