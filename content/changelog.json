@@ -253,6 +253,16 @@
         "type": "added",
         "minor": true,
         "text": "iso-glow in Skills and Prompts, under Creative and media."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "MakaKami in Learning and in My go-to stack."
+      },
+      {
+        "type": "changed",
+        "minor": true,
+        "text": "Added REA to My go-to stack."
       }
     ]
   },

@@ -1,0 +1,20 @@
+{
+  "slug": "makakami",
+  "title": "MakaKami",
+  "url": "https://makakami.com.my/",
+  "description": "A community directory of apps, websites and software made in Malaysia.",
+  "category": "learning",
+  "subcategory": "guides",
+  "tags": [
+    "malaysia",
+    "directory",
+    "software",
+    "apps",
+    "community"
+  ],
+  "pick": true,
+  "thumbnail": "/thumbs/makakami.webp",
+  "addedAt": "2026-10-27T16:56:35.963Z",
+  "source": "manual",
+  "order": 216
+}
