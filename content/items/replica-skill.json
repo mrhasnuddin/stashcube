@@ -1,0 +1,29 @@
+{
+  "slug": "replica-skill",
+  "title": "Replica Skill",
+  "url": "https://github.com/Jakeschincariol/replica-skill",
+  "description": "Eleven Claude skills to clean-room clone web or mobile apps: reverse-engineer flows, design architecture and test for bugs.",
+  "category": "github",
+  "subcategory": "skills-plugins",
+  "tags": [
+    "claude-code",
+    "skills",
+    "reverse-engineering",
+    "clone",
+    "agents"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "engineering"
+    }
+  ],
+  "install": [
+    "/plugin marketplace add Jakeschincariol/replica-skill",
+    "/plugin install replica-skill@replica-skill"
+  ],
+  "thumbnail": "/thumbs/replica-skill.webp",
+  "addedAt": "2026-10-30T16:24:13.185Z",
+  "source": "manual",
+  "order": 225
+}

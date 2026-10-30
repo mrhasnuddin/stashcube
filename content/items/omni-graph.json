@@ -1,0 +1,29 @@
+{
+  "slug": "omni-graph",
+  "title": "Omni-graph",
+  "url": "https://github.com/Rekabytes-Enterprise/omni-graph",
+  "description": "Local graph memory for coding agents: store decisions, lessons and constraints in SQLite and recall context across sessions.",
+  "category": "github",
+  "subcategory": "skills-plugins",
+  "tags": [
+    "agents",
+    "memory",
+    "sqlite",
+    "knowledge-graph",
+    "developer-tools",
+    "rust"
+  ],
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "agent-tools"
+    }
+  ],
+  "install": [
+    "npx --yes --package=https://github.com/Rekabytes-Enterprise/omni-graph/releases/latest/download/omni-graph.tgz omni-graph install"
+  ],
+  "thumbnail": "/thumbs/omni-graph.webp",
+  "addedAt": "2026-10-30T16:24:25.341Z",
+  "source": "manual",
+  "order": 226
+}

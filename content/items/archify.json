@@ -1,0 +1,29 @@
+{
+  "slug": "archify",
+  "title": "Archify",
+  "url": "https://github.com/tt-a1i/archify",
+  "description": "An AI agent skill that turns ideas, plans and codebases into interactive diagrams and explainer pages.",
+  "category": "github",
+  "subcategory": "skills-plugins",
+  "tags": [
+    "ai",
+    "skills",
+    "agents",
+    "diagrams",
+    "architecture",
+    "claude-code"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "design-skills"
+    }
+  ],
+  "install": [
+    "npx skills add tt-a1i/archify -g"
+  ],
+  "thumbnail": "/thumbs/archify.webp",
+  "addedAt": "2026-10-28T10:09:18.904Z",
+  "source": "manual",
+  "order": 217
+}

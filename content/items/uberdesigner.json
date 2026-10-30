@@ -1,0 +1,26 @@
+{
+  "slug": "uberdesigner",
+  "title": "uberdesigner",
+  "url": "https://uberdesigner.ai/",
+  "description": "Curated website designs, sections and UI kits with AI prompts, project source and Figma files.",
+  "category": "galleries",
+  "subcategory": "templates-mockups",
+  "tags": [
+    "templates",
+    "figma",
+    "prompts",
+    "claude-code",
+    "landing-pages",
+    "ui"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "prompts"
+    }
+  ],
+  "thumbnail": "/thumbs/uberdesigner.webp",
+  "addedAt": "2026-10-30T16:23:44.743Z",
+  "source": "manual",
+  "order": 223
+}

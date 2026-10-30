@@ -1,0 +1,30 @@
+{
+  "slug": "ai-templates",
+  "title": "AI Templates",
+  "url": "https://www.aitmpl.com/",
+  "description": "1,000+ pre-built components for Claude Code: agents, slash commands, MCP integrations, hooks and settings.",
+  "category": "skills",
+  "subcategory": "directories",
+  "tags": [
+    "aitmpl",
+    "claude-code",
+    "agents",
+    "skills",
+    "mcp",
+    "templates",
+    "directory"
+  ],
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "agent-tools"
+    }
+  ],
+  "install": [
+    "npx claude-code-templates@latest"
+  ],
+  "thumbnail": "/thumbs/ai-templates.webp",
+  "addedAt": "2026-10-29T11:11:12.886Z",
+  "source": "manual",
+  "order": 219
+}

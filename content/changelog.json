@@ -263,6 +263,31 @@
         "type": "changed",
         "minor": true,
         "text": "Added REA to My go-to stack."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Archify and OGL in GitHub."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "AI Templates in Skills and Prompts, under Skill directories."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "ReactDrops in UI Components, under Animated libraries."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Swarm Rebuild in GitHub."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Collletttivo in Fonts; uberdesigner in Galleries; Gather in 3D Tools; ascii-reveal, Replica Skill, Omni-graph, fun-isometric, Appllama Skills and AI Design Skills in GitHub; Interface BTS and Skill Issue in Skills and Prompts."
       }
     ]
   },

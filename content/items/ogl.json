@@ -1,0 +1,28 @@
+{
+  "slug": "ogl",
+  "title": "OGL",
+  "url": "https://github.com/oframe/ogl",
+  "description": "A minimal, lightweight WebGL library designed for developers creating custom shaders.",
+  "category": "github",
+  "subcategory": "libraries-lists",
+  "tags": [
+    "webgl",
+    "3d",
+    "shaders",
+    "library",
+    "javascript"
+  ],
+  "also": [
+    {
+      "category": "3d-tools",
+      "subcategory": "web-3d"
+    }
+  ],
+  "install": [
+    "npm i ogl"
+  ],
+  "thumbnail": "/thumbs/ogl.webp",
+  "addedAt": "2026-10-28T10:09:42.598Z",
+  "source": "manual",
+  "order": 218
+}

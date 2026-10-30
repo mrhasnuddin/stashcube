@@ -1,0 +1,29 @@
+{
+  "slug": "interface-bts",
+  "title": "Interface BTS",
+  "url": "https://iamnoman.com/interface-bts",
+  "description": "A Claude skill that pauses real components at key moments to generate spec posters with curves, measurements and timings.",
+  "category": "skills",
+  "subcategory": "design-skills",
+  "tags": [
+    "claude-code",
+    "skills",
+    "specs",
+    "micro-interactions",
+    "animation",
+    "design-tools"
+  ],
+  "also": [
+    {
+      "category": "tools",
+      "subcategory": "developer"
+    }
+  ],
+  "install": [
+    "npx skills add nomanjack/interface-bts"
+  ],
+  "thumbnail": "/thumbs/interface-bts.webp",
+  "addedAt": "2026-10-30T16:24:38.116Z",
+  "source": "manual",
+  "order": 227
+}

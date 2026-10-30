@@ -1,0 +1,20 @@
+{
+  "slug": "reactdrops",
+  "title": "ReactDrops",
+  "url": "https://reactdrops.dev/",
+  "description": "Creative React components and animations: liquid glass orbs, chromatic buttons, refracted text and physics backgrounds.",
+  "category": "ui",
+  "subcategory": "animated-libraries",
+  "tags": [
+    "react",
+    "components",
+    "animations",
+    "ui",
+    "tailwind",
+    "creative"
+  ],
+  "thumbnail": "/thumbs/reactdrops.webp",
+  "addedAt": "2026-10-30T15:53:21.085Z",
+  "source": "manual",
+  "order": 220
+}

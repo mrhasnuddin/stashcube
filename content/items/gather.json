@@ -1,0 +1,27 @@
+{
+  "slug": "gather",
+  "title": "Gather",
+  "url": "https://gather.be-of-dao.com/",
+  "description": "An interactive 3D WebGL point-cloud and particle swarm engine that turns photos into interactive 3D spaces using on-device ML.",
+  "category": "3d-tools",
+  "subcategory": "web-3d",
+  "tags": [
+    "3d",
+    "webgl",
+    "point-cloud",
+    "ml",
+    "particles",
+    "interactive",
+    "creative"
+  ],
+  "also": [
+    {
+      "category": "inspiration",
+      "subcategory": "3d-immersive"
+    }
+  ],
+  "thumbnail": "/thumbs/gather.webp",
+  "addedAt": "2026-10-30T16:26:31.584Z",
+  "source": "manual",
+  "order": 232
+}

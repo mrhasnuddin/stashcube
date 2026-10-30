@@ -1,0 +1,29 @@
+{
+  "slug": "fun-isometric",
+  "title": "fun-isometric",
+  "url": "https://github.com/kelvinkn17/skills",
+  "description": "An agent skill that draws animated isometric stickers on real keyframes for Claude Code and Codex.",
+  "category": "github",
+  "subcategory": "skills-plugins",
+  "tags": [
+    "isometric",
+    "stickers",
+    "animation",
+    "claude-code",
+    "codex",
+    "skills"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "creative-media"
+    }
+  ],
+  "install": [
+    "npx skills add kelvinkn17/skills@fun-isometric"
+  ],
+  "thumbnail": "/thumbs/fun-isometric.webp",
+  "addedAt": "2026-10-30T16:25:03.880Z",
+  "source": "manual",
+  "order": 228
+}
