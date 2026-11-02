@@ -1,0 +1,26 @@
+{
+  "slug": "dvklab",
+  "title": "dvklab",
+  "url": "https://dvklab.vercel.app/",
+  "description": "70 animated landing-page hero sections with WebGL shaders, scroll-driven worlds and ASCII simulations.",
+  "category": "learning",
+  "subcategory": "guides",
+  "tags": [
+    "webgl",
+    "shaders",
+    "heroes",
+    "templates",
+    "animation",
+    "open-source"
+  ],
+  "also": [
+    {
+      "category": "github",
+      "subcategory": "libraries-lists"
+    }
+  ],
+  "thumbnail": "/thumbs/dvklab.webp",
+  "addedAt": "2026-11-02T16:17:00.000Z",
+  "source": "manual",
+  "order": 235
+}

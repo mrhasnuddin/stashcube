@@ -1,0 +1,26 @@
+{
+  "slug": "slopscan",
+  "title": "Slopscan",
+  "url": "https://www.slopscan.co/",
+  "description": "Find the slop in your site's design, copy and SEO, then get a single prompt to fix it.",
+  "category": "inspiration",
+  "subcategory": "saas-ai",
+  "tags": [
+    "ai",
+    "design",
+    "seo",
+    "audit",
+    "copy",
+    "developer-tools"
+  ],
+  "also": [
+    {
+      "category": "tools",
+      "subcategory": "developer"
+    }
+  ],
+  "thumbnail": "/thumbs/slopscan.webp",
+  "addedAt": "2026-11-02T16:17:05.681Z",
+  "source": "manual",
+  "order": 234
+}

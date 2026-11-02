@@ -1,0 +1,26 @@
+{
+  "slug": "designlab",
+  "title": "Designlab",
+  "url": "https://designlab.com/",
+  "description": "Hands-on courses and bootcamps teaching UI/UX, product design and modern AI workflows.",
+  "category": "inspiration",
+  "subcategory": "saas-ai",
+  "tags": [
+    "ux",
+    "ui",
+    "product-design",
+    "education",
+    "courses",
+    "ai"
+  ],
+  "also": [
+    {
+      "category": "learning",
+      "subcategory": "guides"
+    }
+  ],
+  "thumbnail": "/thumbs/designlab.webp",
+  "addedAt": "2026-11-02T16:16:26.345Z",
+  "source": "manual",
+  "order": 233
+}

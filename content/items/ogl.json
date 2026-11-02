@@ -16,6 +16,10 @@
     {
       "category": "3d-tools",
       "subcategory": "web-3d"
+    },
+    {
+      "category": "learning",
+      "subcategory": "guides"
     }
   ],
   "install": [
