@@ -1,0 +1,30 @@
+{
+  "slug": "ffmpeg",
+  "title": "FFmpeg",
+  "url": "https://github.com/FFmpeg/FFmpeg",
+  "description": "A complete, cross-platform solution to record, convert, edit and stream multimedia audio and video.",
+  "category": "github",
+  "subcategory": "libraries-lists",
+  "tags": [
+    "video",
+    "audio",
+    "multimedia",
+    "transcoding",
+    "streaming",
+    "cli"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "demo-video"
+    },
+    {
+      "category": "tools",
+      "subcategory": "audio"
+    }
+  ],
+  "thumbnail": "/thumbs/ffmpeg.webp",
+  "addedAt": "2026-11-05T04:05:28.602Z",
+  "source": "manual",
+  "order": 239
+}

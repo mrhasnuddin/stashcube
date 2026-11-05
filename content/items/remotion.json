@@ -1,0 +1,29 @@
+{
+  "slug": "remotion",
+  "title": "Remotion",
+  "url": "https://github.com/remotion-dev/remotion",
+  "description": "Create videos programmatically in React using code, web technologies and AI integrations.",
+  "category": "github",
+  "subcategory": "libraries-lists",
+  "tags": [
+    "video",
+    "react",
+    "motion",
+    "animation",
+    "programmatic-video",
+    "javascript"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "demo-video"
+    }
+  ],
+  "install": [
+    "npx create-video@latest"
+  ],
+  "thumbnail": "/thumbs/remotion.webp",
+  "addedAt": "2026-11-05T04:05:00.468Z",
+  "source": "manual",
+  "order": 237
+}

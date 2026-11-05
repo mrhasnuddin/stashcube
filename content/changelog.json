@@ -293,6 +293,11 @@
         "type": "added",
         "minor": true,
         "text": "Designlab and Slopscan in Inspiration, under SaaS and AI; dvklab in Learning, under Guides; OGL cross-referenced in Learning."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "fontzz in Fonts; Remotion, HyperFrames, FFmpeg, Whisper, and yt-dlp in GitHub and Motion."
       }
     ]
   },

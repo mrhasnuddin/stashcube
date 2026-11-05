@@ -1,0 +1,29 @@
+{
+  "slug": "hyperframes",
+  "title": "HyperFrames",
+  "url": "https://github.com/heygen-com/hyperframes",
+  "description": "A motion graphics and video framework for AI coding agents to write HTML and render video.",
+  "category": "github",
+  "subcategory": "skills-plugins",
+  "tags": [
+    "video",
+    "motion",
+    "animation",
+    "html-to-video",
+    "ai-agents",
+    "claude-code"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "demo-video"
+    }
+  ],
+  "install": [
+    "npm i hyperframes"
+  ],
+  "thumbnail": "/thumbs/hyperframes.webp",
+  "addedAt": "2026-11-05T04:05:14.339Z",
+  "source": "manual",
+  "order": 238
+}

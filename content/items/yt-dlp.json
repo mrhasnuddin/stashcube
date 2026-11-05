@@ -1,0 +1,29 @@
+{
+  "slug": "yt-dlp",
+  "title": "yt-dlp",
+  "url": "https://github.com/yt-dlp/yt-dlp",
+  "description": "A feature-rich command-line audio and video downloader supporting thousands of sites.",
+  "category": "github",
+  "subcategory": "libraries-lists",
+  "tags": [
+    "video",
+    "downloader",
+    "cli",
+    "audio",
+    "youtube",
+    "media-tools"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "demo-video"
+    }
+  ],
+  "install": [
+    "pip install yt-dlp"
+  ],
+  "thumbnail": "/thumbs/yt-dlp.webp",
+  "addedAt": "2026-11-05T04:05:51.134Z",
+  "source": "manual",
+  "order": 241
+}

@@ -45,6 +45,7 @@ export const descriptions = {
   'best-free-fonts': 'A curated list of free serif, sans, script and mono fonts.',
   'pp-neue-montreal': 'A grotesque sans by Pangram Pangram for branding, UI and editorial work.',
   'collletttivo': 'Free open-source display and text typefaces released under the SIL Open Font License.',
+  'fontzz': 'Thirty-six original type families across every weight from 100 to 900, free under the SIL Open Font License.',
   'space-type-generator': 'A kinetic type generator.',
   // Templates
   'vibeui': 'AI-generated UI components and templates.',
@@ -75,6 +76,11 @@ export const descriptions = {
   'svg-shapes': 'Free copy-paste SVG shapes by Monika Michalczyk.',
   'playthru': 'Run animated product demos on your real UI with a gliding cursor and camera zoom, in 5 KB.',
   'swarm-rebuild': 'A Chrome extension that wipes any web page and rebuilds it live with a swarm of multiplayer cursors.',
+  'remotion': 'Create videos programmatically in React using code, web technologies and AI integrations.',
+  'hyperframes': 'A motion graphics and video framework for AI coding agents to write HTML and render video.',
+  'ffmpeg': 'A complete, cross-platform solution to record, convert, edit and stream multimedia audio and video.',
+  'whisper': 'A general-purpose speech recognition and audio transcription model from OpenAI.',
+  'yt-dlp': 'A feature-rich command-line audio and video downloader supporting thousands of sites.',
   'mockups-design': 'Free premium mockups for personal and commercial work.',
   // Brand
   'logoinspo': '1,200+ logos you can search by style, industry and color.',

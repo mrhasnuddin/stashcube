@@ -1,0 +1,33 @@
+{
+  "slug": "whisper",
+  "title": "Whisper",
+  "url": "https://github.com/openai/whisper",
+  "description": "A general-purpose speech recognition and audio transcription model from OpenAI.",
+  "category": "github",
+  "subcategory": "libraries-lists",
+  "tags": [
+    "audio",
+    "speech-recognition",
+    "transcription",
+    "ai",
+    "speech-to-text",
+    "openai"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "demo-video"
+    },
+    {
+      "category": "tools",
+      "subcategory": "audio"
+    }
+  ],
+  "install": [
+    "pip install -U openai-whisper"
+  ],
+  "thumbnail": "/thumbs/whisper.webp",
+  "addedAt": "2026-11-05T04:05:38.420Z",
+  "source": "manual",
+  "order": 240
+}

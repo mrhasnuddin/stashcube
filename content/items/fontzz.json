@@ -1,0 +1,19 @@
+{
+  "slug": "fontzz",
+  "title": "fontzz",
+  "url": "https://fontzz.vercel.app/",
+  "description": "Thirty-six original type families across every weight from 100 to 900, free under the SIL Open Font License.",
+  "category": "fonts",
+  "subcategory": "libraries",
+  "tags": [
+    "fonts",
+    "typography",
+    "open-source",
+    "font-family",
+    "free-fonts"
+  ],
+  "thumbnail": "/thumbs/fontzz.webp",
+  "addedAt": "2026-11-05T04:04:48.884Z",
+  "source": "manual",
+  "order": 236
+}
