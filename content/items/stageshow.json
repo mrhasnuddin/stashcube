@@ -1,0 +1,34 @@
+{
+  "slug": "stageshow",
+  "title": "Stageshow",
+  "url": "https://github.com/benjitaylor/skills",
+  "description": "Agent skills for building realistic faux product UI, feature cards, cursor demos, and bento grids in React.",
+  "category": "skills",
+  "subcategory": "frontend-ui",
+  "tags": [
+    "skills",
+    "claude-code",
+    "ui",
+    "motion",
+    "bento-grid",
+    "react",
+    "agents"
+  ],
+  "install": [
+    "npx skills add benjitaylor/skills --skill stageshow"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "motion"
+    },
+    {
+      "category": "motion",
+      "subcategory": "motion-skills"
+    }
+  ],
+  "thumbnail": "/thumbs/stageshow.webp",
+  "addedAt": "2026-11-10T04:08:00.000Z",
+  "source": "manual",
+  "order": 246
+}

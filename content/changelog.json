@@ -320,6 +320,11 @@
         "text": "Craftwork Catalog in Galleries, under Templates and Mockups."
       },
       {
+        "type": "added",
+        "minor": true,
+        "text": "Stageshow in Agent Skills, under Frontend and UI (and Motion)."
+      },
+      {
         "type": "changed",
         "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }

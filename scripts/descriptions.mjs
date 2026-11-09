@@ -231,4 +231,5 @@ export const descriptions = {
   'uppbeat-sfx': 'Free sound effects, safe for YouTube, TikTok and podcasts.',
   'tars-ai': 'Decentralized AI architecture and agent tokenization protocol on Solana.',
   'craftwork-catalog': 'Curated packs of 2D and 3D illustrations, UI kits, device mockups and design assets.',
+  'stageshow': 'Agent skills for building realistic faux product UI, feature cards, cursor demos, and bento grids in React.',
 };
