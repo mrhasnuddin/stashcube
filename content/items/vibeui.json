@@ -3,7 +3,7 @@
   "title": "VibeUI",
   "url": "https://www.vibeui.studio/",
   "description": "AI-generated UI components and templates.",
-  "category": "templates",
+  "category": "galleries",
   "tags": [
     "ai-generated",
     "ui"
@@ -12,6 +12,6 @@
   "addedAt": "2026-10-10",
   "source": "notion",
   "order": 37,
-  "subcategory": "templates",
+  "subcategory": "templates-mockups",
   "status": "archived"
 }

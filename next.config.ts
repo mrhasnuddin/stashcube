@@ -9,7 +9,8 @@ const merged: [string, string, string][] = [
   ["templates", "galleries", "templates-mockups"],
   ["colors-gradients", "colors-effects", "colors-gradients"],
   ["shaders-effects", "colors-effects", "shaders-effects"],
-  ["prompts", "skills", "prompts"],
+  ["prompts", "skills", "frontend-ui"],
+  ["github", "skills", "registries"],
 ];
 
 const nextConfig: NextConfig = {

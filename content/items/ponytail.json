@@ -18,11 +18,5 @@
     "/plugin marketplace add DietrichGebert/ponytail",
     "/plugin install ponytail@ponytail"
   ],
-  "subcategory": "engineering",
-  "also": [
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
-    }
-  ]
+  "subcategory": "backend-systems"
 }

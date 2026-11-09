@@ -17,11 +17,5 @@
   "install": [
     "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit"
   ],
-  "subcategory": "engineering",
-  "also": [
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
-    }
-  ]
+  "subcategory": "backend-systems"
 }

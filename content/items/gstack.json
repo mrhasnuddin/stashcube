@@ -18,11 +18,5 @@
     "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/gstack",
     "cd ~/gstack && ./setup"
   ],
-  "subcategory": "engineering",
-  "also": [
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
-    }
-  ]
+  "subcategory": "backend-systems"
 }

@@ -3,7 +3,7 @@
   "title": "Motionmaxxing",
   "url": "https://github.com/Tejashmakwana/motionmaxxing",
   "description": "An agent skill that makes AI-generated videos look like a motion designer made them.",
-  "category": "motion",
+  "category": "skills",
   "tags": [
     "motion",
     "skills",
@@ -17,15 +17,11 @@
   "addedAt": "2026-10-16T17:09:44.731Z",
   "source": "manual",
   "order": 174,
-  "subcategory": "motion-skills",
+  "subcategory": "motion",
   "also": [
     {
-      "category": "skills",
-      "subcategory": "creative-media"
-    },
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
+      "category": "motion",
+      "subcategory": "motion-skills"
     }
   ]
 }

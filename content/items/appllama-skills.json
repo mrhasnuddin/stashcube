@@ -3,8 +3,8 @@
   "title": "Appllama Skills",
   "url": "https://github.com/Appllama/appllama-skills",
   "description": "Agent skills that turn patterns from top-grossing mobile apps into native-quality screens for React Native and Expo.",
-  "category": "github",
-  "subcategory": "skills-plugins",
+  "category": "skills",
+  "subcategory": "registries",
   "tags": [
     "mobile",
     "react-native",
@@ -12,12 +12,6 @@
     "skills",
     "claude-code",
     "ui-design"
-  ],
-  "also": [
-    {
-      "category": "skills",
-      "subcategory": "design-skills"
-    }
   ],
   "install": [
     "npx skills@latest add appllama/appllama-skills"

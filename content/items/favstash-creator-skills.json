@@ -3,7 +3,7 @@
   "title": "FavStash Creator Skills",
   "url": "https://github.com/alisadiq-ai/favstash-ai-video-editing-skills",
   "description": "AI skills for coding agents to research, script, edit and publish short-form video.",
-  "category": "motion",
+  "category": "skills",
   "tags": [
     "video",
     "agents",
@@ -19,15 +19,11 @@
   "addedAt": "2026-10-19T14:48:23.858Z",
   "source": "manual",
   "order": 191,
-  "subcategory": "motion-skills",
+  "subcategory": "motion",
   "also": [
     {
-      "category": "skills",
-      "subcategory": "creative-media"
-    },
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
+      "category": "motion",
+      "subcategory": "motion-skills"
     }
   ]
 }

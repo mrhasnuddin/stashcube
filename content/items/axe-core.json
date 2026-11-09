@@ -17,11 +17,5 @@
   "addedAt": "2026-10-19T14:55:43.886Z",
   "source": "manual",
   "order": 195,
-  "subcategory": "developer",
-  "also": [
-    {
-      "category": "github",
-      "subcategory": "libraries-lists"
-    }
-  ]
+  "subcategory": "developer"
 }

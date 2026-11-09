@@ -17,15 +17,11 @@
   "addedAt": "2026-10-16T17:10:10.052Z",
   "source": "manual",
   "order": 177,
-  "subcategory": "design-skills",
+  "subcategory": "frontend-ui",
   "also": [
     {
       "category": "icons",
       "subcategory": "illustrations"
-    },
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "title": "Animate",
   "url": "https://github.com/cth9191/animate",
   "description": "A Claude Code plugin that makes short canvas animations in a chosen style, with storyboard check-ins.",
-  "category": "motion",
+  "category": "skills",
   "tags": [
     "motion",
     "claude-code",
@@ -18,15 +18,11 @@
   "addedAt": "2026-10-16T17:09:53.457Z",
   "source": "manual",
   "order": 175,
-  "subcategory": "motion-skills",
+  "subcategory": "motion",
   "also": [
     {
-      "category": "skills",
-      "subcategory": "creative-media"
-    },
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
+      "category": "motion",
+      "subcategory": "motion-skills"
     }
   ]
 }

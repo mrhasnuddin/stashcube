@@ -3,8 +3,8 @@
   "title": "Whisper",
   "url": "https://github.com/openai/whisper",
   "description": "A general-purpose speech recognition and audio transcription model from OpenAI.",
-  "category": "github",
-  "subcategory": "libraries-lists",
+  "category": "tools",
+  "subcategory": "developer",
   "tags": [
     "audio",
     "speech-recognition",

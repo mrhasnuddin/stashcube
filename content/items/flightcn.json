@@ -17,11 +17,5 @@
   "install": [
     "npx shadcn@latest add @flightcn/flight"
   ],
-  "subcategory": "specialty",
-  "also": [
-    {
-      "category": "github",
-      "subcategory": "libraries-lists"
-    }
-  ]
+  "subcategory": "specialty"
 }

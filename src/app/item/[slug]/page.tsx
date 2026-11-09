@@ -43,10 +43,15 @@ export default async function ItemPage(props: PageProps<"/item/[slug]">) {
       <PageHeader trail={[{ label: cat.group }, { label: cat.name, href: `/c/${cat.slug}` }, { label: item.title }]} />
       <div className="item-grid">
         <div>
-          <span className="label">
-            {cat.name}
-            {sub ? ` / ${sub.name}` : ""}
-          </span>
+          <p className="label item-cat-trail">
+            <Link href={`/c/${cat.slug}`}>{cat.name}</Link>
+            {sub ? (
+              <>
+                <span className="sep">/</span>
+                <Link href={`/c/${cat.slug}?sub=${sub.slug}`}>{sub.name}</Link>
+              </>
+            ) : null}
+          </p>
           {item.comingSoon || item.pick ? (
             <p className="badges">
               {item.comingSoon ? <span className="badge soon">COMING SOON</span> : null}
@@ -73,23 +78,26 @@ export default async function ItemPage(props: PageProps<"/item/[slug]">) {
               <InstallBlock lines={item.install} />
             </div>
           ) : null}
-          {item.also?.length ? (
-            <p className="label host" style={{ marginTop: "var(--primitive-spacing-4)" }}>
-              Also in{" "}
-              {[...new Set(item.also.map((a) => a.category))].map((c, n) => (
-                <span key={c}>
-                  {n > 0 ? ", " : ""}
-                  <Link href={`/c/${c}`}>{getCategory(c)?.name ?? c}</Link>
-                </span>
-              ))}
-            </p>
-          ) : null}
+          {(() => {
+            const extraCats = [...new Set((item.also ?? []).map((a) => a.category))].filter((c) => c !== item.category);
+            if (!extraCats.length) return null;
+            return (
+              <p className="label host" style={{ marginTop: "var(--primitive-spacing-4)" }}>
+                Also in{" "}
+                {extraCats.map((c, n) => (
+                  <span key={c}>
+                    {n > 0 ? ", " : ""}
+                    <Link href={`/c/${c}`}>{getCategory(c)?.name ?? c}</Link>
+                  </span>
+                ))}
+              </p>
+            );
+          })()}
           {item.tags.length > 0 ? (
-            <div className="chips" style={{ marginTop: "var(--primitive-spacing-6)" }}>
+            <div className="item-tags" style={{ marginTop: "var(--primitive-spacing-6)" }}>
               {item.tags.map((t) => (
-                <Link key={t} className="tag" href={`/search?q=${encodeURIComponent(t)}`}>
-                  <i />
-                  {t}
+                <Link key={t} className="item-tag-pill" href={`/search?q=${encodeURIComponent(t)}`}>
+                  #{t}
                 </Link>
               ))}
             </div>

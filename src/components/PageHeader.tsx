@@ -11,7 +11,7 @@ export function PageHeader({ trail, hideSearch = false }: { trail: Crumb[]; hide
         const last = i === trail.length - 1;
         return (
           <Fragment key={c.label + i}>
-            {i > 0 ? <span aria-hidden="true">&gt;</span> : null}
+            {i > 0 ? <span className="sep" aria-hidden="true">&gt;</span> : null}
             {c.href && !last ? (
               <Link href={c.href}>{c.label}</Link>
             ) : (

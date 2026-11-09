@@ -1,0 +1,30 @@
+{
+  "slug": "67js",
+  "title": "67js",
+  "url": "https://67js.codepawl.com/",
+  "description": "A 3D engine built for AI agents with real-time WebGL2 rendering, offline path tracing and 23 MCP tools.",
+  "category": "3d-tools",
+  "subcategory": "ai-3d",
+  "tags": [
+    "3d",
+    "webgl",
+    "path-tracing",
+    "ai-agents",
+    "mcp",
+    "rendering",
+    "gltf"
+  ],
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "mcp-servers"
+    }
+  ],
+  "install": [
+    "npm i @codepawlhq/67js"
+  ],
+  "thumbnail": "/thumbs/67js.webp",
+  "addedAt": "2026-11-09T04:48:54.562Z",
+  "source": "manual",
+  "order": 242
+}

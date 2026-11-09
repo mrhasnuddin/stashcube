@@ -1,0 +1,26 @@
+{
+  "slug": "craftwork-catalog",
+  "title": "Craftwork Catalog",
+  "url": "https://craftwork.design/catalog",
+  "description": "Curated packs of 2D and 3D illustrations, UI kits, device mockups and design assets.",
+  "category": "galleries",
+  "subcategory": "templates-mockups",
+  "tags": [
+    "design-assets",
+    "mockups",
+    "illustrations",
+    "3d",
+    "figma",
+    "ui-kits"
+  ],
+  "also": [
+    {
+      "category": "icons",
+      "subcategory": "illustrations"
+    }
+  ],
+  "thumbnail": "/thumbs/craftwork-catalog.webp",
+  "addedAt": "2026-11-09T17:51:58.232Z",
+  "source": "manual",
+  "order": 245
+}

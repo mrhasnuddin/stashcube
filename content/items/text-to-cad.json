@@ -18,15 +18,5 @@
     "claude plugin marketplace add earthtojake/text-to-cad#latest",
     "claude plugin install text-to-cad@earthtojake"
   ],
-  "subcategory": "ai-3d",
-  "also": [
-    {
-      "category": "skills",
-      "subcategory": "creative-media"
-    },
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
-    }
-  ]
+  "subcategory": "ai-3d"
 }

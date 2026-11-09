@@ -3,8 +3,8 @@
   "title": "Swarm Rebuild",
   "url": "https://github.com/DhvanilPatel/swarm-cursors",
   "description": "A Chrome extension that wipes any web page and rebuilds it live with a swarm of multiplayer cursors.",
-  "category": "github",
-  "subcategory": "libraries-lists",
+  "category": "ui",
+  "subcategory": "controls",
   "tags": [
     "chrome-extension",
     "cursors",

@@ -3,8 +3,8 @@
   "title": "Remotion",
   "url": "https://github.com/remotion-dev/remotion",
   "description": "Create videos programmatically in React using code, web technologies and AI integrations.",
-  "category": "github",
-  "subcategory": "libraries-lists",
+  "category": "motion",
+  "subcategory": "libraries",
   "tags": [
     "video",
     "react",

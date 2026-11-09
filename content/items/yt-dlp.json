@@ -3,8 +3,8 @@
   "title": "yt-dlp",
   "url": "https://github.com/yt-dlp/yt-dlp",
   "description": "A feature-rich command-line audio and video downloader supporting thousands of sites.",
-  "category": "github",
-  "subcategory": "libraries-lists",
+  "category": "tools",
+  "subcategory": "developer",
   "tags": [
     "video",
     "downloader",

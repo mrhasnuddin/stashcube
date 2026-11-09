@@ -17,11 +17,5 @@
   "install": [
     "/plugin install superpowers@claude-plugins-official"
   ],
-  "subcategory": "engineering",
-  "also": [
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
-    }
-  ]
+  "subcategory": "backend-systems"
 }

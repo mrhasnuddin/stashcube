@@ -60,6 +60,7 @@ export const descriptions = {
   'cobe': 'A 5KB WebGL globe.',
   'ogl': 'A minimal, lightweight WebGL library designed for developers creating custom shaders.',
   'gather': 'An interactive 3D WebGL point-cloud and particle swarm engine that turns photos into interactive 3D spaces using on-device ML.',
+  '67js': 'A 3D engine built for AI agents with real-time WebGL2 rendering, offline path tracing and 23 MCP tools.',
   'nacre': 'A tool for making 3D hero sections.',
   'morflax': 'Browser-based tools for 3D device mockups, clothing and abstract shapes.',
   'ai-particle-simulator': 'Generate and publish 3D particle swarms with custom logic.',
@@ -129,6 +130,7 @@ export const descriptions = {
   'drip': 'A platform for creators and communities, built on Solana.',
   'lvcidia-roadmap': 'The roadmap for a space-themed gaming metaverse.',
   'x6sense': 'A curated reference board and design inspiration canvas for crypto and Web3 landing pages.',
+  'etherfuse': 'Tokenized sovereign bonds and real-world assets for onchain treasury yield and cross-border settlement.',
   // Inspiration: studios and agencies
   'fantik-studio': 'A branding, web and motion studio for startups, SaaS and web3.',
   'active-theory': 'A creative studio making immersive web experiences since 2012.',
@@ -227,4 +229,6 @@ export const descriptions = {
   'fancy-design': 'A design subscription service for web, apps, branding and 3D.',
   'the-moving-poster': '280 handpicked moving posters from around the web.',
   'uppbeat-sfx': 'Free sound effects, safe for YouTube, TikTok and podcasts.',
+  'tars-ai': 'Decentralized AI architecture and agent tokenization protocol on Solana.',
+  'craftwork-catalog': 'Curated packs of 2D and 3D illustrations, UI kits, device mockups and design assets.',
 };

@@ -20,11 +20,5 @@
   "addedAt": "2026-10-14T16:58:01.470Z",
   "source": "manual",
   "order": 172,
-  "subcategory": "design-skills",
-  "also": [
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
-    }
-  ]
+  "subcategory": "frontend-ui"
 }

@@ -3,8 +3,8 @@
   "title": "HyperFrames",
   "url": "https://github.com/heygen-com/hyperframes",
   "description": "A motion graphics and video framework for AI coding agents to write HTML and render video.",
-  "category": "github",
-  "subcategory": "skills-plugins",
+  "category": "skills",
+  "subcategory": "motion",
   "tags": [
     "video",
     "motion",
@@ -16,7 +16,7 @@
   "also": [
     {
       "category": "motion",
-      "subcategory": "demo-video"
+      "subcategory": "libraries"
     }
   ],
   "install": [

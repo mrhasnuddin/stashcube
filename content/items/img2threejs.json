@@ -18,15 +18,5 @@
   "install": [
     "npx --yes img2threejs@latest install --host claude"
   ],
-  "subcategory": "ai-3d",
-  "also": [
-    {
-      "category": "skills",
-      "subcategory": "creative-media"
-    },
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
-    }
-  ]
+  "subcategory": "ai-3d"
 }

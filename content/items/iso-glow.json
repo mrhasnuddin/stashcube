@@ -4,7 +4,7 @@
   "url": "https://isoglow.dev/",
   "description": "A Claude skill for interactive isometric line drawings with glow lighting in 2D and 3D.",
   "category": "skills",
-  "subcategory": "creative-media",
+  "subcategory": "frontend-ui",
   "tags": [
     "isometric",
     "3d",

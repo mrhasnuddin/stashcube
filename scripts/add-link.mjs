@@ -30,8 +30,7 @@ function listCategories() {
 }
 
 if (!url) { console.error('Usage: node scripts/add-link.mjs <url> --category=<slug> [--sub=<slug>] [--tags=a,b] [--name="Name"] [--desc="One line."]\n\nCategories:'); listCategories(); process.exit(2); }
-// A github.com link goes to the GitHub tab unless told otherwise
-const category = flag('category') ?? (url && new URL(url).hostname === 'github.com' ? 'github' : undefined);
+const category = flag('category');
 const cat = categories.find((c) => c.slug === category);
 if (!cat) { console.error(category ? `Unknown category "${category}".` : 'Missing --category.', 'Pick one of:'); listCategories(); process.exit(2); }
 const status = flag('status');

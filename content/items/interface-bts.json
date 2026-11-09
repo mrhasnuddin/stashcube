@@ -4,7 +4,7 @@
   "url": "https://iamnoman.com/interface-bts",
   "description": "A Claude skill that pauses real components at key moments to generate spec posters with curves, measurements and timings.",
   "category": "skills",
-  "subcategory": "design-skills",
+  "subcategory": "frontend-ui",
   "tags": [
     "claude-code",
     "skills",

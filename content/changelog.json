@@ -298,6 +298,30 @@
         "type": "added",
         "minor": true,
         "text": "fontzz in Fonts; Remotion, HyperFrames, FFmpeg, Whisper, and yt-dlp in GitHub and Motion."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "67js in 3D Tools, under AI 3D and CAD."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Etherfuse in Inspiration, under Web3 and Crypto."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "TARS AI in Inspiration, under Web3 and Crypto."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Craftwork Catalog in Galleries, under Templates and Mockups."
+      },
+      {
+        "type": "changed",
+        "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }
     ]
   },

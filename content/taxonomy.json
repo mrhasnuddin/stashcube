@@ -99,25 +99,6 @@
               "name": "APIs"
             }
           ]
-        },
-        {
-          "slug": "github",
-          "name": "GitHub",
-          "description": "Repositories worth cloning, forking or learning from.",
-          "subcategories": [
-            {
-              "slug": "skills-plugins",
-              "name": "Skills and plugins"
-            },
-            {
-              "slug": "mcp-servers",
-              "name": "MCP servers"
-            },
-            {
-              "slug": "libraries-lists",
-              "name": "Libraries and lists"
-            }
-          ]
         }
       ]
     },
@@ -169,20 +150,24 @@
           "description": "Motion design for the web and video: animated references, templates and prompts to recreate them.",
           "subcategories": [
             {
-              "slug": "ai-motion",
-              "name": "AI motion catalogues"
+              "slug": "libraries",
+              "name": "Libraries & Code"
             },
             {
               "slug": "motion-skills",
-              "name": "Motion skills"
+              "name": "Motion Skills"
+            },
+            {
+              "slug": "ai-motion",
+              "name": "AI Motion"
             },
             {
               "slug": "demo-video",
-              "name": "Demos and video tools"
+              "name": "Demos & Tools"
             },
             {
               "slug": "ui-motion",
-              "name": "UI motion"
+              "name": "UI Motion"
             }
           ]
         }
@@ -275,36 +260,36 @@
       "categories": [
         {
           "slug": "skills",
-          "name": "Skills and Prompts",
+          "name": "Agent Skills",
           "description": "Skill files, DESIGN.md libraries and prompts that give AI coding agents design direction.",
           "subcategories": [
             {
-              "slug": "design-md",
-              "name": "DESIGN.md libraries"
+              "slug": "frontend-ui",
+              "name": "Frontend & UI"
             },
             {
-              "slug": "directories",
-              "name": "Skill directories"
+              "slug": "motion",
+              "name": "Motion & Video"
             },
             {
-              "slug": "engineering",
-              "name": "Engineering and workflow"
+              "slug": "logo-brand",
+              "name": "Logo & Brand"
             },
             {
-              "slug": "design-skills",
-              "name": "Design skills"
+              "slug": "backend-systems",
+              "name": "Backend & Systems"
             },
             {
-              "slug": "creative-media",
-              "name": "Creative and media"
+              "slug": "clone-reverse",
+              "name": "Clone & Rebuild"
             },
             {
-              "slug": "business-web3",
-              "name": "Business and web3"
+              "slug": "web3-crypto",
+              "name": "Web3 & Crypto"
             },
             {
-              "slug": "prompts",
-              "name": "Prompts"
+              "slug": "registries",
+              "name": "Registries & Hubs"
             }
           ]
         },

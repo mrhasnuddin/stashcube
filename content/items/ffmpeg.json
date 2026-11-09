@@ -3,8 +3,8 @@
   "title": "FFmpeg",
   "url": "https://github.com/FFmpeg/FFmpeg",
   "description": "A complete, cross-platform solution to record, convert, edit and stream multimedia audio and video.",
-  "category": "github",
-  "subcategory": "libraries-lists",
+  "category": "motion",
+  "subcategory": "libraries",
   "tags": [
     "video",
     "audio",

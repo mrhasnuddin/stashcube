@@ -14,11 +14,5 @@
   "addedAt": "2026-10-11",
   "source": "manual",
   "order": 158,
-  "subcategory": "ai-motion",
-  "also": [
-    {
-      "category": "skills",
-      "subcategory": "prompts"
-    }
-  ]
+  "subcategory": "ai-motion"
 }

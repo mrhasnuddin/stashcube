@@ -16,11 +16,5 @@
   "install": [
     "git clone https://github.com/Jane-xiaoer/claude-skill-web-clone.git ~/.claude/skills/web-clone"
   ],
-  "subcategory": "design-skills",
-  "also": [
-    {
-      "category": "github",
-      "subcategory": "skills-plugins"
-    }
-  ]
+  "subcategory": "clone-reverse"
 }

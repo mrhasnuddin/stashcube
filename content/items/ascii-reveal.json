@@ -3,8 +3,8 @@
   "title": "ascii-reveal",
   "url": "https://github.com/quanhoangindex/ascii-reveal",
   "description": "A React loading effect where text, images and cards decode through an ASCII glyph grid with zero-dependency CSS skeletons.",
-  "category": "github",
-  "subcategory": "libraries-lists",
+  "category": "ui",
+  "subcategory": "text-effects",
   "tags": [
     "react",
     "ascii",
