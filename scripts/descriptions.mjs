@@ -233,4 +233,5 @@ export const descriptions = {
   'craftwork-catalog': 'Curated packs of 2D and 3D illustrations, UI kits, device mockups and design assets.',
   'stageshow': 'Agent skills for building realistic faux product UI, feature cards, cursor demos, and bento grids in React.',
   'landdding': 'Daily curated showcase of landing pages and website designs upvoted by designers.',
+  'make-font': 'Agent skill that measures reference fonts, fits and spaces open-licence bases, and delivers custom OFL fonts with webfiles and a font book.',
 };

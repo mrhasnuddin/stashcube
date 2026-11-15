@@ -1,0 +1,30 @@
+{
+  "slug": "make-font",
+  "title": "Make a Font",
+  "url": "https://github.com/arla6ka/design.how/blob/main/skills/make-font/SKILL.md",
+  "description": "Agent skill that measures reference fonts, fits and spaces open-licence bases, and delivers custom OFL fonts with webfiles and a font book.",
+  "category": "skills",
+  "subcategory": "frontend-ui",
+  "tags": [
+    "skills",
+    "claude-code",
+    "typography",
+    "fonts",
+    "design-tools",
+    "type-design",
+    "open-source"
+  ],
+  "install": [
+    "npx skills@latest add arla6ka/design.how --skill make-font"
+  ],
+  "also": [
+    {
+      "category": "fonts",
+      "subcategory": "typefaces-tools"
+    }
+  ],
+  "thumbnail": "/thumbs/make-font.webp",
+  "addedAt": "2026-11-15T07:30:00.000Z",
+  "source": "manual",
+  "order": 248
+}

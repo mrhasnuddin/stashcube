@@ -103,9 +103,8 @@ if (!thumbnail || !title || !description) {
   } catch (e) { console.warn('Chrome pass failed: ' + (e.message || e)); }
 }
 
-// extra listings: --also=cat:sub,cat2; a github.com link is also listed under GitHub
+// extra listings: --also=cat:sub,cat2
 const alsoList = (flag('also') || '').split(',').map((x) => x.trim()).filter(Boolean).map((x) => { const [category, subcategory] = x.split(':'); return subcategory ? { category, subcategory } : { category }; });
-if (new URL(url).hostname === 'github.com' && cat.slug !== 'github' && !alsoList.some((a) => a.category === 'github')) alsoList.push({ category: 'github', subcategory: 'skills-plugins' });
 for (const a of alsoList) if (!categories.some((c) => c.slug === a.category)) { console.error(`Unknown category in --also: ${a.category}`); process.exit(2); }
 
 const finalSlug = slugify(title || slug);
