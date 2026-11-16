@@ -1,0 +1,35 @@
+{
+  "slug": "agent-reach",
+  "title": "Agent Reach",
+  "url": "https://github.com/Panniantong/Agent-Reach",
+  "description": "Enables AI agents to search and read Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu via one CLI with zero API fees.",
+  "category": "mcp-agents",
+  "subcategory": "agent-tools",
+  "tags": [
+    "agents",
+    "mcp",
+    "cli",
+    "web-scraping",
+    "claude-code",
+    "cursor",
+    "open-source"
+  ],
+  "install": [
+    "uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip",
+    "agent-reach setup"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "backend-systems"
+    },
+    {
+      "category": "tools",
+      "subcategory": "developer"
+    }
+  ],
+  "thumbnail": "/thumbs/agent-reach.webp",
+  "addedAt": "2026-11-16T08:45:00.000Z",
+  "source": "manual",
+  "order": 249
+}

@@ -234,4 +234,5 @@ export const descriptions = {
   'stageshow': 'Agent skills for building realistic faux product UI, feature cards, cursor demos, and bento grids in React.',
   'landdding': 'Daily curated showcase of landing pages and website designs upvoted by designers.',
   'make-font': 'Agent skill that measures reference fonts, fits and spaces open-licence bases, and delivers custom OFL fonts with webfiles and a font book.',
+  'agent-reach': 'Enables AI agents to search and read Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu via one CLI with zero API fees.',
 };
