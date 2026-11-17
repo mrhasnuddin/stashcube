@@ -1,0 +1,31 @@
+{
+  "slug": "kubai-icons",
+  "title": "Kubai Icons",
+  "url": "https://github.com/kubai087/kubai-icons",
+  "description": "An agent skill that draws animated icons in one consistent style for Claude Code and Codex, with 2,800+ open-source icons for React, Vue and the web.",
+  "category": "icons",
+  "subcategory": "animated",
+  "tags": [
+    "icons",
+    "animated",
+    "skills",
+    "claude-code",
+    "react",
+    "vue",
+    "svg",
+    "open-source"
+  ],
+  "install": [
+    "npm i kubai-icons-react"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "frontend-ui"
+    }
+  ],
+  "thumbnail": "/thumbs/kubai-icons.webp",
+  "addedAt": "2026-11-17T09:15:00.000Z",
+  "source": "manual",
+  "order": 251
+}

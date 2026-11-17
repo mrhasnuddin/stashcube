@@ -1,0 +1,30 @@
+{
+  "slug": "blobatar",
+  "title": "Blobatar",
+  "url": "https://blobatar.dev/",
+  "description": "Deterministic geometric blobatars generated from any string with zero dependencies, React/shadcn support, and motion variants.",
+  "category": "ui",
+  "subcategory": "specialty",
+  "tags": [
+    "avatars",
+    "components",
+    "react",
+    "shadcn",
+    "geometric",
+    "generative",
+    "svg"
+  ],
+  "install": [
+    "npm i blobatar @blobatar/react"
+  ],
+  "also": [
+    {
+      "category": "icons",
+      "subcategory": "illustrations"
+    }
+  ],
+  "thumbnail": "/thumbs/blobatar.webp",
+  "addedAt": "2026-11-17T09:15:00.000Z",
+  "source": "manual",
+  "order": 250
+}

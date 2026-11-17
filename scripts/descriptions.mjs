@@ -235,4 +235,6 @@ export const descriptions = {
   'landdding': 'Daily curated showcase of landing pages and website designs upvoted by designers.',
   'make-font': 'Agent skill that measures reference fonts, fits and spaces open-licence bases, and delivers custom OFL fonts with webfiles and a font book.',
   'agent-reach': 'Enables AI agents to search and read Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu via one CLI with zero API fees.',
+  'blobatar': 'Deterministic geometric blobatars generated from any string with zero dependencies, React/shadcn support, and motion variants.',
+  'kubai-icons': 'An agent skill that draws animated icons in one consistent style for Claude Code and Codex, with 2,800+ open-source icons for React, Vue and the web.',
 };

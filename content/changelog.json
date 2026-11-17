@@ -340,6 +340,16 @@
         "text": "Agent Reach in MCP and Agents, under Agent tools and apps (cross-listed in Agent Skills and Developer Tools)."
       },
       {
+        "type": "added",
+        "minor": true,
+        "text": "Blobatar in UI Components, under Specialty (cross-listed in Icons and Illustrations)."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Kubai Icons in Icons and Illustrations, under Animated icons (cross-listed in Agent Skills)."
+      },
+      {
         "type": "changed",
         "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }
