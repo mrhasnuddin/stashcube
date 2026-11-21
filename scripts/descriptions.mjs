@@ -238,4 +238,5 @@ export const descriptions = {
   'blobatar': 'Deterministic geometric blobatars generated from any string with zero dependencies, React/shadcn support, and motion variants.',
   'kubai-icons': 'An agent skill that draws animated icons in one consistent style for Claude Code and Codex, with 2,800+ open-source icons for React, Vue and the web.',
   'solana-skills': 'Pre-built skills for AI agents building on Solana, providing context for programs, Token-2022, Anchor, and DeFi protocols.',
+  'fobo': 'Decentralized token launchpad with floor-backed liquidity reserves, Uniswap v4 hook mechanics, and AI agent integration.',
 };

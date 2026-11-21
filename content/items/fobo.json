@@ -1,0 +1,27 @@
+{
+  "slug": "fobo",
+  "title": "FOBO",
+  "url": "https://fobo.fun/",
+  "description": "Decentralized token launchpad with floor-backed liquidity reserves, Uniswap v4 hook mechanics, and AI agent integration.",
+  "category": "inspiration",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "web3",
+    "crypto",
+    "launchpad",
+    "liquidity",
+    "uniswap",
+    "dark-mode",
+    "interactive"
+  ],
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "agent-tools"
+    }
+  ],
+  "thumbnail": "/thumbs/fobo.webp",
+  "addedAt": "2026-11-21T08:15:00.000Z",
+  "source": "manual",
+  "order": 253
+}

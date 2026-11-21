@@ -355,6 +355,11 @@
         "text": "Solana Agent Skills in Agent Skills, under Web3 and Crypto (cross-listed in Registries & Hubs and Backend APIs)."
       },
       {
+        "type": "added",
+        "minor": true,
+        "text": "FOBO in Website Inspiration, under Web3 and Crypto (cross-listed in MCP and Agents)."
+      },
+      {
         "type": "changed",
         "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }
