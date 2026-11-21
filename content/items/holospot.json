@@ -1,0 +1,27 @@
+{
+  "slug": "holospot",
+  "title": "holospot",
+  "url": "https://www.holo.spot/",
+  "description": "Real-time holographic material simulator with physically based diffraction foils, stickers, cloth, and flags in the browser.",
+  "category": "3d-tools",
+  "subcategory": "web-3d",
+  "tags": [
+    "3d",
+    "webgl",
+    "shaders",
+    "holographic",
+    "materials",
+    "foil",
+    "open-source"
+  ],
+  "also": [
+    {
+      "category": "colors-effects",
+      "subcategory": "shaders-effects"
+    }
+  ],
+  "thumbnail": "/thumbs/holospot.webp",
+  "addedAt": "2026-11-21T13:52:00.000Z",
+  "source": "manual",
+  "order": 259
+}

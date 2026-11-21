@@ -244,4 +244,5 @@ export const descriptions = {
   'cryptodesign-club': 'A curated database of handpicked crypto and Web3 website designs across DeFi, protocols, wallets, and ecosystems.',
   'alyn': 'Directory of 6,000+ open-source AI skills for Claude Code, Cursor, and Codex, ranked live by installs and quality with MCP support.',
   'design-how-skills': 'Free design systems and agent skills for Claude Code and Cursor, installing via shadcn and skills CLI with Markdown docs.',
+  'holospot': 'Real-time holographic material simulator with physically based diffraction foils, stickers, cloth, and flags in the browser.',
 };

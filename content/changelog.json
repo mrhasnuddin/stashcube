@@ -375,6 +375,11 @@
         "text": "Alyn and Design.how Skills in Agent Skills, under Registries & Hubs and Frontend & UI."
       },
       {
+        "type": "added",
+        "minor": true,
+        "text": "holospot in 3D Tools, under Web 3D (cross-listed in Colors and Effects)."
+      },
+      {
         "type": "changed",
         "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }
