@@ -1,0 +1,20 @@
+{
+  "slug": "recent-design",
+  "title": "Recent Design",
+  "url": "https://recent.design/",
+  "description": "A daily curation of exceptional websites, interfaces, launch videos, OG images, and design tools.",
+  "category": "galleries",
+  "subcategory": "websites",
+  "tags": [
+    "galleries",
+    "inspiration",
+    "websites",
+    "ui",
+    "launch-videos",
+    "curation"
+  ],
+  "thumbnail": "/thumbs/recent-design.webp",
+  "addedAt": "2026-11-21T10:55:01.000Z",
+  "source": "manual",
+  "order": 255
+}

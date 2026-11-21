@@ -360,6 +360,21 @@
         "text": "FOBO in Website Inspiration, under Web3 and Crypto (cross-listed in MCP and Agents)."
       },
       {
+        "type": "added",
+        "minor": true,
+        "text": "Shopify Design in Website Inspiration, under SaaS and AI."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Recent Design and Crypto Design Club in Galleries, under Website galleries."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Alyn and Design.how Skills in Agent Skills, under Registries & Hubs and Frontend & UI."
+      },
+      {
         "type": "changed",
         "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }

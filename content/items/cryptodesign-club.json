@@ -1,0 +1,26 @@
+{
+  "slug": "cryptodesign-club",
+  "title": "Crypto Design Club",
+  "url": "https://cryptodesign.club/",
+  "description": "A curated database of handpicked crypto and Web3 website designs across DeFi, protocols, wallets, and ecosystems.",
+  "category": "galleries",
+  "subcategory": "websites",
+  "tags": [
+    "galleries",
+    "web3",
+    "crypto",
+    "defi",
+    "inspiration",
+    "websites"
+  ],
+  "also": [
+    {
+      "category": "inspiration",
+      "subcategory": "web3-crypto"
+    }
+  ],
+  "thumbnail": "/thumbs/cryptodesign-club.webp",
+  "addedAt": "2026-11-21T10:55:02.000Z",
+  "source": "manual",
+  "order": 256
+}

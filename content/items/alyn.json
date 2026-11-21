@@ -1,0 +1,27 @@
+{
+  "slug": "alyn",
+  "title": "Alyn",
+  "url": "https://alyn.dev/",
+  "description": "Directory of 6,000+ open-source AI skills for Claude Code, Cursor, and Codex, ranked live by installs and quality with MCP support.",
+  "category": "skills",
+  "subcategory": "registries",
+  "tags": [
+    "skills",
+    "registry",
+    "claude-code",
+    "cursor",
+    "codex",
+    "mcp",
+    "agents"
+  ],
+  "also": [
+    {
+      "category": "mcp-agents",
+      "subcategory": "mcp-servers"
+    }
+  ],
+  "thumbnail": "/thumbs/alyn.webp",
+  "addedAt": "2026-11-21T10:55:03.000Z",
+  "source": "manual",
+  "order": 257
+}

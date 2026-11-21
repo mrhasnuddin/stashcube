@@ -1,0 +1,30 @@
+{
+  "slug": "design-how-skills",
+  "title": "Design.how Skills",
+  "url": "https://design.how/skills",
+  "description": "Free design systems and agent skills for Claude Code and Cursor, installing via shadcn and skills CLI with Markdown docs.",
+  "category": "skills",
+  "subcategory": "frontend-ui",
+  "tags": [
+    "skills",
+    "design-systems",
+    "shadcn",
+    "claude-code",
+    "cursor",
+    "frontend",
+    "ui"
+  ],
+  "install": [
+    "npx skills@latest add https://design.how"
+  ],
+  "also": [
+    {
+      "category": "ui",
+      "subcategory": "frameworks"
+    }
+  ],
+  "thumbnail": "/thumbs/design-how-skills.webp",
+  "addedAt": "2026-11-21T10:55:04.000Z",
+  "source": "manual",
+  "order": 258
+}

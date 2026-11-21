@@ -239,4 +239,9 @@ export const descriptions = {
   'kubai-icons': 'An agent skill that draws animated icons in one consistent style for Claude Code and Codex, with 2,800+ open-source icons for React, Vue and the web.',
   'solana-skills': 'Pre-built skills for AI agents building on Solana, providing context for programs, Token-2022, Anchor, and DeFi protocols.',
   'fobo': 'Decentralized token launchpad with floor-backed liquidity reserves, Uniswap v4 hook mechanics, and AI agent integration.',
+  'shopify-design': "The Shopify Design team's showcase of craft, editorial experiments, and ideas shaping agentic commerce.",
+  'recent-design': 'A daily curation of exceptional websites, interfaces, launch videos, OG images, and design tools.',
+  'cryptodesign-club': 'A curated database of handpicked crypto and Web3 website designs across DeFi, protocols, wallets, and ecosystems.',
+  'alyn': 'Directory of 6,000+ open-source AI skills for Claude Code, Cursor, and Codex, ranked live by installs and quality with MCP support.',
+  'design-how-skills': 'Free design systems and agent skills for Claude Code and Cursor, installing via shadcn and skills CLI with Markdown docs.',
 };
