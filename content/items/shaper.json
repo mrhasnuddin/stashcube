@@ -1,0 +1,27 @@
+{
+  "slug": "shaper",
+  "title": "Shaper",
+  "url": "https://shaper.ui8.dev/",
+  "description": "Interactive browser grid-based shape and glyph builder by UI8 with real-time 3D extrusion, symmetry, loop recording, and export.",
+  "category": "3d-tools",
+  "subcategory": "web-3d",
+  "tags": [
+    "3d",
+    "shapes",
+    "glyphs",
+    "grid",
+    "extrusion",
+    "vector",
+    "ui8"
+  ],
+  "also": [
+    {
+      "category": "icons",
+      "subcategory": "illustrations"
+    }
+  ],
+  "thumbnail": "/thumbs/shaper.webp",
+  "addedAt": "2026-11-21T18:50:00.000Z",
+  "source": "manual",
+  "order": 260
+}
