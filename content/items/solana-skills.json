@@ -1,0 +1,35 @@
+{
+  "slug": "solana-skills",
+  "title": "Solana Agent Skills",
+  "url": "https://solana.com/skills",
+  "description": "Pre-built skills for AI agents building on Solana, providing context for programs, Token-2022, Anchor, and DeFi protocols.",
+  "category": "skills",
+  "subcategory": "web3-crypto",
+  "tags": [
+    "solana",
+    "web3",
+    "crypto",
+    "skills",
+    "agents",
+    "claude-code",
+    "anchor",
+    "defi"
+  ],
+  "install": [
+    "npx skills add https://github.com/solana-foundation/solana-dev-skill"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "registries"
+    },
+    {
+      "category": "backend",
+      "subcategory": "apis"
+    }
+  ],
+  "thumbnail": "/thumbs/solana-skills.webp",
+  "addedAt": "2026-11-21T08:10:00.000Z",
+  "source": "manual",
+  "order": 252
+}
