@@ -1,0 +1,28 @@
+{
+  "slug": "sakuga-vfx",
+  "title": "Sakuga VFX",
+  "url": "https://sakuga-vfx.vercel.app/gallery/",
+  "description": "Twelve zero-dependency web component controls that react like anime with spring squash, impact bursts, slashes, and manga SFX lettering.",
+  "category": "ui",
+  "subcategory": "controls",
+  "tags": [
+    "ui",
+    "controls",
+    "buttons",
+    "anime",
+    "vfx",
+    "micro-interactions",
+    "web-components",
+    "open-source"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "ui-motion"
+    }
+  ],
+  "thumbnail": "/thumbs/sakuga-vfx.webp",
+  "addedAt": "2026-11-22T10:09:00.000Z",
+  "source": "manual",
+  "order": 266
+}

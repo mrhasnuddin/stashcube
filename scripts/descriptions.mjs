@@ -250,4 +250,6 @@ export const descriptions = {
   'designbookmark': 'An organized directory of 2,000+ design tools, motion resources, AI skills, and websites for designers.',
   'blender-skills': '28 professional Blender 5.3 workflows packaged as Agent Skills for Claude Code, Codex, Gemini CLI, and Cursor covering modeling, UVs, PBR, rigging, animation, and QA.',
   'motion': 'Production-grade animation library for React, JavaScript, and Vue (formerly Framer Motion) with layout, scroll, spring, and hardware-accelerated motion.',
+  'bklit-ui': 'Design-engineered charts and data visualization components built on top of shadcn/ui, featuring 235+ ready-to-use chart patterns.',
+  'sakuga-vfx': 'Twelve zero-dependency web component controls that react like anime with spring squash, impact bursts, slashes, and manga SFX lettering.',
 };

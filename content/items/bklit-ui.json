@@ -1,0 +1,22 @@
+{
+  "slug": "bklit-ui",
+  "title": "Bklit UI",
+  "url": "https://bklit.com/",
+  "description": "Design-engineered charts and data visualization components built on top of shadcn/ui, featuring 235+ ready-to-use chart patterns.",
+  "category": "ui",
+  "subcategory": "dashboards-charts",
+  "tags": [
+    "charts",
+    "data-viz",
+    "shadcn",
+    "react",
+    "ui",
+    "dashboards",
+    "components",
+    "open-source"
+  ],
+  "thumbnail": "/thumbs/bklit-ui.webp",
+  "addedAt": "2026-11-22T10:07:00.000Z",
+  "source": "manual",
+  "order": 265
+}
