@@ -1,0 +1,33 @@
+{
+  "slug": "blender-skills",
+  "title": "Blender Agent Skills",
+  "url": "https://github.com/EL4CTEO/blender-skills",
+  "description": "28 professional Blender 5.3 workflows packaged as Agent Skills for Claude Code, Codex, Gemini CLI, and Cursor covering modeling, UVs, PBR, rigging, animation, and QA.",
+  "category": "3d-tools",
+  "subcategory": "ai-3d",
+  "tags": [
+    "blender",
+    "3d",
+    "skills",
+    "claude-code",
+    "codex",
+    "cursor",
+    "pbr",
+    "rigging",
+    "open-source"
+  ],
+  "install": [
+    "/plugin marketplace add EL4CTEO/blender-skills",
+    "/plugin install blender-agent-skills@blender-agent-skills"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "motion"
+    }
+  ],
+  "thumbnail": "/thumbs/blender-skills.webp",
+  "addedAt": "2026-11-22T07:00:01.000Z",
+  "source": "manual",
+  "order": 263
+}

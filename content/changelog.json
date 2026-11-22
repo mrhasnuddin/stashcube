@@ -390,6 +390,21 @@
         "text": "raea (Render Anything Engine) in Motion, under AI Motion (cross-listed in Agent Skills and 3D Tools)."
       },
       {
+        "type": "added",
+        "minor": true,
+        "text": "DesignBookmark in Tools and Utilities, under Directories (cross-listed in Galleries)."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Blender Agent Skills in 3D Tools, under AI 3D and CAD (cross-listed in Agent Skills)."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Motion (motion.dev) in Motion, under Libraries & Code (cross-listed in UI Components)."
+      },
+      {
         "type": "changed",
         "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }

@@ -1,0 +1,26 @@
+{
+  "slug": "designbookmark",
+  "title": "DesignBookmark",
+  "url": "https://designbookmark.com/",
+  "description": "An organized directory of 2,000+ design tools, motion resources, AI skills, and websites for designers.",
+  "category": "tools",
+  "subcategory": "directories",
+  "tags": [
+    "directory",
+    "design-tools",
+    "bookmarks",
+    "resources",
+    "curation",
+    "inspiration"
+  ],
+  "also": [
+    {
+      "category": "galleries",
+      "subcategory": "websites"
+    }
+  ],
+  "thumbnail": "/thumbs/designbookmark.webp",
+  "addedAt": "2026-11-22T07:00:00.000Z",
+  "source": "manual",
+  "order": 262
+}

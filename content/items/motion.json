@@ -1,0 +1,32 @@
+{
+  "slug": "motion",
+  "title": "Motion",
+  "url": "https://motion.dev/",
+  "description": "Production-grade animation library for React, JavaScript, and Vue (formerly Framer Motion) with layout, scroll, spring, and hardware-accelerated motion.",
+  "category": "motion",
+  "subcategory": "libraries",
+  "tags": [
+    "motion",
+    "animation",
+    "react",
+    "vue",
+    "javascript",
+    "framer-motion",
+    "ui",
+    "spring"
+  ],
+  "install": [
+    "npm install motion",
+    "npx motion-ai"
+  ],
+  "also": [
+    {
+      "category": "ui",
+      "subcategory": "animated-libraries"
+    }
+  ],
+  "thumbnail": "/thumbs/motion.webp",
+  "addedAt": "2026-11-22T07:00:02.000Z",
+  "source": "manual",
+  "order": 264
+}

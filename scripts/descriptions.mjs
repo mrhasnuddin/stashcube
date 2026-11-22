@@ -247,4 +247,7 @@ export const descriptions = {
   'holospot': 'Real-time holographic material simulator with physically based diffraction foils, stickers, cloth, and flags in the browser.',
   'shaper': 'Interactive browser grid-based shape and glyph builder by UI8 with real-time 3D extrusion, symmetry, loop recording, and export.',
   'raea': 'Render Anything Engine: make videos, motion graphics, 3D scenes, and games in React and TypeScript with AI agents, rendered locally on your GPU.',
+  'designbookmark': 'An organized directory of 2,000+ design tools, motion resources, AI skills, and websites for designers.',
+  'blender-skills': '28 professional Blender 5.3 workflows packaged as Agent Skills for Claude Code, Codex, Gemini CLI, and Cursor covering modeling, UVs, PBR, rigging, animation, and QA.',
+  'motion': 'Production-grade animation library for React, JavaScript, and Vue (formerly Framer Motion) with layout, scroll, spring, and hardware-accelerated motion.',
 };
