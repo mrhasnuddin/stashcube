@@ -1,0 +1,37 @@
+{
+  "slug": "raea",
+  "title": "raea",
+  "url": "https://github.com/shinyobjectz/raea",
+  "description": "Render Anything Engine: make videos, motion graphics, 3D scenes, and games in React and TypeScript with AI agents, rendered locally on your GPU.",
+  "category": "motion",
+  "subcategory": "ai-motion",
+  "tags": [
+    "motion",
+    "video",
+    "3d",
+    "react",
+    "rust",
+    "bevy",
+    "gpu",
+    "agents",
+    "skills"
+  ],
+  "install": [
+    "curl -fsSL https://raea.io/install | sh",
+    "irm https://raea.io/install.ps1 | iex"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "motion"
+    },
+    {
+      "category": "3d-tools",
+      "subcategory": "web-3d"
+    }
+  ],
+  "thumbnail": "/thumbs/raea.webp",
+  "addedAt": "2026-11-22T06:08:00.000Z",
+  "source": "manual",
+  "order": 261
+}

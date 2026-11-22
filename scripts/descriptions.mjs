@@ -246,4 +246,5 @@ export const descriptions = {
   'design-how-skills': 'Free design systems and agent skills for Claude Code and Cursor, installing via shadcn and skills CLI with Markdown docs.',
   'holospot': 'Real-time holographic material simulator with physically based diffraction foils, stickers, cloth, and flags in the browser.',
   'shaper': 'Interactive browser grid-based shape and glyph builder by UI8 with real-time 3D extrusion, symmetry, loop recording, and export.',
+  'raea': 'Render Anything Engine: make videos, motion graphics, 3D scenes, and games in React and TypeScript with AI agents, rendered locally on your GPU.',
 };

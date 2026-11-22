@@ -385,6 +385,11 @@
         "text": "Shaper by UI8 in 3D Tools, under Web 3D (cross-listed in Icons and Illustrations)."
       },
       {
+        "type": "added",
+        "minor": true,
+        "text": "raea (Render Anything Engine) in Motion, under AI Motion (cross-listed in Agent Skills and 3D Tools)."
+      },
+      {
         "type": "changed",
         "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }
