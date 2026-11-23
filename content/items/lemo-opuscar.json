@@ -1,0 +1,34 @@
+{
+  "slug": "lemo-opuscar",
+  "title": "Lemo-Opuscar",
+  "url": "https://github.com/lemomo-ai/lemo-opuscar",
+  "description": "Toolbox of 99 code-driven film styles for Claude Code — each pairing a style prompt with a demo short film built entirely in code with no video model.",
+  "category": "skills",
+  "subcategory": "motion",
+  "tags": [
+    "skills",
+    "claude-code",
+    "filmmaking",
+    "motion",
+    "video",
+    "canvas",
+    "webgl",
+    "threejs",
+    "creative-coding",
+    "open-source"
+  ],
+  "install": [
+    "claude plugin marketplace add lemomo-ai/lemo-opuscar",
+    "claude plugin install lemo-opuscar@lemolab"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "motion-skills"
+    }
+  ],
+  "thumbnail": "/thumbs/lemo-opuscar.webp",
+  "addedAt": "2026-11-23T15:41:00.000Z",
+  "source": "manual",
+  "order": 271
+}
