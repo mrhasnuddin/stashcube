@@ -1,0 +1,37 @@
+{
+  "slug": "rea-video",
+  "title": "rea-video",
+  "url": "https://github.com/JuneYaooo/rea-video",
+  "description": "Reverse-engineer any video shot by shot — detecting whether it was filmed, AI-generated, or coded — and output remake instructions in the open VIDEO.md format.",
+  "category": "skills",
+  "subcategory": "clone-reverse",
+  "tags": [
+    "skills",
+    "video",
+    "reverse-engineering",
+    "claude-code",
+    "codex",
+    "ffmpeg",
+    "remotion",
+    "videomd",
+    "open-source"
+  ],
+  "install": [
+    "claude plugin marketplace add JuneYaooo/rea-video",
+    "claude plugin install rea-video@rea-video"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "motion"
+    },
+    {
+      "category": "motion",
+      "subcategory": "motion-skills"
+    }
+  ],
+  "thumbnail": "/thumbs/rea-video.webp",
+  "addedAt": "2026-11-23T15:35:00.000Z",
+  "source": "manual",
+  "order": 269
+}

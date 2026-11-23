@@ -254,4 +254,5 @@ export const descriptions = {
   'sakuga-vfx': 'Twelve zero-dependency web component controls that react like anime with spring squash, impact bursts, slashes, and manga SFX lettering.',
   'shopify-supply': "Shopify's own flagship store featuring an interactive spatial canvas, tactile product filters, and bold editorial commerce design.",
   'video-shotcraft': 'AI video skill for Claude Code and Codex that builds cinematic product promo videos with Remotion, 124 shot recipe cards, beat sync, and CapCut/JianYing export.',
+  'rea-video': 'Reverse-engineer any video shot by shot — detecting whether it was filmed, AI-generated, or coded — and output remake instructions in the open VIDEO.md format.',
 };
