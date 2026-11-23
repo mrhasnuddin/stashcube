@@ -1,0 +1,36 @@
+{
+  "slug": "pixelfx",
+  "title": "pixelfx",
+  "url": "https://github.com/patch-gg/pixelfx",
+  "description": "244 code-driven pixel art VFX and animations (fire, explosions, magic, weather, UI) with sprite sheet export and a Claude Code skill to create new ones.",
+  "category": "colors-effects",
+  "subcategory": "shaders-effects",
+  "tags": [
+    "pixel-art",
+    "vfx",
+    "animation",
+    "canvas",
+    "gamedev",
+    "sprite-sheet",
+    "skills",
+    "claude-code",
+    "open-source"
+  ],
+  "install": [
+    "npm i github:patch-gg/pixelfx"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "motion"
+    },
+    {
+      "category": "motion",
+      "subcategory": "libraries"
+    }
+  ],
+  "thumbnail": "/thumbs/pixelfx.webp",
+  "addedAt": "2026-11-23T15:38:00.000Z",
+  "source": "manual",
+  "order": 270
+}
