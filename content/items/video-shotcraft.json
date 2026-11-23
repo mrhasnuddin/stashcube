@@ -1,0 +1,31 @@
+{
+  "slug": "video-shotcraft",
+  "title": "video-shotcraft",
+  "url": "https://github.com/Vincentwei1021/video-shotcraft",
+  "description": "AI video skill for Claude Code and Codex that builds cinematic product promo videos with Remotion, 124 shot recipe cards, beat sync, and CapCut/JianYing export.",
+  "category": "skills",
+  "subcategory": "motion",
+  "tags": [
+    "skills",
+    "video",
+    "remotion",
+    "motion",
+    "claude-code",
+    "codex",
+    "product-video",
+    "open-source"
+  ],
+  "install": [
+    "npx skills add Vincentwei1021/video-shotcraft"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "motion-skills"
+    }
+  ],
+  "thumbnail": "/thumbs/video-shotcraft.webp",
+  "addedAt": "2026-11-23T15:28:00.000Z",
+  "source": "manual",
+  "order": 268
+}
