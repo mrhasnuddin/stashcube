@@ -415,6 +415,11 @@
         "text": "Sakuga VFX in UI Components, under Buttons and controls (cross-listed in Motion)."
       },
       {
+        "type": "added",
+        "minor": true,
+        "text": "Shopify Supply in Website Inspiration, under 3D and Immersive."
+      },
+      {
         "type": "changed",
         "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }

@@ -1,0 +1,21 @@
+{
+  "slug": "shopify-supply",
+  "title": "Shopify Supply",
+  "url": "https://shopify.supply/",
+  "description": "Shopify's own flagship store featuring an interactive spatial canvas, tactile product filters, and bold editorial commerce design.",
+  "category": "inspiration",
+  "subcategory": "3d-immersive",
+  "tags": [
+    "inspiration",
+    "ecommerce",
+    "shopify",
+    "spatial-ui",
+    "editorial",
+    "interactive",
+    "typography"
+  ],
+  "thumbnail": "/thumbs/shopify-supply.webp",
+  "addedAt": "2026-11-23T03:23:00.000Z",
+  "source": "manual",
+  "order": 267
+}

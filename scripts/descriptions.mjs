@@ -252,4 +252,5 @@ export const descriptions = {
   'motion': 'Production-grade animation library for React, JavaScript, and Vue (formerly Framer Motion) with layout, scroll, spring, and hardware-accelerated motion.',
   'bklit-ui': 'Design-engineered charts and data visualization components built on top of shadcn/ui, featuring 235+ ready-to-use chart patterns.',
   'sakuga-vfx': 'Twelve zero-dependency web component controls that react like anime with spring squash, impact bursts, slashes, and manga SFX lettering.',
+  'shopify-supply': "Shopify's own flagship store featuring an interactive spatial canvas, tactile product filters, and bold editorial commerce design.",
 };
