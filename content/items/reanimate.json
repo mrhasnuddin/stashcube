@@ -1,0 +1,36 @@
+{
+  "slug": "reanimate",
+  "title": "reanimate",
+  "url": "https://github.com/NiazMorshed2007/reanimate",
+  "description": "A Claude Code skill that reverse-engineers any UI or WebGL animation frame by frame from live sites, recordings, GIFs, or Lottie files, then verifies the rebuilt copy moves the same.",
+  "category": "skills",
+  "subcategory": "clone-reverse",
+  "tags": [
+    "skills",
+    "claude-code",
+    "animation",
+    "motion",
+    "reverse-engineering",
+    "playwright",
+    "webgl",
+    "frontend",
+    "open-source"
+  ],
+  "install": [
+    "npx skills add NiazMorshed2007/reanimate -g"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "motion"
+    },
+    {
+      "category": "motion",
+      "subcategory": "motion-skills"
+    }
+  ],
+  "thumbnail": "/thumbs/reanimate.webp",
+  "addedAt": "2026-11-24T04:40:00.000Z",
+  "source": "manual",
+  "order": 272
+}

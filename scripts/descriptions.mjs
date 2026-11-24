@@ -257,4 +257,5 @@ export const descriptions = {
   'rea-video': 'Reverse-engineer any video shot by shot — detecting whether it was filmed, AI-generated, or coded — and output remake instructions in the open VIDEO.md format.',
   'pixelfx': '244 code-driven pixel art VFX and animations (fire, explosions, magic, weather, UI) with sprite sheet export and a Claude Code skill to create new ones.',
   'lemo-opuscar': 'Toolbox of 99 code-driven film styles for Claude Code — each pairing a style prompt with a demo short film built entirely in code with no video model.',
+  'reanimate': 'A Claude Code skill that reverse-engineers any UI or WebGL animation frame by frame from live sites, recordings, GIFs, or Lottie files, then verifies the rebuilt copy moves the same.',
 };
