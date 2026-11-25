@@ -1,0 +1,25 @@
+{
+  "slug": "unslop",
+  "title": "unslop",
+  "url": "https://github.com/heydamir/unslop",
+  "description": "Agent skill for Claude Code, Codex, and Google Antigravity that audits AI-looking UI slop and refines screens pass by pass like a designer redline review.",
+  "category": "skills",
+  "subcategory": "frontend-ui",
+  "tags": [
+    "skills",
+    "claude-code",
+    "codex",
+    "antigravity",
+    "ui",
+    "design-review",
+    "frontend",
+    "open-source"
+  ],
+  "install": [
+    "claude plugin install unslop --marketplace heydamir/unslop"
+  ],
+  "thumbnail": "/thumbs/unslop.webp",
+  "addedAt": "2026-11-25T13:59:00.000Z",
+  "source": "manual",
+  "order": 273
+}
