@@ -1,0 +1,36 @@
+{
+  "slug": "line-art-animation",
+  "title": "line-art-animation",
+  "url": "https://github.com/JDhruv14/line-art-animation",
+  "description": "A Claude skill and TypeScript library for animated line-art SVG components: ink-on-paper figures that walk and react in scenes with day/night cycles.",
+  "category": "skills",
+  "subcategory": "motion",
+  "tags": [
+    "skills",
+    "svg",
+    "line-art",
+    "animation",
+    "motion",
+    "typescript",
+    "claude-code",
+    "illustrations",
+    "open-source"
+  ],
+  "install": [
+    "git clone https://github.com/JDhruv14/line-art-animation ~/.claude/skills/line-art-animation"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "motion-skills"
+    },
+    {
+      "category": "icons",
+      "subcategory": "illustrations"
+    }
+  ],
+  "thumbnail": "/thumbs/line-art-animation.webp",
+  "addedAt": "2026-11-26T09:43:00.000Z",
+  "source": "manual",
+  "order": 278
+}

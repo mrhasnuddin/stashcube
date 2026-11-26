@@ -263,4 +263,5 @@ export const descriptions = {
   'vgpu': 'Modular cross-runtime WebGPU library by Vercel Labs designed for humans and AI coding agents, with an installable skill, MCP server, and headless Node.js rendering.',
   'motion-design-skill': 'Universal motion design principles for AI agents by LottieFiles — teaching timing, easing, choreography, and Disney animation rules across CSS, Motion, GSAP, and Lottie.',
   'genjutsu': 'Open-source motion and art direction skills for coding agents — cast animates UI, paint designs a product, and bunshin builds a whole website with a team of agents.',
+  'line-art-animation': 'A Claude skill and TypeScript library for animated line-art SVG components: ink-on-paper figures that walk and react in scenes with day/night cycles.',
 };
