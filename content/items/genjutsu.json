@@ -1,0 +1,39 @@
+{
+  "slug": "genjutsu",
+  "title": "genjutsu",
+  "url": "https://genjutsu.athevon.dev/",
+  "description": "Open-source motion and art direction skills for coding agents — cast animates UI, paint designs a product, and bunshin builds a whole website with a team of agents.",
+  "category": "skills",
+  "subcategory": "frontend-ui",
+  "tags": [
+    "skills",
+    "motion",
+    "art-direction",
+    "claude-code",
+    "frontend",
+    "inspiration",
+    "editorial",
+    "open-source"
+  ],
+  "install": [
+    "npx skills add https://genjutsu.athevon.dev -g"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "motion"
+    },
+    {
+      "category": "inspiration",
+      "subcategory": "saas-ai"
+    },
+    {
+      "category": "motion",
+      "subcategory": "motion-skills"
+    }
+  ],
+  "thumbnail": "/thumbs/genjutsu.webp",
+  "addedAt": "2026-11-26T09:41:00.000Z",
+  "source": "manual",
+  "order": 277
+}

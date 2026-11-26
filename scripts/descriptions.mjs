@@ -262,4 +262,5 @@ export const descriptions = {
   'motion-video-skill': 'Agent skill that turns a short brief, screenshots, or a repo into a directed motion-graphics MP4 using HTML/CSS scenes, Chromium, ffmpeg, and motion-synced SFX.',
   'vgpu': 'Modular cross-runtime WebGPU library by Vercel Labs designed for humans and AI coding agents, with an installable skill, MCP server, and headless Node.js rendering.',
   'motion-design-skill': 'Universal motion design principles for AI agents by LottieFiles — teaching timing, easing, choreography, and Disney animation rules across CSS, Motion, GSAP, and Lottie.',
+  'genjutsu': 'Open-source motion and art direction skills for coding agents — cast animates UI, paint designs a product, and bunshin builds a whole website with a team of agents.',
 };
