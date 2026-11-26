@@ -260,4 +260,6 @@ export const descriptions = {
   'reanimate': 'A Claude Code skill that reverse-engineers any UI or WebGL animation frame by frame from live sites, recordings, GIFs, or Lottie files, then verifies the rebuilt copy moves the same.',
   'unslop': 'Agent skill for Claude Code, Codex, and Google Antigravity that audits AI-looking UI slop and refines screens pass by pass like a designer redline review.',
   'motion-video-skill': 'Agent skill that turns a short brief, screenshots, or a repo into a directed motion-graphics MP4 using HTML/CSS scenes, Chromium, ffmpeg, and motion-synced SFX.',
+  'vgpu': 'Modular cross-runtime WebGPU library by Vercel Labs designed for humans and AI coding agents, with an installable skill, MCP server, and headless Node.js rendering.',
+  'motion-design-skill': 'Universal motion design principles for AI agents by LottieFiles — teaching timing, easing, choreography, and Disney animation rules across CSS, Motion, GSAP, and Lottie.',
 };

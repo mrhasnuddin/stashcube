@@ -1,0 +1,31 @@
+{
+  "slug": "motion-design-skill",
+  "title": "Motion Design Skill",
+  "url": "https://github.com/lottiefiles/motion-design-skill",
+  "description": "Universal motion design principles for AI agents by LottieFiles — teaching timing, easing, choreography, and Disney animation rules across CSS, Motion, GSAP, and Lottie.",
+  "category": "skills",
+  "subcategory": "motion",
+  "tags": [
+    "skills",
+    "motion",
+    "animation",
+    "lottie",
+    "easing",
+    "ui-motion",
+    "claude-code",
+    "open-source"
+  ],
+  "install": [
+    "npx skills add LottieFiles/motion-design-skill"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "motion-skills"
+    }
+  ],
+  "thumbnail": "/thumbs/motion-design-skill.webp",
+  "addedAt": "2026-11-26T09:35:01.000Z",
+  "source": "manual",
+  "order": 276
+}

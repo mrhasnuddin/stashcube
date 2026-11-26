@@ -1,0 +1,35 @@
+{
+  "slug": "vgpu",
+  "title": "vgpu",
+  "url": "https://vgpu.sh/",
+  "description": "Modular cross-runtime WebGPU library by Vercel Labs designed for humans and AI coding agents, with an installable skill, MCP server, and headless Node.js rendering.",
+  "category": "3d-tools",
+  "subcategory": "web-3d",
+  "tags": [
+    "webgpu",
+    "shaders",
+    "wgsl",
+    "3d",
+    "vercel",
+    "skills",
+    "mcp",
+    "open-source"
+  ],
+  "install": [
+    "npx skills add vercel-labs/vgpu"
+  ],
+  "also": [
+    {
+      "category": "skills",
+      "subcategory": "frontend-ui"
+    },
+    {
+      "category": "mcp-agents",
+      "subcategory": "mcp-servers"
+    }
+  ],
+  "thumbnail": "/thumbs/vgpu.webp",
+  "addedAt": "2026-11-26T09:35:00.000Z",
+  "source": "manual",
+  "order": 275
+}

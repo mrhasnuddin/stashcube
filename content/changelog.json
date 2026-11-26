@@ -455,6 +455,16 @@
         "text": "motion-video in Agent Skills, under Motion & Video (cross-listed in Motion)."
       },
       {
+        "type": "added",
+        "minor": true,
+        "text": "vgpu by Vercel Labs in 3D Tools, under Web 3D (cross-listed in Agent Skills and MCP)."
+      },
+      {
+        "type": "added",
+        "minor": true,
+        "text": "Motion Design Skill by LottieFiles in Agent Skills, under Motion & Video (cross-listed in Motion)."
+      },
+      {
         "type": "changed",
         "text": "Reorganized Agent Skills into domain-specific subcategories (Frontend & UI, Motion & Video, Logo & Brand, Backend & Systems, Clone & Reverse, Web3 & Crypto, Registries & Hubs). Dissolved the generic GitHub category into real functional topics across UI, Motion, 3D, and Skills."
       }
