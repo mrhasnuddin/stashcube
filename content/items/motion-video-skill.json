@@ -1,0 +1,32 @@
+{
+  "slug": "motion-video-skill",
+  "title": "motion-video",
+  "url": "https://github.com/farhan-syah/motion-video-skill",
+  "description": "Agent skill that turns a short brief, screenshots, or a repo into a directed motion-graphics MP4 using HTML/CSS scenes, Chromium, ffmpeg, and motion-synced SFX.",
+  "category": "skills",
+  "subcategory": "motion",
+  "tags": [
+    "skills",
+    "motion",
+    "video",
+    "ffmpeg",
+    "chromium",
+    "html",
+    "claude-code",
+    "open-source"
+  ],
+  "install": [
+    "git clone https://github.com/farhan-syah/motion-video-skill motion-video",
+    "cd motion-video/scripts && bun install"
+  ],
+  "also": [
+    {
+      "category": "motion",
+      "subcategory": "motion-skills"
+    }
+  ],
+  "thumbnail": "/thumbs/motion-video-skill.webp",
+  "addedAt": "2026-11-26T09:20:00.000Z",
+  "source": "manual",
+  "order": 274
+}
